@@ -11,9 +11,9 @@
                         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/2014_Imeretia%2C_Jaskinia_Prometeusza_%2816%29.jpg/800px-2014_Imeretia%2C_Jaskinia_Prometeusza_%2816%29.jpg "
                     }
                 ],
-            "type": "adventure",
-            "duration": "5-6 hours",
-            "startFinish": "kutaisi",
+            "type": "Adventure",
+            "duration": "5-6 Hours",
+            "startFinish": "Kutaisi",
             "price": "200₾"
         },
         {
@@ -32,9 +32,49 @@
                     }
                 ],
             "type": "Adventure",
-            "duration": "9 hours",
-            "startFinish": "kutaisi",
+            "duration": "9 Hours",
+            "startFinish": "Kutaisi",
             "price": "300₾"
+        },
+        {
+            "locations": [
+                    {
+                        "name": "Gelati",
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Gelati_1661.jpg"
+                    },
+                    {
+                        "name": "Motsameta",
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Motsameta_monastery_%28panorama_photo%29.jpg/800px-Motsameta_monastery_%28panorama_photo%29.jpg"
+                    },
+                    {
+                        "name": "Bagrati",
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2014_Kutaisi%2C_Katedra_Bagrati_%2804%29.jpg/1024px-2014_Kutaisi%2C_Katedra_Bagrati_%2804%29.jpg"
+                    }
+                ],
+            "type": "History Tour",
+            "duration": "3 Hours",
+            "startFinish": "Kutaisi",
+            "price": "100₾"
+        },
+        {
+            "locations": [
+                    {
+                        "name": "Tskhrajvari",
+                        "image": "https://cdn.georgiantravelguide.com/storage/files/tskhrajvari-4.jpg"
+                    },
+                    {
+                        "name": "Shaori",
+                        "image": "https://cdn.georgiantravelguide.com/storage/files/shaoris-tsqalsatsavi-racha-shaori-reservoir-racha-shaori-vodohranilishche-racha-1.jpg"
+                    },
+                    {
+                        "name": "Nikortsminda",
+                        "image": "https://cdn.georgiantravelguide.com/storage/files/nikortsminda-racha-nikortsminda-church-racha-4.jpg"
+                    }
+                ],
+            "type": "History Tour",
+            "duration": "3 Hours",
+            "startFinish": "Kutaisi",
+            "price": "100₾"
         }
     ]
 }
