@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "locations": [
+                    {
+                        "name": "Martvili",
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Martvili_28.jpg/1024px-Martvili_28.jpg"
+                    },
+                    {
+                        "name": "Prometheus",
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/2014_Imeretia%2C_Jaskinia_Prometeusza_%2816%29.jpg/800px-2014_Imeretia%2C_Jaskinia_Prometeusza_%2816%29.jpg "
+                    }
+                ],
+            "type": "adventure",
+            "duration": "5-6 hours",
+            "startFinish": "kutaisi",
+            "price": "200₾"
+        },
+        {
+            "locations": [
+                    {
+                        "name": "Martvili",
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Martvili_28.jpg/1024px-Martvili_28.jpg"
+                    },
+                    {
+                        "name": "Okatse",
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Okatse11.jpg/1280px-Okatse11.jpg"
+                    },
+                    {
+                        "name": "Prometheus",
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/2014_Imeretia%2C_Jaskinia_Prometeusza_%2816%29.jpg/800px-2014_Imeretia%2C_Jaskinia_Prometeusza_%2816%29.jpg "
+                    }
+                ],
+            "type": "Adventure",
+            "duration": "9 hours",
+            "startFinish": "kutaisi",
+            "price": "300₾"
+        }
+    ]
+}
