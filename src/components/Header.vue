@@ -1,11 +1,12 @@
 <template>
-    <div class="bg-red-600 flex justify-between px-2 py-3 text-gray-800">
-        <div class="logo">
+    <div class="flex justify-between px-2 py-3 bg-yellow-500 text-gray-700">
+        <RouterLink to="/">
             DISCOVER KUTAISI
-        </div>
+        </RouterLink>
         <div class="nav flex gap-3 justify-end">
-            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/tours">Tours</RouterLink>
             <RouterLink to="/about">About</RouterLink>
+            <RouterLink to="/contact">Contact</RouterLink>
         </div>
     </div>
 </template>

@@ -4,7 +4,7 @@ import Header from './components/Header.vue'
 
 <template>
   <Header />
-  <div class="bg-gradient-to-br from-blue-600 via-cyan-500 to-green-200 w-screen min-h-screen p-2">
+  <div class="bg-gradient-to-br from-green-800 via-green-600 to-green-400 w-screen min-h-screen p-2">
     <router-view></router-view>
   </div>
 </template>
