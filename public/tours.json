@@ -14,7 +14,7 @@
             "type": "Adventure",
             "duration": "5-6 Hours",
             "startFinish": "Kutaisi",
-            "price": "200₾"
+            "price": "195₾"
         },
         {
             "locations": [
@@ -34,7 +34,7 @@
             "type": "Adventure",
             "duration": "9 Hours",
             "startFinish": "Kutaisi",
-            "price": "300₾"
+            "price": "240₾"
         },
         {
             "locations": [
@@ -74,7 +74,7 @@
             "type": "History and Hiking",
             "duration": "9 Hours",
             "startFinish": "Kutaisi",
-            "price": "100₾"
+            "price": "300₾"
         }
     ]
 }
