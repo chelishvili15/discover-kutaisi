@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-between px-2 py-3 bg-yellow-500 text-gray-700">
+    <div class="flex justify-between px-2 py-3 bg-green-700 text-gray-200 font-main">
         <RouterLink to="/">
             DISCOVER KUTAISI
         </RouterLink>

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col gap-3 text-gray-100 text-xl">
+    <div class="flex flex-col gap-3 text-gray-500 text-xl">
         <p>
             A Web Developer Turned Kutaisi Tour Guide
         </p>
@@ -13,7 +13,7 @@
             I'm excited to combine my technical expertise with my local knowledge to create unforgettable experiences. Whether you're captivated by Kutaisi's ancient history, its stunning natural beauty, or its vibrant culture, I'm here to ensure your visit is nothing short of extraordinary.
         </p>
         <p>
-            Let's <span class="text-orange-600 bg-green-600 text-2xl">Discover Kutaisi</span> together!
+            Let's <span class="text-gray-600 bg-green-600 text-2xl px-5 py-1 rounded">Discover Kutaisi</span> together!
         </p>
     </div>
 </template>

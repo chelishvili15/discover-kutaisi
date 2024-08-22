@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'main': ['Edu VIC WA NT Beginner', 'Sans-serif']
+    },
   },
   plugins: [],
 }
