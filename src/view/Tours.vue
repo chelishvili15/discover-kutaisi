@@ -1,6 +1,6 @@
 <script setup>
 import Card from '../components/Card.vue'
-import Tour from '../../public/tours.json'
+import Tour from '../tours.json'
 </script>
 
 <template>
