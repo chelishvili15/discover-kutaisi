@@ -6,15 +6,18 @@
             "locations": [
                     {
                         "name": "Gelati",
-                        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Gelati_1661.jpg"
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Gelati_1661.jpg",
+                        "description": ""
                     },
                     {
                         "name": "Motsameta",
-                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Motsameta_monastery_%28panorama_photo%29.jpg/800px-Motsameta_monastery_%28panorama_photo%29.jpg"
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Motsameta_monastery_%28panorama_photo%29.jpg/800px-Motsameta_monastery_%28panorama_photo%29.jpg",
+                        "description": ""
                     },
                     {
                         "name": "Bagrati",
-                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2014_Kutaisi%2C_Katedra_Bagrati_%2804%29.jpg/1024px-2014_Kutaisi%2C_Katedra_Bagrati_%2804%29.jpg"
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2014_Kutaisi%2C_Katedra_Bagrati_%2804%29.jpg/1024px-2014_Kutaisi%2C_Katedra_Bagrati_%2804%29.jpg",
+                        "description": ""
                     }
                 ],
             "type": "History Tour",
@@ -27,11 +30,16 @@
             "locations": [
                     {
                         "name": "Martvili",
-                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Martvili_28.jpg/1024px-Martvili_28.jpg"
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Martvili_28.jpg/1024px-Martvili_28.jpg",
+                        "description": "Visitor Centre of Martvili Canyon is located in the village Inchkhuri. 700 meters circular hiking trail starts from the visitors' centre and passes through Dadiani's historic walkway. There are 2 bridges, 3 viewing platforms, and 30-step historic staircase that is built from limestone staircase.Here you have the opportunity to take a trip by boat, 300 meters (one way) section of Abasha and enjoy the beautiful views of canyon.Here you have a great chance to enjoy diving and explore beautiful places under the water. Canyon welcomes visitors during week-end as well, thus put hiking clothes into the backpack and enjoy the vacations in Western Georgia.",
+                        "youtube": "https://www.youtube.com/embed/IuY0fCzUZ9A?si=RDS9Ct_nZA9wPJ2E"
+                        
                     },
                     {
                         "name": "Prometheus",
-                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/2014_Imeretia%2C_Jaskinia_Prometeusza_%2816%29.jpg/800px-2014_Imeretia%2C_Jaskinia_Prometeusza_%2816%29.jpg "
+                        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/31/8e/4a/examples-of-stalactites.jpg?w=1000&h=-1&s=1",
+                        "description": "Prometheus Cave is located in Tskaltubo municipality, village Kumistavi. River. There are 22 halls found, where just 6 halls are open for tourists. It is possible to walk through the length of 1420 meters in the cave's territory visit the halls and enjoy boat tour by walking the river. Discover real masterpieces of nature - stalactites and stalagmites at Prometheus Cave, which are the most beautiful forms created by nature. While visiting the cave, hanging waterfalls are waiting for you. Be more adventurous and spend your weekend in a beautiful and special area – Western Georgia. ",
+                        "youtube": "https://www.youtube.com/embed/IuY0fCzUZ9A?si=RDS9Ct_nZA9wPJ2E"
                     }
                 ],
             "type": "Adventure",
@@ -44,15 +52,18 @@
             "locations": [
                     {
                         "name": "Martvili",
-                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Martvili_28.jpg/1024px-Martvili_28.jpg"
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Martvili_28.jpg/1024px-Martvili_28.jpg",
+                        "description": "Visitor Centre of Martvili Canyon is located in the village Inchkhuri. 700 meters circular hiking trail starts from the visitors' centre and passes through Dadiani's historic walkway. There are 2 bridges, 3 viewing platforms, and 30-step historic staircase that is built from limestone staircase.Here you have the opportunity to take a trip by boat, 300 meters (one way) section of Abasha and enjoy the beautiful views of canyon.Here you have a great chance to enjoy diving and explore beautiful places under the water. Canyon welcomes visitors during week-end as well, thus put hiking clothes into the backpack and enjoy the vacations in Western Georgia."
                     },
                     {
                         "name": "Okatse",
-                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Okatse11.jpg/1280px-Okatse11.jpg"
+                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Okatse11.jpg/1280px-Okatse11.jpg",
+                        "description": "We have a surprise for extreme lovers. Enjoy first hanging trail called Okatse Canyon and have a feeling as if you are walking 2-3 hours directly in the sky. The pedestrian trail passes through Dadiani historic forests, thus enjoy hiking and 780 meters length hanging trail. The last destination is a panoramic view, where visitors have chance to take photos by smart camera installed on the area."
                     },
                     {
                         "name": "Prometheus",
-                        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/2014_Imeretia%2C_Jaskinia_Prometeusza_%2816%29.jpg/800px-2014_Imeretia%2C_Jaskinia_Prometeusza_%2816%29.jpg "
+                        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/31/8e/4a/examples-of-stalactites.jpg?w=1000&h=-1&s=1",
+                        "description": "Prometheus Cave is located in Tskaltubo municipality, village Kumistavi. River. There are 22 halls found, where just 6 halls are open for tourists. It is possible to walk through the length of 1420 meters in the cave's territory visit the halls and enjoy boat tour by walking the river. Discover real masterpieces of nature - stalactites and stalagmites at Prometheus Cave, which are the most beautiful forms created by nature. While visiting the cave, hanging waterfalls are waiting for you. Be more adventurous and spend your weekend in a beautiful and special area – Western Georgia. "
                     }
                 ],
             "type": "Adventure",
@@ -65,15 +76,18 @@
             "locations": [
                     {
                         "name": "Tskhrajvari",
-                        "image": "https://cdn.georgiantravelguide.com/storage/files/tskhrajvari-4.jpg"
+                        "image": "https://cdn.georgiantravelguide.com/storage/files/tskhrajvari-4.jpg",
+                        "description": ""
                     },
                     {
                         "name": "Shaori",
-                        "image": "https://cdn.georgiantravelguide.com/storage/files/shaoris-tsqalsatsavi-racha-shaori-reservoir-racha-shaori-vodohranilishche-racha-1.jpg"
+                        "image": "https://cdn.georgiantravelguide.com/storage/files/shaoris-tsqalsatsavi-racha-shaori-reservoir-racha-shaori-vodohranilishche-racha-1.jpg",
+                        "description": ""
                     },
                     {
                         "name": "Nikortsminda",
-                        "image": "https://cdn.georgiantravelguide.com/storage/files/nikortsminda-racha-nikortsminda-church-racha-4.jpg"
+                        "image": "https://cdn.georgiantravelguide.com/storage/files/nikortsminda-racha-nikortsminda-church-racha-4.jpg",
+                        "description": ""
                     }
                 ],
             "type": "History and Hiking",

@@ -20,10 +20,19 @@
             </div>
         </div>
 
-        <p class="absolute right-5 bottom-3 text-gray-100 underline">See More ...</p>
+        <p class="absolute right-5 bottom-3 text-gray-100 underline" @click="seeMore(tour.id)" >See More ...</p>
     </div>
 </template>
 
 <script setup>
+import { useRoute, useRouter } from 'vue-router'
+
 defineProps(["tour"])
+
+const router = useRouter()
+const route = useRoute()
+
+const seeMore = (id) => {
+    router.push(`/tours/${id}`)
+}
 </script>
