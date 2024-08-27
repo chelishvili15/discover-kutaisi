@@ -3,8 +3,10 @@ import Header from './components/Header.vue'
 </script>
 
 <template>
-  <Header />
-  <div class="bg-gradient-to-br w-screen min-h-screen p-2 font-main">
-    <router-view></router-view>
-  </div>
+    <div class="max-w-[768px] m-auto bg-transparent">
+      <Header />
+      <div class="bg-gradient-to-br w-full min-h-screen p-2 font-main ">
+        <router-view></router-view>
+      </div>
+    </div>
 </template>
