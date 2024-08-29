@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-between items-center px-7 py-3 bg-green-700 text-gray-200 font-main">
+    <div class="sticky top-0 z-50 flex justify-between items-center px-7 py-3 bg-green-700 text-gray-200 font-main">
         <RouterLink to="/">
             <Logo />
         </RouterLink>
