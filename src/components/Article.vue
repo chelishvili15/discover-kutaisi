@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header class="text-2xl font-bold text-center mb-3"> {{ location.name }} </header>
+        <header class="text-2xl font-bold text-center mb-3"> {{ location.fullName }} </header>
         <img :src="location.image" :alt="location.name">
         
         <p class="mt-3">{{ location.description }}</p>
