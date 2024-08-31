@@ -4,13 +4,16 @@
             <Logo />
         </RouterLink>
         <div class="nav flex gap-3 justify-end">
-            <RouterLink to="/tours">Tours</RouterLink>
-            <RouterLink to="/about">About</RouterLink>
-            <RouterLink to="/contact">Contact</RouterLink>
+            <RouterLink to="/tours"   :class="route.path == `/tours` && 'font-bold'">Tours</RouterLink>
+            <RouterLink to="/about"   :class="route.path == `/about` && 'font-bold'">About</RouterLink>
+            <RouterLink to="/contact" :class="route.path == `/contact` && 'font-bold'">Contact</RouterLink>
         </div>
     </div>
 </template>
 
 <script setup>
-import Logo from '../assets/icons/Logo.vue';
+import Logo from '../assets/icons/Logo.vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
 </script>
