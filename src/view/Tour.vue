@@ -1,5 +1,5 @@
 <template>
-    <div class="flex my-8">
+    <div class="flex mb-10">
         <div 
             v-for="location in tour.locations" 
             class="w-1/3 flex justify-center py-2"

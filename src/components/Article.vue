@@ -3,7 +3,7 @@
         <header class="text-2xl font-bold text-center mb-3"> {{ location.fullName }} </header>
         <img :src="location.image" :alt="location.name">
         
-        <p class="mt-3">{{ location.description }}</p>
+        <p class="mt-3 p-2">{{ location.description }}</p>
 
         <iframe class="w-full h-64 mt-3" :src="location.youtube" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
