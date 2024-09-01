@@ -3,9 +3,13 @@
         <div class="flex items-center gap-4">
             <Gmail />  <p>d.chelishvili91@gmail.com </p>
         </div>
-        <div class="flex items-center gap-4">
-            <Whatsapp /> <p>+995 557 66 91 79</p>
-        </div>
+        <a 
+            href="https://api.whatsapp.com/send?phone=+995557669179" 
+            class="flex items-center gap-4"
+        >
+            <Whatsapp /> 
+            <p class="underline">+995 557 66 91 79</p>
+        </a>
     </div>
 </template>
 
