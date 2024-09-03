@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import Article from '../components/Article.vue'
 import { useRoute, useRouter } from 'vue-router'
 import tours from '../tours.json'
@@ -28,5 +28,9 @@ const id = route.params.id
 const [tour] = tours.data.filter(ob => ob.id == id)
 
 const currentArticle = ref(tour.locations[0])
+
+onMounted(() => {
+    window.scrollTo(0, 0)
+})
 
 </script>
