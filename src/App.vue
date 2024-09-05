@@ -9,7 +9,7 @@ const togSidebar = ref(false)
 <template>
     <div class="max-w-[768px] m-auto bg-transparent font-main">
       <Sidebar :toggleSidebar="togSidebar" @closeSidebar = "togSidebar = false" />
-      <Header @toggleSidebar="togSidebar = !togSidebar" @closeSidebar="togSidebar = false" />
+      <Header :toggleSidebar="togSidebar" @toggleSidebar="togSidebar = !togSidebar" @closeSidebar="togSidebar = false" />
       <div class="bg-gradient-to-br w-full p-2 font-main" @click="togSidebar = false">
         <router-view v-slot="{ Component }">
           <transition name="slide-fade-route">
