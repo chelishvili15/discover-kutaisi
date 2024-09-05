@@ -1,19 +1,21 @@
 <template>
     <div class="sticky top-0 z-50 flex justify-between items-center px-7 bg-green-700 text-gray-200 font-main">
-        <RouterLink to="/">
-            <Logo />
-        </RouterLink>
-        <div class="nav flex gap-3 justify-end">
-            <RouterLink to="/tours"   :class="route.path == `/tours` && 'font-bold'">Tours</RouterLink>
-            <RouterLink to="/about"   :class="route.path == `/about` && 'font-bold'">About</RouterLink>
-            <RouterLink to="/contact" :class="route.path == `/contact` && 'font-bold'">Contact</RouterLink>
+        <div class="w-1/2">
+            <Burger @click="$emit('toggleSidebar')" />
         </div>
+        
+        <div class="w-1/2 flex flex-start">
+            <RouterLink to="/">
+                <Logo class="-translate-x-1/2" @click="$emit('closeSidebar')"/>
+            </RouterLink>
+        </div>
+        
     </div>
 </template>
 
 <script setup>
 import Logo from '../assets/icons/Logo.vue'
-import { useRoute } from 'vue-router'
+import Burger from '../assets/icons/Burger.vue'
 
-const route = useRoute()
+defineEmits(['toggleSidebar', 'closeSidebar'])
 </script>
