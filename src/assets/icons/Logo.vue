@@ -4,7 +4,6 @@
       <svg
          version="1.1"
          id="svg2"
-         width=""
          height="50"
          viewBox="0 0 426.66666 426.66666"
          sodipodi:docname="discover kutaisi logo.ai"

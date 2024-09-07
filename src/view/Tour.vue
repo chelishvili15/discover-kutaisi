@@ -1,4 +1,5 @@
 <template>
+  <div>
     <div class="flex mb-10">
         <div 
             v-for="location in tour.locations" 
@@ -12,7 +13,7 @@
     </div> 
 
     <Article :location="currentArticle" />
-
+  </div>
 </template>
 
 <script setup>
