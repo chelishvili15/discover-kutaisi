@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Tbilisi",
+            "price": "280Gel",
+            "pick-up": "Kutaisi",
+            "image": ""
+        },
+        {
+            "id": 2,
+            "name": "Batumi",
+            "price": "200Gel",
+            "pick-up": "Kutaisi",
+            "image": ""
+        }
+    ]
+}
