@@ -1,5 +1,5 @@
 <script setup>
-import { data } from './../transffers.json'
+import { data } from '../transfers.json'
 </script>
 
 <template>

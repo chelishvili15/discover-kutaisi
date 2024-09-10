@@ -5,9 +5,14 @@
             class="fixed z-40 w-full h-screen text-gray-100 flex text-2xl"
         >
             <div class="nav flex flex-col items-center justify-center shadow-lg gap-3 w-1/2 bg-green-600 h-full" @click="$emit('closeSidebar')">
-                <RouterLink to="/"   :class="route.path == `/` && 'font-bold text-white'">Home</RouterLink>
+                <RouterLink 
+                  to="/"   
+                  :class="route.path == `/` && 'font-bold text-white'"
+                >
+                  Home
+                </RouterLink>
                 <RouterLink to="/tours"   :class="route.path == `/tours` && 'font-bold text-white'">Tours</RouterLink>
-                <RouterLink to="/transffers"   :class="route.path == `/transffers` && 'font-bold text-white'">Transffers</RouterLink>
+                <RouterLink to="/transfers"   :class="route.path == `/transfers` && 'font-bold text-white'">Transfers</RouterLink>
                 <RouterLink to="/about"   :class="route.path == `/about` && 'font-bold text-white'">About</RouterLink>
                 <RouterLink to="/contact" :class="route.path == `/contact` && 'font-bold text-white'">Contact</RouterLink>
             </div>
