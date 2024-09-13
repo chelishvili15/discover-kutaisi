@@ -15,6 +15,13 @@
                 <Whatsapp /> 
                 <p class="underline">+995 557 66 91 79</p>
             </a>
+            <a 
+                href="https://www.youtube.com/@DiscoverKutaisi" 
+                class="flex items-center gap-4"
+            >
+                <Youtube /> 
+                <p class="underline">@DiscoverKutaisi</p>
+            </a>
         </div>
     </div>
 </template>
@@ -22,4 +29,5 @@
 <script setup>
 import Gmail from '../assets/icons/Gmail.vue'
 import Whatsapp from '../assets/icons/Whatsapp.vue'
+import Youtube from '../assets/icons/Youtube.vue'
 </script>
