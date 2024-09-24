@@ -10,7 +10,7 @@
             </div>
         </div>
 
-        <div class="flex justify-between text-gray-200">
+        <div class="flex justify-between text-gray-200 mb-5">
             <div>
                 <p><strong>Duration:</strong> {{ tour.duration }}</p>
                 <p><strong>Type:</strong> {{ tour.type }}</p>
@@ -20,6 +20,7 @@
             </div>
             <div>
                 <p class="text-2xl font-semibold text-gray-200">PRICE: {{ tour.price }}</p>
+                <p class="text-xs font-semibold">Minivan(5+1 person)</p>
             </div>
         </div>
 
