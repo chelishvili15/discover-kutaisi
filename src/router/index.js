@@ -8,12 +8,15 @@ import TourView from '../view/Tour.vue'
 import TransfersView from '../view/Transfers.vue'
 
 const routes = [
-  { path: '/', name: 'Home', component: HomeView },
-  { path: '/tours', name: 'Tours', component: ToursView },
-  { path: '/tours/:id', name: 'Tour', component: TourView },
-  { path: '/transfers', name: 'Transfer', component: TransfersView },
-  { path: '/about', name:'About', component: AboutView },
-  { path: '/contact', name:'Contact', component: ContactView },
+  { path: '/', 
+    name: 'Home', 
+    component: HomeView,
+  },
+  { path: '/tours', name: 'Tours', component: ToursView, meta: {transition: 'slide-fade-route'} },
+  { path: '/tours/:id', name: 'Tour', component: TourView, meta: {transition: 'slide-fade-route'} },
+  { path: '/transfers', name: 'Transfer', component: TransfersView, meta: {transition: 'slide-fade-route'} },
+  { path: '/about', name:'About', component: AboutView, meta: {transition: 'slide-fade-route'} },
+  { path: '/contact', name:'Contact', component: ContactView, meta: {transition: 'slide-fade-route'} },
 ]
 
 const router = createRouter({

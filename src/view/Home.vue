@@ -1,13 +1,5 @@
-<script setup>
-import BlackLogo from '../assets/icons/BlackLogo.vue'
-</script>
-
 <template>
-    <BlackLogo class="opacity-5 w-full fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" /> 
-    
-
     <div class="w-full h-[calc(100vh-200px)] flex justify-center pt-24">
-
         <div class="w-full h-full flex flex-col justify-center gap-5 text-green-700">
             <a 
                 href="#/tours" 
@@ -47,7 +39,7 @@ import BlackLogo from '../assets/icons/BlackLogo.vue'
   position: absolute;
   animation: linear;
   animation-name: runLeft;
-  animation-duration: 3s;
+  animation-duration: 0.8s;
 }
 .pot4 {
   top: 60%;
@@ -56,15 +48,15 @@ import BlackLogo from '../assets/icons/BlackLogo.vue'
   position: absolute;
   animation: linear;
   animation-name: runLeft;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
 }
 
 @keyframes runLeft {
   0% {
-    left: -100%;
+    left: 10%;
   }
   50% { 
-    left: 10%; 
+    left: 20%; 
    }
   100% {
     left: 50%;     
@@ -78,7 +70,7 @@ import BlackLogo from '../assets/icons/BlackLogo.vue'
   position: absolute;
   animation: linear;
   animation-name: runRight;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
 }
 .pot3 {
   top: 45%;
@@ -87,15 +79,15 @@ import BlackLogo from '../assets/icons/BlackLogo.vue'
   position: absolute;
   animation: linear;
   animation-name: runRight;
-  animation-duration: 3s;
+  animation-duration: 0.8s;
 }
 
 @keyframes runRight {
   0% {
-    right: -100%;
+    right: 10%;
   }
   50% { 
-    right: 10%; 
+    right: 20%; 
    }
   100% {
     right: 50%;     
