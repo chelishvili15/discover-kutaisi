@@ -4,7 +4,7 @@
             v-if="toggleSidebar"
             class="fixed z-40 w-full h-screen text-gray-100 flex text-2xl"
         >
-            <div class="nav flex flex-col items-center justify-center shadow-lg gap-3 w-1/2 bg-green-600 h-full" @click="$emit('closeSidebar')">
+            <div class="nav flex flex-col items-center justify-center shadow-lg gap-5 w-1/2 bg-green-600 h-full" @click="$emit('closeSidebar')">
                 <RouterLink 
                   to="/"   
                   :class="route.path == `/` && 'font-bold text-white'"
