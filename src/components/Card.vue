@@ -20,7 +20,7 @@
             </div>
             <div>
                 <p class="text-2xl font-semibold text-gray-200">PRICE: {{ tour.price }}</p>
-                <p class="text-xs font-semibold">Minivan(5+1 person)</p>
+                <p class="text-xs font-semibold">Minivan(6+1 person)</p>
             </div>
         </div>
 
