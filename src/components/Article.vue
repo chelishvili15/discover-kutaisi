@@ -3,7 +3,7 @@
         <header class="text-2xl font-bold text-center mb-3"> {{ location.fullName }} </header>
         <img :src="location.image" :alt="location.name">
         
-        <p class="mt-3 p-1" :class="readmore ? 'line-clamp-2 text-ellipsis' : ''">{{ location.description }}</p>
+        <p class="mt-3 p-1 font-lato text-gray-700" :class="readmore ? 'line-clamp-2 text-ellipsis' : ''">{{ location.description }}</p>
 
         <p 
             class="text-blue-500 text-right underline" 

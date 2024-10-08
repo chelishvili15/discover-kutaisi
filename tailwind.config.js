@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      'main': ['Edu VIC WA NT Beginner', 'Sans-serif']
+      'main': ['Edu VIC WA NT Beginner', 'Sans-serif'],
+      'lato': ['Lato', 'Sans-serif']
     },
   },
   plugins: [],
