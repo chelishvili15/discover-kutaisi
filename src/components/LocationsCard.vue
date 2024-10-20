@@ -1,7 +1,7 @@
 <template>
     <div class="bg-green-600 w-full py-3 px-3 rounded-md relative font-main flex justify-between text-gray-100">
         <div class="flex items-center gap-2">
-            <img :src="location.image" :alt="location.name" class="w-40 rounded">
+            <img :src="location.image" :alt="location.name" class="w-24 rounded">
             <div>
                 <p class="text-2xl font-semibold text-gray-100">{{ location.name }}</p>
                 <p class="text-xs font-semibold text-gray-100">{{ location.type }}</p>
