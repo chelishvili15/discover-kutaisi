@@ -1,9 +1,14 @@
 <template>
-    <div v-html="locations[0].description" class="font-lato text-gray-800">
-        
+    <div class="flex flex-col gap-4">
+        <div v-for="location in locations">
+            <LocationsCard :location="location" />
+        </div>
+
+        <pre>{{ locations }}</pre>
     </div>
 </template>
 
 <script setup>
 import locations from "../locations.json"
+import LocationsCard from "../components/LocationsCard.vue"
 </script>
