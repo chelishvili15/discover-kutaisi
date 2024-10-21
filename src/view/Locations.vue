@@ -3,8 +3,6 @@
         <div v-for="location in locations">
             <LocationsCard :location="location" />
         </div>
-
-        <pre>{{ locations }}</pre>
     </div>
 </template>
 

@@ -8,20 +8,35 @@
         "image": "https://cdn.georgiantravelguide.com/storage/files/sataflia-satafliis-aghkvetili-sataplia-9.jpg",
         "fee": 
             {
-                "entry": "20₾"
+                "Entry": "20₾"
             }
 
     },
     {
         "id": 2,
-        "type": "Managed Reserve",
-        "name": "Sataplia",
-        "description": "Sataplia Managed Reserve is located in Imereti, in the territory of Tskaltubo municipality's villages Gumbra, Banoja and khomuli, on the hill of Sataplia 500 meters above the sea level. It was founded in 1935. Reserve itself has a complex structure and contains geologic, paleontological, speleological, zoological and botanical monuments.<br><br>Sataplia Managed Reserve is part of the Imereti Protected Areas and its infrastructure includes Visitor Center, Dinosaur Footprint Conservation Building, Exhibition Hall,Glass Panorama view, Cafes, Souvenir Shops, well-organized Caves and Marked Trails.<br><br>Visitors can visit the dinosaur footprints, Sataplia karst cave with a length of 900 meters, a height of 10 meters, a width of 12 meters, rock trail, Colchic forest, and panoramic views.<br><br>Word Sataplia means 'honey place'. The name originated from the Sataplia Mountain, which derives its name from the bees living in the mountains and the ancient tradition of collecting honey.",
-        "image": "https://cdn.georgiantravelguide.com/storage/files/sataflia-satafliis-aghkvetili-sataplia-9.jpg",
+        "location": "Tskaltubo",
+        "type": "Cave",
+        "name": "Prometheus",
+        "description": "Natural monument Prometheus Cave is located in Tskaltubo municipality in Imereti region. Its length is 1,8 km and is formed within the depth of 40 meters.<br><br>The Prometheus Cave is a notable beautiful natural monument of the world. It is about 60-70 million years old. This beautifully shaped karst cave with stunning strips of stalactites and stalagmites once again will convince you of the enormous power of nature and will travel you in the fairy world.<br><br>Prometheus cave is located in the village of Kumistavi in Tskaltubo municipality, in the basin of Kuma River. In the cave are found 22 halls, from which for tourists is opened only 6. In the cave, it is possible to walk through the length of 1420 meters, see the halls and travel by boat on the river flow.<br><br>In the Prometheus Cave, you will meet a lot of real masterpieces of nature - stalactites, and stalagmites, beautiful forms of it leave the impression of the fairy environment. Also, When walking in the cave, there are 'petrification waterfalls', 'hanging stone curtains', 'helictites' and etc.",
+        "image": "https://cdn.georgiantravelguide.com/storage/files/prometes-mghvime-prometheus-cave-kumistavi.jpg",
         "fee": 
             {
-                "entry": "20₾",
-                "zipline": "50₾"
+                "Entry": "25₾"
+            }
+
+    },
+    {
+        "id": 3,
+        "location": "Martvili",
+        "type": "Canyon, Watefalls",
+        "name": "Canyon",
+        "description": "Martvili Canyon – is the monument of nature. In the village of Gachedili, in the municipality of Martvili, on the side of Samegrelo, 210 meters from sea level, you can see this picturesque place. Martvili Canyon Visitors Center is situated near the entrance of the canyon.<br><br>This monument of nature represents the ravine, created by the river Abasha, cut out through the limestone rock sides. The length of the canyon is 2400 meters, and the depth of carving is 20-30 meters, and as for the width, - 5-10 meters. In the middle reaches of the canyon, there are arising 12-15 meters long waterfalls, with a small falling. One section is highly distinguished, as it is really charming. It is called Ophutskhole, which is also known as the “Dadiani Bathe” as well.<br><br>From the Visitor Center, stars the tournament footway path, which is cobbled with stones and in total, is 700 meters long. It leads you to the Dadiani historical by-path. There are placed two bridges, 3 panorama platforms, and a huge, chalk-stoned, man-made historical, 30 stepped stairway.<br><br>The visitors can also take a walk or row down the river Abasha. This “trip” is about 300 meters long interspace, (one way) and take pleasure in the extremely beautiful and pretty views of the river and canyon. Maritime routes are also available, but you must satisfy one condition- you must be higher, than 1 meter.",
+        "image": "https://cdn.georgiantravelguide.com/storage/files/martvilis-kanioni-canyon-visitor-center-6.jpg",
+        "fee": 
+            {
+                "Entry": "20₾",
+                "Zipline": "50₾",
+                "Boat": "20₾"
             }
 
     }
