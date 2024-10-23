@@ -8,12 +8,20 @@
                 <RouterLink 
                   to="/"   
                   :class="route.path == `/` && 'font-bold text-white'"
+                  class="mb-10"
                 >
                   Home
                 </RouterLink>
+                <RouterLink to="/locations"   :class="route.path == `/locations` && 'font-bold text-white'">Locations</RouterLink>
                 <RouterLink to="/tours"   :class="route.path == `/tours` && 'font-bold text-white'">Tours</RouterLink>
                 <RouterLink to="/transfers"   :class="route.path == `/transfers` && 'font-bold text-white'">Transfers</RouterLink>
-                <RouterLink to="/about"   :class="route.path == `/about` && 'font-bold text-white'">About</RouterLink>
+                <RouterLink 
+                  to="/about"   
+                  :class="route.path == `/about` && 'font-bold text-white'"
+                  class="mt-10"
+                >
+                  About
+                </RouterLink>
                 <RouterLink to="/contact" :class="route.path == `/contact` && 'font-bold text-white'">Contact</RouterLink>
             </div>
             <div class="bg-transparent h-screen w-1/2" @click="$emit('closeSidebar')">

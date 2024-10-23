@@ -2,8 +2,9 @@
     {
         "id": 1,
         "location": "Tskaltubo",
-        "type": "Managed Reserve",
+        "type": ["Managed reserve", "Cave", "Hiking", "Panoramic view"],
         "name": "Sataplia",
+        "fullName": "Sataplia Strict Nature Reserve",
         "description": "Sataplia Managed Reserve is located in Imereti, in the territory of Tskaltubo municipality's villages Gumbra, Banoja and khomuli, on the hill of Sataplia 500 meters above the sea level. It was founded in 1935. Reserve itself has a complex structure and contains geologic, paleontological, speleological, zoological and botanical monuments.<br><br>Sataplia Managed Reserve is part of the Imereti Protected Areas and its infrastructure includes Visitor Center, Dinosaur Footprint Conservation Building, Exhibition Hall,Glass Panorama view, Cafes, Souvenir Shops, well-organized Caves and Marked Trails.<br><br>Visitors can visit the dinosaur footprints, Sataplia karst cave with a length of 900 meters, a height of 10 meters, a width of 12 meters, rock trail, Colchic forest, and panoramic views.<br><br>Word Sataplia means 'honey place'. The name originated from the Sataplia Mountain, which derives its name from the bees living in the mountains and the ancient tradition of collecting honey.",
         "image": "https://cdn.georgiantravelguide.com/storage/files/sataflia-satafliis-aghkvetili-sataplia-9.jpg",
         "fee": 
@@ -15,21 +16,24 @@
     {
         "id": 2,
         "location": "Tskaltubo",
-        "type": "Cave",
+        "type": ["Cave"],
         "name": "Prometheus",
+        "fullName": "Prometheus Cave",
         "description": "Natural monument Prometheus Cave is located in Tskaltubo municipality in Imereti region. Its length is 1,8 km and is formed within the depth of 40 meters.<br><br>The Prometheus Cave is a notable beautiful natural monument of the world. It is about 60-70 million years old. This beautifully shaped karst cave with stunning strips of stalactites and stalagmites once again will convince you of the enormous power of nature and will travel you in the fairy world.<br><br>Prometheus cave is located in the village of Kumistavi in Tskaltubo municipality, in the basin of Kuma River. In the cave are found 22 halls, from which for tourists is opened only 6. In the cave, it is possible to walk through the length of 1420 meters, see the halls and travel by boat on the river flow.<br><br>In the Prometheus Cave, you will meet a lot of real masterpieces of nature - stalactites, and stalagmites, beautiful forms of it leave the impression of the fairy environment. Also, When walking in the cave, there are 'petrification waterfalls', 'hanging stone curtains', 'helictites' and etc.",
         "image": "https://cdn.georgiantravelguide.com/storage/files/prometes-mghvime-prometheus-cave-kumistavi.jpg",
         "fee": 
             {
                 "Entry": "25₾"
-            }
+            },
+        "youtube": "https://www.youtube.com/embed/W1d6CWjswdM?si=EDfmc0QdktJLscE5"
 
     },
     {
         "id": 3,
         "location": "Martvili",
-        "type": "Canyon, Watefalls",
+        "type": ["Canyon", "Waterfall"],
         "name": "Canyon",
+        "fullName": "Martvili Canyon",
         "description": "Martvili Canyon – is the monument of nature. In the village of Gachedili, in the municipality of Martvili, on the side of Samegrelo, 210 meters from sea level, you can see this picturesque place. Martvili Canyon Visitors Center is situated near the entrance of the canyon.<br><br>This monument of nature represents the ravine, created by the river Abasha, cut out through the limestone rock sides. The length of the canyon is 2400 meters, and the depth of carving is 20-30 meters, and as for the width, - 5-10 meters. In the middle reaches of the canyon, there are arising 12-15 meters long waterfalls, with a small falling. One section is highly distinguished, as it is really charming. It is called Ophutskhole, which is also known as the “Dadiani Bathe” as well.<br><br>From the Visitor Center, stars the tournament footway path, which is cobbled with stones and in total, is 700 meters long. It leads you to the Dadiani historical by-path. There are placed two bridges, 3 panorama platforms, and a huge, chalk-stoned, man-made historical, 30 stepped stairway.<br><br>The visitors can also take a walk or row down the river Abasha. This “trip” is about 300 meters long interspace, (one way) and take pleasure in the extremely beautiful and pretty views of the river and canyon. Maritime routes are also available, but you must satisfy one condition- you must be higher, than 1 meter.",
         "image": "https://cdn.georgiantravelguide.com/storage/files/martvilis-kanioni-canyon-visitor-center-6.jpg",
         "fee": 
@@ -37,53 +41,58 @@
                 "Entry": "20₾",
                 "Zipline": "50₾",
                 "Boat": "20₾"
-            }
+            },
+        "youtube": "https://www.youtube.com/embed/Vaebg93W2o4?si=7wDrwTZScnuxbtaj"
 
     },
     {
         "id": 4,
         "location": "Tkibuli",
-        "type": "Mountain, Hiking",
+        "type": ["Mountain", "Hiking", "Panoramic view"],
         "name": "Tskhrajvari",
+        "fullName": "Tskhrajvari shrine",
         "description": "Tskhrajvari (literally nine crosses), a shrine of St. George, is located in the Imereti region, near the Nakerala Pass, on the top of a mountain near Tkibuli, at 1500 meters above sea level.<br><br>Every year on the last Saturday of May, 'Tskhrajvaroba' is celebrated in Imereti, especially in Tkibuli Municipality and its villages.<br><br>In addition, a unique cave is discovered near the Tskhrajvari temple.<br><br><strong>There is a legend<strong> according to which 9 sons from one family went to war. The boys' father prayed daily that his sons would return home safe. He decided to make an offering and erected crosses on the mountain of Tkibuli. He lifted 9 crosses on his shoulders to the mountain and built a shrine there. After the end of World War II, all the sons returned home unharmed. Since then, the shrine has become popular among tourists.<br><br>According to another legend: long ago in Svaneti, the Sopromian brothers killed the prince, after which they emigrated from Svaneti, settled in a small village in Okriba and changed the surname to Sopromadze. After a while, God's wrath fell on the Sopromadze family. Newborn sons of the Sopromadze family died before reaching the age of majority. And then one day, the horrified people gathered in the open air and prayed to God: raise a son for us, and we will release a pigeon, and where it sits down on, we will build a shrine for the glory of the Lord.<br><br>Indeed, the elders of the Sopromadze family released a pigeon, which, as it turns out, sat down on the top of this mountain. They carried stones to the mountain on their hands, many even died during the construction, but in the end, after long torment and hard work, they erected a small shrine on the mountain. On the last day of the construction of the temple, they made a feast, slaughtered many heifers and birds. In the middle of the feast, after getting drunk they started to fight, using the sharp bones of heifers as a weapon; the sinners severely wounded each other and the blood was shed. After sobering up, they experienced great regret, knelt down and asked the Lord for forgiveness. Since then, the Sopromadze family, annually, on the last Saturday of May, praises the Lord and rejects the meat.",
         "image": "https://cdn.georgiantravelguide.com/storage/files/tskhrajvari-5.jpg",
         "fee": 
             {
                 "Entry": "free"
-            }
-
+            },
+        "youtube": "https://www.youtube.com/embed/xVuwIiZFZuM?si=u3Lx7z29mC7-0JC7"
     },
     {
         "id": 5,
         "location": "Racha",
-        "type": "Lake",
+        "type": ["Lake", "Swimming"],
         "name": "Shaori",
+        "fullName": "Shaori reservoir",
         "description": "Shaori Reservoir is one of the most attractive places in Racha. Heading to Racha, you cannot overpass the Reservoir which dazzles you with its landscape. Shaori Reservoir is not a very popular tourist destination; however, on the plus side, it makes the place more interesting. People who love to wander frequently search for places which are not overcrowded with visitors and tourists and, at the same time, where they can spend a pleasant weekend in nature.<br><br>Located in Ambrolauri Municipality at the altitude of 1100-1200 meters, Shaori Reservoir is the biggest in Racha-Lechkhumi and Lower Svaneti region. The Reservoir is inside a structural basin formed by the damming of Shaori River and surrounded by mixed deciduous trees. There had been two lakes in this basin – Kharistvali and Dzrikhistvali, which are now covered with the reservoir waters. The length of Shaori Lake is 7.1km, greatest width – 2.7km and maximum depth – 14.5 meters.<br><br>Shaori Reservoir is endowed with rich tourism potential. You can arrange various activities here - nowadays, fishing is the most popular one. The lake is the home to various species of fish and people from all parts of Georgia visit it for this purpose. You can also take a boat trip (if you bring the boat). The Reservoir is surrounded by Nakerala Mountain Range and Mount Satsalike, where you can take hikes. The area around the Reservoir offers an abundance of mushrooms - one of the most delicious and expensive of which is Caesar’s mushroom. Small infrastructure is arranged near the Reservoir. There are swings in the lake, capturing the attention of people who love photoshoots.<br><br>Shaori is beautiful in every season, however, it is the most stunning in autumn and spring, when various colors are reflected in the lake or when the nature is blooming.<br><br>Climate here on Shaori territory holds healing properties. The temperature is relatively low, winters are cold and summers – cool.<br><br>Shaori Reservoir is 275 km away from the capital city and 20km from Ambrolauri. Roads are asphalted and you can travel by any transport.<br><br>And finally, Shaori Reservoir is a must-see place.",
         "image": "https://cdn.georgiantravelguide.com/storage/files/shaoris-tsqalsatsavi-racha-shaori-reservoir-racha-shaori-vodohranilishche-racha-1.jpg",
         "fee": 
             {
                 "Entry": "free"
-            }
-
+            },
+        "youtube": "https://www.youtube.com/embed/LUxt0tM-Muw?si=AP1hBxfW_U8yIMJ2"
     },
     {
         "id": 6,
         "location": "Khoni",
-        "type": "Canyon",
+        "type": ["Canyon", "Panoramic view"],
         "name": "Okatse",
+        "fullName": "Okatse canyon",
         "description": "Okatse Canyon - is located in the territories of the village of Gordi in Khoni municipality. For those who love extreme tours, there is a hanging trail which takes approximately 2-3 hours of walking.<br><br>Okatse canyon route is very interesting for extreme lovers. It has a pedestrian route which goes through Dadiani historical forest, 780 m length hanging trail and finishes with panoramic view, where visitors can take memorable photos by Smart-Selfie Camera, installed nearby.",
         "image": "https://cdn.georgiantravelguide.com/storage/files/okatses-kanioni-okace-canyon-imereti-1.jpg",
         "fee": 
             {
                 "Entry": "20₾"
-            }
-
+            },
+        "youtube": "https://www.youtube.com/embed/HHjoeYaxGMk?si=XUWganPLjUJOj_64"
     },
     {
         "id": 7,
         "location": "Khoni",
-        "type": "Waterfall",
+        "type": ["Waterfall","Swimming"],
         "name": "Kinchkha",
+        "fullName": "Kinchkha waterfall",
         "description": "Kinchkha Waterfall - The natural monument, the three-step waterfall cascade is in the valley of satsiskvilo. The upper two stages are on the right tributary of the Satsiskvilo river, the first waterfall height is about 25 m and the second waterfall rises to 70 m. Streamflow connected to river Satsiskvilo form the third 35 meters high stage. It is located in Khoni municipality, in the village of Kinchka, 843 meters above the sea level.",
         "image": "https://cdn.georgiantravelguide.com/storage/files/okatses-chanchkeri-kinchkha-okatses-kanioni-samegrelo-waterfall-canyon-3.jpg",
         "fee": 
