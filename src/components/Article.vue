@@ -20,7 +20,7 @@
         <iframe 
             v-if="location.youtube" 
             class="w-full h-64 mt-3" 
-            :src="location.youtube" 
+            :src="`${location.youtube}&autoplay=1&mute=1&controls=0`" 
             title="YouTube video player" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
