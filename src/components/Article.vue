@@ -17,7 +17,16 @@
             {{ readmore ? 'Read more' : 'Read less' }}
         </p>
 
-        <iframe v-if="location.youtube" class="w-full h-64 mt-3" :src="location.youtube" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe 
+            v-if="location.youtube" 
+            class="w-full h-64 mt-3" 
+            :src="location.youtube" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
 
     </div>
 
