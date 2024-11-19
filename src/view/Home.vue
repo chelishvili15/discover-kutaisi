@@ -2,6 +2,12 @@
     <div class="w-full h-[calc(100vh-200px)] flex justify-center pt-24">
         <div class="w-full h-full flex flex-col justify-center gap-5 text-green-700">
             <a 
+                href="#/locations" 
+                class="pot0 flex items-center gap-4"
+            >
+                <p class="underline">Locations</p>
+            </a>
+            <a 
                 href="#/tours" 
                 class="pot1 flex items-center gap-4"
             >
@@ -32,8 +38,18 @@
 </template>
 
 <style>
-.pot1 {
+.pot0 {
   top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  animation: linear;
+  animation-name: runTop;
+  animation-duration: 0.8s;
+}
+
+.pot1 {
+  top: 30%;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
@@ -42,7 +58,7 @@
   animation-duration: 0.8s;
 }
 .pot4 {
-  top: 60%;
+  top: 75%;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
@@ -64,7 +80,7 @@
 }
 
 .pot2 {
-  top: 30%;
+  top: 45%;
   right: 50%;
   transform: translateX(50%);
   position: absolute;
@@ -73,7 +89,7 @@
   animation-duration: 0.5s;
 }
 .pot3 {
-  top: 45%;
+  top: 60%;
   right: 50%;
   transform: translateX(50%);
   position: absolute;
@@ -91,6 +107,18 @@
    }
   100% {
     right: 50%;     
+  }
+}
+
+@keyframes runTop {
+  0% {
+    top: -10%;
+  }
+  50% { 
+    top: -0%; 
+   }
+  100% {
+    top: 15%;     
   }
 }
 </style>
