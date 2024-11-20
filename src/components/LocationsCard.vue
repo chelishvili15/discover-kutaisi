@@ -7,7 +7,7 @@
             </div>
             <div>
                 <p class="text-2xl font-semibold text-gray-100">{{ location.name }}</p>
-                <p class="text-xs font-semibold text-gray-100">{{ location.type[0] }}</p>
+                <p class="text-xs font-semibold text-gray-100">{{ location.fullName }}</p>
             </div>
         </div>
 

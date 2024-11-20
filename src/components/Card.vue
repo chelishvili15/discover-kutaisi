@@ -4,9 +4,16 @@
          @click="seeMore(tour.id)"
     >
         <div class="images flex justify-around mb-3">
-            <div v-for="(location, index) in tour.locations" class="img1 w-24 h-28 rounded overflow-hidden flex flex-col items-center" :class="index == 0 ? '-rotate-12' : index == 1 ? 'rotate-3' : '-rotate-6'">
-                <img :src="location.image" class="w-full h-20" :alt="location.name">
-                <p class="text-gray-100">{{ location.name }}</p>
+            <div 
+                v-for="(name, index) in tour.locations" 
+                class="img1 w-24 h-28 rounded overflow-hidden flex flex-col items-center"
+                :class="index == 0 ? '-rotate-12' : index == 1 ? 'rotate-3' : '-rotate-6'"
+            >
+                <img 
+                    :src="locations.filter(location => location.name == name)[0]?.image"
+                    class="w-full h-20" :alt="name"
+                >
+                <p class="text-gray-100">{{ name }}</p>
             </div>
         </div>
 
@@ -29,12 +36,12 @@
 </template>
 
 <script setup>
-import { useRoute, useRouter } from 'vue-router'
+import { useRouter } from 'vue-router'
+import locations from '../locations.json'
 
 defineProps(["tour"])
 
 const router = useRouter()
-const route = useRoute()
 
 const seeMore = (id) => {
     router.push(`/tours/${id}`)

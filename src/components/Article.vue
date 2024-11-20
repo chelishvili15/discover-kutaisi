@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header class="text-2xl font-bold text-center mb-1"> {{ location.fullName }} </header>
+        <header class="text-2xl font-bold text-center mb-1"> {{ location?.fullName }} </header>
         <div class="flex gap-3 mb-10 justify-center text-gray-500">
             <div v-for="type in location.type">
                 {{ type }}
@@ -16,6 +16,7 @@
         >
             {{ readmore ? 'Read more' : 'Read less' }}
         </p>
+
 
         <iframe 
             v-if="location.youtube" 
