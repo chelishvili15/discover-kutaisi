@@ -6,6 +6,16 @@
                 {{ type }}
             </div>
         </div>
+
+        <div class="mb-10">
+            <p>Activities:</p>
+            <ol class="ml-3">
+                <li v-for="(price, name, index) in location.fee">
+                    {{ index + 1 }}. {{ name }} - {{ price }}
+                </li>
+            </ol>
+        </div>
+
         <img :src="location.image" :alt="location.name">
         
         <p v-html="location.description" class="mt-3 p-1 font-lato text-gray-700" :class="readmore ? 'line-clamp-2 text-ellipsis' : ''"></p>

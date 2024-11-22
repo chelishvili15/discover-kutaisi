@@ -11,9 +11,9 @@
             </div>
         </div>
 
-        <div class="flex items-center flex-col text-xs">
-            <div v-for="(fee, name, index) in location.fee" :key="index">
-                {{ name }} : {{ fee }}
+        <div class="flex items-left w-1/4 flex-col text-xs">
+            <div v-for="(price, name, index) in location.fee" :key="index">
+                {{ name }} : {{ price}}
             </div>
         </div>
         <p class="absolute right-5 bottom-3 text-gray-100 underline" >See More ...</p>
