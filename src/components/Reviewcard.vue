@@ -2,7 +2,7 @@
     <div class="flex flex-col">
 
         <div 
-            class="pt-10 pb-2 mx-10 px-7 border-2 border-gray-300 font-lato text-gray-600 rounded-md relative bg-white"
+            class="pt-10 pb-2 mx-5 px-4 border-2 border-gray-300 font-lato text-gray-600 rounded-md relative bg-white"
             :class="author.rotate"  
         >
             <div class="bg-white absolute -top-5 left-2 flex items-center px-3">
@@ -24,7 +24,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
 import Star from '../assets/icons/Star.vue'
 
 defineProps(["author"])

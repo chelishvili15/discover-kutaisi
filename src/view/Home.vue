@@ -6,7 +6,7 @@ import Reviews from '../components/Reviews.vue';
     <div class="w-full h-[calc(100vh-200px)] flex justify-center pt-24">
         <Reviews />
 
-        <div class="w-full h-full flex flex-col justify-center gap-5 text-green-700">
+        <div class="w-full h-full flex flex-col justify-center gap-5 text-green-700 font-semibold">
             <a 
                 href="#/locations" 
                 class="pot0 flex items-center gap-4 bg-white px-3 py-1 rounded-md"
