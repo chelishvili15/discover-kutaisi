@@ -1,37 +1,45 @@
+<script setup lang="ts">
+import Reviews from '../components/Reviews.vue';
+</script>
+
 <template>
     <div class="w-full h-[calc(100vh-200px)] flex justify-center pt-24">
+        <Reviews />
+
         <div class="w-full h-full flex flex-col justify-center gap-5 text-green-700">
             <a 
                 href="#/locations" 
-                class="pot0 flex items-center gap-4"
+                class="pot0 flex items-center gap-4 bg-white px-3 py-1 rounded-md"
             >
                 <p class="underline">Locations</p>
             </a>
             <a 
                 href="#/tours" 
-                class="pot1 flex items-center gap-4"
+                class="pot1 flex items-center gap-4 bg-white px-3 py-1 rounded-md"
             >
                 <p class="underline">Tours</p>
             </a>
             <a 
                 href="#/transfers" 
-                class="pot2 flex items-center gap-4"
+                class="pot2 flex items-center gap-4 bg-white px-3 py-1 rounded-md"
             >
                 <p class="underline">Transfers</p>
             </a>
             <a 
                 href="#/about" 
-                class="pot3 flex items-center gap-4"
+                class="pot3 flex items-center gap-4 bg-white px-3 py-1 rounded-md"
             >
                 <p class="underline">About</p>
             </a>
             <a 
                 href="#/contact" 
-                class="pot4 flex items-center gap-4"
+                class="pot4 flex items-center gap-4 bg-white px-3 py-1 rounded-md"
             >
                 <p class="underline">Contact</p>
             </a>
         </div>
+
+        
     </div>
 
 
