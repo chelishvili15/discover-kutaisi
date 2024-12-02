@@ -1,5 +1,8 @@
-<script setup lang="ts">
+<script setup>
+import { ref } from 'vue';
 import Reviews from '../components/Reviews.vue';
+
+const cls = ref(' flex items-center gap-4 bg-green-50 py-1 px-12 rounded-full border-green-700 border-[1px]')
 </script>
 
 <template>
@@ -9,31 +12,36 @@ import Reviews from '../components/Reviews.vue';
         <div class="w-full h-full flex flex-col justify-center gap-5 text-green-700 font-semibold">
             <a 
                 href="#/locations" 
-                class="pot0 flex items-center gap-4 bg-white px-3 py-1 rounded-md"
+                class="pot0"
+                :class="cls"
             >
                 <p class="underline">Locations</p>
             </a>
             <a 
                 href="#/tours" 
-                class="pot1 flex items-center gap-4 bg-white px-3 py-1 rounded-md"
+                class="pot1"
+                :class="cls"
             >
                 <p class="underline">Tours</p>
             </a>
             <a 
                 href="#/transfers" 
-                class="pot2 flex items-center gap-4 bg-white px-3 py-1 rounded-md"
+                class="pot2"
+                :class="cls"
             >
                 <p class="underline">Transfers</p>
             </a>
             <a 
                 href="#/about" 
-                class="pot3 flex items-center gap-4 bg-white px-3 py-1 rounded-md"
+                class="pot3"
+                :class="cls"
             >
                 <p class="underline">About</p>
             </a>
             <a 
                 href="#/contact" 
-                class="pot4 flex items-center gap-4 bg-white px-3 py-1 rounded-md"
+                class="pot4"
+                :class="cls"
             >
                 <p class="underline">Contact</p>
             </a>
