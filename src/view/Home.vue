@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import Reviews from '../components/Reviews.vue';
 
-const cls = ref(' flex items-center gap-4 bg-green-50 py-1 px-12 rounded-full border-green-700 border-[1px]')
+const cls = ref('flex items-center gap-4 bg-white  py-1 px-12 rounded-full border-green-700 border-[1px]')
 </script>
 
 <template>
