@@ -1,5 +1,8 @@
 <template>
     <div>
+
+
+
         <header class="text-2xl font-bold text-center mb-1"> {{ location?.fullName }} </header>
         <div class="flex gap-3 mb-10 justify-center text-gray-500">
             <div v-for="type in location.type">
@@ -16,7 +19,18 @@
             </ol>
         </div>
 
-        <img :src="location.image" :alt="location.name">
+        <carousel :items-to-show="1.2">
+            <slide v-for="img in location.image" :key="img">
+                <div>
+                    <img :src="img">
+                </div>
+            </slide>
+
+            <template #addons>
+                <navigation />
+                <pagination />
+            </template>
+        </carousel>
         
         <p v-html="location.description" class="mt-3 p-1 font-lato text-gray-700" :class="readmore ? 'line-clamp-2 text-ellipsis' : ''"></p>
 
@@ -46,7 +60,11 @@
 
 <script setup>
 import { ref } from 'vue'
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+
 defineProps(['location'])
 
 const readmore = ref(true)
+const images = ref(['erti', 'ori', 'sami'])
 </script>

@@ -6,7 +6,12 @@
         "name": "Sataplia",
         "fullName": "Sataplia Strict Nature Reserve",
         "description": "Sataplia Managed Reserve is located in Imereti, in the territory of Tskaltubo municipality's villages Gumbra, Banoja and khomuli, on the hill of Sataplia 500 meters above the sea level. It was founded in 1935. Reserve itself has a complex structure and contains geologic, paleontological, speleological, zoological and botanical monuments.<br><br>Sataplia Managed Reserve is part of the Imereti Protected Areas and its infrastructure includes Visitor Center, Dinosaur Footprint Conservation Building, Exhibition Hall,Glass Panorama view, Cafes, Souvenir Shops, well-organized Caves and Marked Trails.<br><br>Visitors can visit the dinosaur footprints, Sataplia karst cave with a length of 900 meters, a height of 10 meters, a width of 12 meters, rock trail, Colchic forest, and panoramic views.<br><br>Word Sataplia means 'honey place'. The name originated from the Sataplia Mountain, which derives its name from the bees living in the mountains and the ancient tradition of collecting honey.",
-        "image": "https://cdn.georgiantravelguide.com/storage/files/sataflia-satafliis-aghkvetili-sataplia-9.jpg",
+        "image": 
+        [
+            "https://cdn.georgiantravelguide.com/storage/files/sataflia-satafliis-aghkvetili-sataplia-9.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/sataflia-satafliis-aghkvetili-sataplia-3.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/sataflia-satafliis-aghkvetili-sataplia-1.jpg"
+        ],
         "fee": 
             {
                 "Entry": "20₾",
@@ -21,7 +26,13 @@
         "name": "Prometheus",
         "fullName": "Prometheus Cave",
         "description": "Natural monument Prometheus Cave is located in Tskaltubo municipality in Imereti region. Its length is 1,8 km and is formed within the depth of 40 meters.<br><br>The Prometheus Cave is a notable beautiful natural monument of the world. It is about 60-70 million years old. This beautifully shaped karst cave with stunning strips of stalactites and stalagmites once again will convince you of the enormous power of nature and will travel you in the fairy world.<br><br>Prometheus cave is located in the village of Kumistavi in Tskaltubo municipality, in the basin of Kuma River. In the cave are found 22 halls, from which for tourists is opened only 6. In the cave, it is possible to walk through the length of 1420 meters, see the halls and travel by boat on the river flow.<br><br>In the Prometheus Cave, you will meet a lot of real masterpieces of nature - stalactites, and stalagmites, beautiful forms of it leave the impression of the fairy environment. Also, When walking in the cave, there are 'petrification waterfalls', 'hanging stone curtains', 'helictites' and etc.",
-        "image": "https://cdn.georgiantravelguide.com/storage/files/prometes-mghvime-prometheus-cave-kumistavi.jpg",
+        "image": 
+        [
+            "https://cdn.georgiantravelguide.com/storage/files/prometes-mghvime-prometheus-cave-kumistavi.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/sataflia-satafliis-aghkvetili-sataplia-9.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/sataflia-satafliis-aghkvetili-sataplia-3.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/sataflia-satafliis-aghkvetili-sataplia-1.jpg"
+        ],
         "fee": 
             {
                 "Entry": "25₾"
