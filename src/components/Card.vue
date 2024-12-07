@@ -10,7 +10,7 @@
                 :class="index == 0 ? '-rotate-12' : index == 1 ? 'rotate-3' : '-rotate-6'"
             >
                 <img 
-                    :src="locations.filter(location => location.name == name)[0]?.image"
+                    :src="locations.filter(location => location.name == name)[0]?.image[0]"
                     class="w-full h-20" :alt="name"
                 >
                 <p class="text-gray-100">{{ name }}</p>

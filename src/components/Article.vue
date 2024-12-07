@@ -19,10 +19,10 @@
             </ol>
         </div>
 
-        <carousel :items-to-show="1.2">
+        <carousel :items-to-show="1">
             <slide v-for="img in location.image" :key="img">
                 <div>
-                    <img :src="img">
+                    <img :src="img" class="h-80" >
                 </div>
             </slide>
 
