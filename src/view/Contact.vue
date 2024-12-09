@@ -22,12 +22,21 @@
                 <Youtube /> 
                 <p class="underline">@DiscoverKutaisi</p>
             </a>
+            <a 
+                href="https://maps.app.goo.gl/BTfJWPiJzyUDRkyn7"
+                target="_blank" 
+                class="flex items-center gap-4"
+            >
+                <Maps /> 
+                <p class="underline">Find us on map</p>
+            </a>
         </div>
     </div>
 </template>
 
 <script setup>
 import Gmail from '../assets/icons/Gmail.vue'
+import Maps from '../assets/icons/Maps.vue';
 import Whatsapp from '../assets/icons/Whatsapp.vue'
 import Youtube from '../assets/icons/Youtube.vue'
 </script>
