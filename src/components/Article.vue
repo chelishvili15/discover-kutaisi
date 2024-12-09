@@ -28,11 +28,11 @@
         >
             <slide v-for="img in location.image" :key="img">
                 <div>
-                    <img :src="img" class="h-80 rounded-lg">
+                    <img :src="img" class="sm:h-80 h-1/5 rounded-lg">
                 </div>
             </slide>
 
-            <template #addons>
+            <template #addons class="text-white">
                 <navigation />
                 <pagination />
             </template>
