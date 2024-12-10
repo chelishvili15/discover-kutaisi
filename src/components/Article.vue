@@ -2,23 +2,6 @@
     <div>
 
 
-
-        <header class="text-2xl font-bold text-center mb-1"> {{ location?.fullName }} </header>
-        <div class="flex gap-3 mb-10 justify-center text-gray-500">
-            <div v-for="type in location.type">
-                {{ type }}
-            </div>
-        </div>
-
-        <div class="mb-10">
-            <p>Activities:</p>
-            <ol class="ml-3">
-                <li v-for="(price, name, index) in location.fee">
-                    {{ index + 1 }}. {{ name }} - {{ price }}
-                </li>
-            </ol>
-        </div>
-
         <carousel 
             :items-to-show="1" 
             :gap="10" 
@@ -34,9 +17,37 @@
 
             <template #addons class="text-white">
                 <navigation />
-                <pagination />
+                <!-- <pagination /> -->
             </template>
         </carousel>
+
+        <iframe 
+            v-if="location.youtube" 
+            class="w-full h-64 mt-3 rounded-xl sm:h-80 mb-3" 
+            :src="`https://www.youtube.com/embed/${location.youtube}?playlist=${location.youtube}&autoplay=1&mute=1&controls=0&loop=1`" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen
+        >
+        </iframe>
+
+        <header class="text-2xl font-bold text-center mb-1"> {{ location?.fullName }} </header>
+        <div class="flex gap-3 mb-4 justify-center text-gray-500">
+            <div v-for="type in location.type">
+                {{ type }}
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <p>Activities:</p>
+            <ol class="ml-3">
+                <li v-for="(price, name, index) in location.fee">
+                    {{ index + 1 }}. {{ name }} - {{ price }}
+                </li>
+            </ol>
+        </div>
         
         <p v-html="location.description" class="mt-3 p-1 font-lato text-gray-700" :class="readmore ? 'line-clamp-2 text-ellipsis' : ''"></p>
 
@@ -48,16 +59,7 @@
         </p>
 
 
-        <iframe 
-            v-if="location.youtube" 
-            class="w-full h-64 mt-3" 
-            :src="`${location.youtube}&autoplay=1&mute=1&controls=0&loop=1`" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
+
 
     </div>
 
