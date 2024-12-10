@@ -5,7 +5,7 @@
         <carousel 
             :items-to-show="1" 
             :gap="10" 
-            :wrapAround="'true'" 
+            :wrapAround="true" 
             :transition="500"
             :autoplay="2500"
         >

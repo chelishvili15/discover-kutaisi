@@ -3,8 +3,8 @@
     <div class="flex mb-10">
         <div 
             v-for="name in tour.locations" 
-            class=" flex justify-center py-2"
-            :class="[currentArticle == name ? 'border-l border-t border-r font-bold border-black' : 'border border-b-black', tour.locations.length === 3 ? 'w-1/3' : 'w-1/2']"
+            class=" flex justify-center py-2 text-gray-700"
+            :class="[currentArticle == name ? 'border-l border-t border-r font-bold text-gray-800 border-gray-800' : 'border-b border-gray-800', tour.locations.length === 3 ? 'w-1/3' : 'w-1/2']"
             @click = "currentArticle = name"
         >
             <p>{{ name }}</p>
