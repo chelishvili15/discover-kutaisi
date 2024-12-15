@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "Sataplia",
         "location": "Tskaltubo",
         "type": ["Managed reserve", "Cave", "Hiking", "Panoramic view"],
         "name": "Sataplia",
@@ -22,7 +22,7 @@
 
     },
     {
-        "id": 2,
+        "id": "Prometheus",
         "location": "Tskaltubo",
         "type": ["Cave"],
         "name": "Prometheus",
@@ -41,7 +41,7 @@
         "youtube": "W1d6CWjswdM"
     },
     {
-        "id": 3,
+        "id": "Martvili",
         "location": "Martvili",
         "type": ["Canyon", "Waterfall"],
         "name": "Martvili",
@@ -64,7 +64,7 @@
 
     },
     {
-        "id": 4,
+        "id": "Tskhrajvari",
         "location": "Tkibuli",
         "type": ["Mountain", "Hiking", "Panoramic view"],
         "name": "Tskhrajvari",
@@ -83,7 +83,7 @@
         "youtube": "xVuwIiZFZuM"
     },
     {
-        "id": 5,
+        "id": "Shaori",
         "location": "Racha",
         "type": ["Lake", "Swimming"],
         "name": "Shaori",
@@ -102,7 +102,7 @@
         "youtube": "LUxt0tM-Muw"
     },
     {
-        "id": 6,
+        "id": "Okatse",
         "location": "Khoni",
         "type": ["Canyon", "Panoramic view"],
         "name": "Okatse",
@@ -122,7 +122,7 @@
         "youtube": "HHjoeYaxGMk"
     },
     {
-        "id": 7,
+        "id": "Kinchkha",
         "location": "Khoni",
         "type": ["Waterfall","Swimming"],
         "name": "Kinchkha",
@@ -144,7 +144,7 @@
 
     },
     {
-        "id": 8,
+        "id": "Gelati",
         "location": "Gelati",
         "type": ["Historical", "Monastery"],
         "name": "Gelati",
@@ -164,7 +164,7 @@
 
     },
     {
-        "id": 9,
+        "id": "Motsameta",
         "location": "Motsameta",
         "type": ["Historical", "Monastery"],
         "name": "Motsameta",
@@ -186,7 +186,7 @@
 
     },
     {
-        "id": 10,
+        "id": "Bagrati",
         "location": "Kutaisi",
         "type": ["Historical", "Cathedral"],
         "name": "Bagrati",
@@ -206,7 +206,7 @@
 
     },
     {
-        "id": 11,
+        "id": "Nikortsminda",
         "location": "Racha",
         "type": ["Historical", "Temple", "Cathedral"],
         "name": "Nikortsminda",

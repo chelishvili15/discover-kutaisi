@@ -1,8 +1,11 @@
 <template>
-    <div class="bg-green-600 w-full pt-3 pb-5 px-3 rounded-md relative font-main flex justify-between text-gray-100">
+    <div class="bg-green-600 w-full pt-3 pb-5 px-3 rounded-md relative font-main flex justify-between text-gray-100 sm:hover:cursor-pointer">
         <div class="flex gap-2">
             <div class="flex flex-col items-center gap-2">
-                <img :src="location.image[0]" :alt="location.name" class="w-24 rounded">
+                <img
+                  :src="location.image[0]"
+                  :alt="location.name"
+                  class="w-24 rounded">
                 <p class="font-semibold">{{ location.location }}</p>
             </div>
             <div>

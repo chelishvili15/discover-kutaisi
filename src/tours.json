@@ -2,7 +2,7 @@
     "data": [
 
         {
-            "id": "1",
+            "id": "Gelati-Motsameta-Bagrati",
             "locations": ["Gelati","Motsameta","Bagrati"],
             "type": "History Tour",
             "duration": "3 Hours",
@@ -10,7 +10,7 @@
             "price": "100₾"
         },
         {
-            "id": "2",
+            "id": "Martvili-Prometheus",
             "locations": ["Martvili", "Prometheus"],
             "type": "Adventure",
             "duration": "5-6 Hours",
@@ -18,7 +18,7 @@
             "price": "195₾"
         },
         {
-            "id": "3",
+            "id": "Martvili-Okatse-Prometheus",
             "locations": ["Martvili", "Okatse", "Prometheus"],
             "type": "Adventure",
             "duration": "9 Hours",
@@ -26,15 +26,15 @@
             "price": "240₾"
         },
         {
-            "id": "4",
-            "locations": ["Tskhrajvari", "Shaori", "Nikortsminda" ],
+            "id": "Tskhrajvari-Shaori-Nikortsminda" ,
+            "locations": ["Tskhrajvari", "Shaori", "Nikortsminda"],
             "type": "History and Hiking",
             "duration": "9 Hours",
             "startFinish": "Kutaisi",
             "price": "300₾"
         },
         {
-            "id": "5",
+            "id": "Okatse-Kinchkha",
             "locations": ["Okatse", "Kinchkha" ],
             "type": "Adventure",
             "duration": "4-5 Hours",
