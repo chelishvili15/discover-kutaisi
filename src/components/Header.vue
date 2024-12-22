@@ -1,14 +1,8 @@
 <template>
     <div class="sticky top-0 z-50 flex justify-between items-center px-7 bg-green-700 text-gray-200 font-main">
         <div class="w-1/2">
-            <Burger
-              v-if="!toggleSidebar"
-              @click="$emit('toggleSidebar')"
-              class="sm:hover:cursor-pointer" />
-            <Close
-              v-if="toggleSidebar"
-              @click="$emit('toggleSidebar')"
-              class="sm:hover:cursor-pointer" />
+            <Burger v-if="!toggleSidebar" @click="$emit('toggleSidebar')" class="sm:hover:cursor-pointer"/>
+            <Close v-if="toggleSidebar" @click="$emit('toggleSidebar')" class="sm:hover:cursor-pointer"/>
         </div>
         
         <div class="w-1/2 flex flex-start">

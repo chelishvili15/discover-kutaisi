@@ -59,6 +59,8 @@ const hide = ref(false)
 
 .slide-fade-enter-from,
 .slide-fade-leave-to {
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
+  width: 0;
+  opacity: 0;
 }
 </style>
