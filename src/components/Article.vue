@@ -1,6 +1,12 @@
 <template>
     <div>
+        <header class="text-2xl font-bold text-center mb-1"> {{ location?.fullName }} </header>
 
+        <div class="flex gap-3 mb-4 justify-center text-gray-500">
+            <div v-for="type in location.type">
+                {{ type }}
+            </div>
+        </div>
 
         <carousel 
             :items-to-show="1" 
@@ -32,13 +38,6 @@
             allowfullscreen
         >
         </iframe>
-
-        <header class="text-2xl font-bold text-center mb-1"> {{ location?.fullName }} </header>
-        <div class="flex gap-3 mb-4 justify-center text-gray-500">
-            <div v-for="type in location.type">
-                {{ type }}
-            </div>
-        </div>
 
         <div class="mb-4">
             <p>Activities:</p>
