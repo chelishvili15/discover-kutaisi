@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import Reviews from '../components/Reviews.vue';
 
-const cls = ref('flex items-center justify-center gap-4 bg-white w-44 py-1  rounded-full border-green-700 border-[1px] shadow-md shadow-black text-xl')
+const cls = ref('flex items-center justify-center gap-4 bg-white w-44 py-1  rounded-full border-green-700 border-[1px] shadow-md shadow-gray-700 text-xl')
 </script>
 
 <template>
@@ -12,7 +12,7 @@ const cls = ref('flex items-center justify-center gap-4 bg-white w-44 py-1  roun
         <div class="w-full h-full flex flex-col justify-center gap-5 text-green-700 font-semibold">
             <a 
                 href="#/locations" 
-                class="pot0 shadow-black shad"
+                class="pot0"
                 :class="cls"
             >
                 <p class="underline">Locations</p>

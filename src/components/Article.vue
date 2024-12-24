@@ -47,14 +47,18 @@
                 </li>
             </ol>
         </div>
-        
-        <p v-html="location.description" class="mt-3 p-1 font-lato text-gray-700" :class="readmore ? 'line-clamp-2 text-ellipsis' : ''"></p>
 
+        <p
+          v-html="location.description"
+          class="mt-3 p-1 font-lato text-gray-700"
+          :class="readMore ? 'line-clamp-2 text-ellipsis' : ''">
+        </p>
+        
         <p 
             class="text-blue-500 text-right underline" 
-            @click="readmore = !readmore"
+            @click="readMore = !readMore"
         >
-            {{ readmore ? 'Read more' : 'Read less' }}
+            {{ readMore ? 'Read more' : 'Read less' }}
         </p>
 
 
@@ -72,6 +76,5 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
 defineProps(['location'])
 
-const readmore = ref(true)
-const images = ref(['erti', 'ori', 'sami'])
+const readMore = ref(true)
 </script>
