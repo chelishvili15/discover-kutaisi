@@ -27,7 +27,7 @@ const togSidebar = ref(false)
           </transition>
         </router-view>
       </div>
-      <Footer />
+      <Footer class="max-w-[768px] m-auto" />
     </div>
 </template>
 
