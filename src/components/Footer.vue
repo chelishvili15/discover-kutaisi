@@ -35,7 +35,7 @@ import Maps from '../assets/icons/Maps.vue';
 import Whatsapp from '../assets/icons/Whatsapp.vue'
 import Youtube from '../assets/icons/Youtube.vue'
 
-const cls = ref('flex items-center gap-4 w-1/4 flex justify-center bg-green-700 py-2')
+const cls = ref('flex items-center gap-4 w-1/4 flex justify-center bg-green-700 py-2 border-r-[0.5px] border-gray-300 rounded')
 </script>
 
 <style lang="scss" scoped>
