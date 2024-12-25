@@ -7,7 +7,7 @@ const cls = ref('flex items-center justify-center gap-4 bg-white w-44 py-1  roun
 
 <template>
     <div class="w-full h-[calc(100vh-200px)] flex justify-center pt-24">
-        <Reviews />
+        <Reviews  class="opacity-25"/>
 
         <div class="w-full h-full flex flex-col justify-center gap-5 text-green-700 font-semibold">
             <a 
