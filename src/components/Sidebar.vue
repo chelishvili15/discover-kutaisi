@@ -63,13 +63,14 @@ const hide = ref(false)
 <style>
 .slide-fade-enter-active,
 .slide-fade-leave-active {
-  transition: all 0.5s ease-out
+  transition: all 0.2s ease-in
 }
 
 .slide-fade-enter-from,
 .slide-fade-leave-to {
   /* transform: translateX(-100%); */
   width: 0;
+  opacity: 0
 }
 
 /* .slide-fade-enter-to,
