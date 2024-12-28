@@ -19,8 +19,8 @@ const routes = [
   { path: '/transfers', name: 'Transfers', component: TransfersView, meta: {transition: 'slide-fade-route'} },
   { path: '/about', name:'About', component: AboutView, meta: {transition: 'slide-fade-route'} },
   { path: '/contact', name:'Contact', component: ContactView, meta: {transition: 'slide-fade-route'} },
-  { path: '/locations', name:'Locations', component: LocationsView, meta: {transition: 'slide-fade-route'} },
-  { path: '/locations/:id', name:'Location', component: LocationView, meta: {transition: 'slide-fade-route'} },
+  { path: '/places-to-visit-kutaisi', name:'Places-to-visit-kutaisi', component: LocationsView, meta: {transition: 'slide-fade-route'} },
+  { path: '/places-to-visit-kutaisi/:id', name:'Location', component: LocationView, meta: {transition: 'slide-fade-route'} },
 ]
 
 const router = createRouter({

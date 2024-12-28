@@ -1,9 +1,11 @@
 <script setup>
 import { data } from '../transfers.json'
+import H1 from '../components/H1.vue';
 </script>
 
 <template>
     <div class="flex flex-col gap-4">
+        <H1 title="Transfers from Kutaisi"></H1>
         <div 
             v-for="location in data" 
             :key="location.id"

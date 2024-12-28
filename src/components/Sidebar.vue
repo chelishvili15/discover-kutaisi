@@ -2,13 +2,13 @@
     <Transition name="slide-fade">
         <div 
             v-if="toggleSidebar"
-            class="fixed z-40 w-full h-screen text-gray-100 flex text-2xl max-w-[768px]"
+            class="fixed z-40 w-full h-screen text-gray-100 flex text-lg max-w-[768px]"
         >
             <div
               class="nav flex flex-col items-center shadow-lg w-1/2 sm:w-1/3  bg-green-600 h-full"
               @click="$emit('closeSidebar')"
             >
-                <div class="h-full w-1/3 flex flex-col justify-around">
+                <div class="h-full flex flex-col justify-around">
                   <div class="flex flex-col ">
                     <RouterLink 
                       to="/"   
@@ -17,10 +17,10 @@
                       Home
                     </RouterLink>
                   </div>
-                  <div class="flex flex-col gap-3">
+                  <div class="flex flex-col gap-3 whitespace-nowrap">
                     <RouterLink
-                      to="/locations"
-                      :class="route.path == `/locations` && 'font-bold text-white'">Locations</RouterLink>
+                      to="/places-to-visit-kutaisi"
+                      :class="route.path == `/places-to-visit-kutaisi` && 'font-bold text-white'">Places to visit Kutaisi</RouterLink>
                     <RouterLink
                       to="/tours"
                       :class="route.path == `/tours` && 'font-bold text-white'">Tours</RouterLink>
