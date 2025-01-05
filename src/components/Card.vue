@@ -1,6 +1,6 @@
 <template>
     <div 
-        class="bg-green-600 w-full py-3 px-3 rounded-md relative font-main sm:hover:cursor-pointer shadow-lg shadow-gray-600"
+        class="bg-green-600 w-full py-3 px-3 rounded-md relative font-main sm:hover:cursor-pointer shadow-md shadow-gray-600"
          @click="seeMore(tour.id)"
     >
         <div class="images flex justify-around mb-3">
