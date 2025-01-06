@@ -17,7 +17,7 @@
         >
             <slide v-for="img in location.image" :key="img">
                 <div>
-                    <img :src="img" class="h-72 h-1/5 rounded-lg">
+                    <img :src="img" class="h-72 rounded-lg">
                 </div>
             </slide>
 

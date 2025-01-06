@@ -2,10 +2,10 @@
     <Transition name="slide-fade">
         <div 
             v-if="toggleSidebar"
-            class="fixed z-40 w-full h-screen text-gray-100 flex text-lg max-w-[768px]"
+            class="fixed right-0 sm:right-[calc(50%-384px)] z-40 w-full h-screen text-gray-100 flex text-lg flex-row-reverse"
         >
             <div
-              class="nav flex flex-col items-center shadow-lg w-1/2 sm:w-1/3  bg-green-600 h-full"
+              class="nav flex flex-col items-center shadow-lg w-1/2 sm:w-[280px]  bg-green-600 h-full"
               @click="$emit('closeSidebar')"
             >
                 <div class="h-full flex flex-col justify-around">
@@ -68,14 +68,7 @@ const hide = ref(false)
 
 .slide-fade-enter-from,
 .slide-fade-leave-to {
-  /* transform: translateX(-100%); */
   width: 0;
   opacity: 0
 }
-
-/* .slide-fade-enter-to,
-.slide-fade-leave-from {
-  right: 0;
-} */
-
 </style>
