@@ -19,7 +19,7 @@
                   </div>
                   <div class="flex flex-col gap-3 whitespace-nowrap">
                     <RouterLink
-                      to="/places-to-visit-kutaisi"
+                      to="/places-to-visit-kutaisi/1"
                       :class="route.path == `/places-to-visit-kutaisi` && 'font-bold text-white'">Places to visit Kutaisi</RouterLink>
                     <RouterLink
                       to="/tours"
