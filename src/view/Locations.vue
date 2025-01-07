@@ -21,7 +21,7 @@ import Pagination from "../components/Pagination.vue"
 import { useRoute } from "vue-router"
 import { ref } from "vue";
 
-const itemsPerPage = ref(6)
+const itemsPerPage = ref(3)
 
 const route = useRoute()
 </script>
