@@ -5,7 +5,7 @@
                 <img
                   :src="location.image[0]"
                   :alt="location.name"
-                  class="w-24 rounded">
+                  class="w-24 rounded h-14">
                 <p class="font-semibold">{{ location.location }}</p>
             </div>
             <div>

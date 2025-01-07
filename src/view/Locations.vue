@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-4 mb-10">
         <H1 title="Places to visit Kutaisi"></H1>
 
         <div v-for="location in locations.slice(((route.params.page - 1) * itemsPerPage), ((route.params.page - 1)* itemsPerPage + itemsPerPage))">
