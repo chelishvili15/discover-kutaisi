@@ -45,6 +45,9 @@ watch(
   () => route.params.page,
   (newPage, oldPage) => {
     currentPage.value = +newPage
+    if (typeof(+oldPage) == 'number') {
+        window.scroll(0, 0)
+    }
   }
 )
 
