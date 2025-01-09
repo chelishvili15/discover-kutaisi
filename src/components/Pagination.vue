@@ -2,14 +2,26 @@
     <div class="flex gap-6 bottom-20 justify-center">
         <div
           class="text-gray-100 p-3 rounded-full"
-          :class="disabledPrev ? 'bg-gray-300 sm:cursor-default' : 'bg-green-600  sm:cursor-pointer'"
+          :class="disabledPrev ? 'bg-gray-300 sm:cursor-default' : 'bg-green-500  sm:cursor-pointer'"
           @click="goToPrevPage"
         >
             <ArrowLeft />
         </div>
+        <div class="flex gap-4 items-center">
+            <div 
+                v-for="page in maxPage" 
+                :key="page"
+                class="w-10 h-10 flex items-center justify-center text-gray-100 text-lg rounded-full sm:cursor-pointer"
+                :class="currentPage == page ? 'bg-green-700' : 'bg-green-500'"
+                @click="changePage(page)"
+            >
+                {{ page }}
+            </div>
+        </div>
         <div
+            
           class=" text-gray-100 p-3 rounded-full"
-          :class="disabledNext ? 'bg-gray-300 sm:cursor-default' : 'bg-green-600  sm:cursor-pointer'"
+          :class="disabledNext ? 'bg-gray-300 sm:cursor-default' : 'bg-green-500  sm:cursor-pointer'"
           @click="goToNextPage"
         >
           <ArrowLeft class="rotate-180" />
@@ -51,6 +63,20 @@ watch(
   }
 )
 
+const changePage = (pageNumber) => {
+    if (pageNumber == maxPage.value && pageNumber > 1) {
+        disabledNext.value = true
+        disabledPrev.value = false
+    }
+
+    if (pageNumber == 1 && pageNumber < maxPage.value) {
+        disabledPrev.value = true
+        disabledNext.value = false
+    }
+
+    router.push({name: 'Places-to-visit-kutaisi', params: {page: pageNumber}})
+}
+
 const goToNextPage = () => {
     if (!disabledNext.value) {
         let nextPage = currentPage.value
@@ -58,7 +84,6 @@ const goToNextPage = () => {
 
         if (currentPage.value + 1 == maxPage.value) {
             disabledNext.value = true
-    console.log(disabledNext.value)
 
             nextPage = currentPage.value + 1
         } else {

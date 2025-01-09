@@ -21,7 +21,7 @@ import router from "../router";
 import H1 from "../components/H1.vue";
 import Pagination from "../components/Pagination.vue"
 
-const itemsPerPage = ref(6)
+const itemsPerPage = ref(4)
 
 const route = useRoute()
 
