@@ -14,7 +14,7 @@ const routes = [
     name: 'Home', 
     component: HomeView,
   },
-  { path: '/tours', name: 'Tours', component: ToursView, meta: {transition: 'slide-fade-route'} },
+  { path: '/tours/:page(\\d+)', name: 'Tours', component: ToursView, meta: {transition: 'slide-fade-route'} },
   { path: '/tours/:id', name: 'Tour', component: TourView, meta: {transition: 'slide-fade-route'} },
   { path: '/transfers', name: 'Transfers', component: TransfersView, meta: {transition: 'slide-fade-route'} },
   { path: '/about', name:'About', component: AboutView, meta: {transition: 'slide-fade-route'} },

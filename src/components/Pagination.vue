@@ -1,5 +1,5 @@
 <template>
-    <div class="flex gap-6 bottom-20 justify-center">
+    <div class="flex gap-6 bottom-20 justify-center my-10">
         <div
           class="text-gray-100 p-3 rounded-full"
           :class="disabledPrev ? 'bg-gray-300 sm:cursor-default' : 'bg-green-500  sm:cursor-pointer'"
@@ -19,7 +19,7 @@
             </div>
         </div>
         <div
-            
+
           class=" text-gray-100 p-3 rounded-full"
           :class="disabledNext ? 'bg-gray-300 sm:cursor-default' : 'bg-green-500  sm:cursor-pointer'"
           @click="goToNextPage"
@@ -38,7 +38,7 @@ import ArrowLeft from "../assets/icons/ArrowLeft.vue"
 const router = useRouter()
 const route = useRoute()
 
-const props = defineProps(["totalItems", "itemsPerPage"])
+const props = defineProps(["totalItems", "itemsPerPage", "routeName"])
 
 const currentPage = ref(Number(route.params.page) || 1)
 const maxPage = ref(Math.ceil(props.totalItems / props.itemsPerPage))
@@ -67,14 +67,17 @@ const changePage = (pageNumber) => {
     if (pageNumber == maxPage.value && pageNumber > 1) {
         disabledNext.value = true
         disabledPrev.value = false
-    }
+    } else
 
     if (pageNumber == 1 && pageNumber < maxPage.value) {
         disabledPrev.value = true
         disabledNext.value = false
+    } else {
+        disabledPrev.value = false
+        disabledNext.value = false
     }
 
-    router.push({name: 'Places-to-visit-kutaisi', params: {page: pageNumber}})
+    router.push({name: props.routeName, params: {page: pageNumber}})
 }
 
 const goToNextPage = () => {
@@ -90,7 +93,7 @@ const goToNextPage = () => {
             nextPage = currentPage.value + 1
         }
 
-        router.push({name: 'Places-to-visit-kutaisi', params: {page: nextPage}})
+        router.push({name: props.routeName, params: {page: nextPage}})
     }
 }
 
@@ -106,7 +109,7 @@ const goToPrevPage = () => {
             prevPage = currentPage.value - 1
         }
 
-        router.push({name: 'Places-to-visit-kutaisi', params: {page: prevPage}})
+        router.push({name: props.routeName, params: {page: prevPage}})
     }
 }
 </script>

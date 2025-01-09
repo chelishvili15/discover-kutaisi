@@ -8,7 +8,11 @@
               @click="router.push(`/places-to-visit-kutaisi/${location.id}`)" />
         </div>
 
-        <Pagination :totalItems="locations.length" :itemsPerPage="itemsPerPage" />
+        <Pagination 
+            :totalItems="locations.length" 
+            :itemsPerPage="itemsPerPage" 
+            :routeName="'Places-to-visit-kutaisi'"
+        />
     </div>
 </template>
 
@@ -21,7 +25,7 @@ import router from "../router";
 import H1 from "../components/H1.vue";
 import Pagination from "../components/Pagination.vue"
 
-const itemsPerPage = ref(4)
+const itemsPerPage = ref(5)
 
 const route = useRoute()
 
