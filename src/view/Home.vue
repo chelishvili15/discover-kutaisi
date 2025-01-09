@@ -11,14 +11,14 @@ const cls = ref('flex items-center justify-center gap-4 bg-white w-44 h-8 py-1  
 
         <div class="w-full h-full flex flex-col justify-center gap-5 text-green-700 font-semibold">
             <a 
-                href="#/places-to-visit-kutaisi" 
+                href="#/places-to-visit-kutaisi/1" 
                 class="pot0"
                 :class="cls"
             >
                 <p class="text-sm">Places to visit Kutaisi</p>
             </a>
             <a 
-                href="#/tours" 
+                href="#/tours/1" 
                 class="pot1"
                 :class="cls"
             >

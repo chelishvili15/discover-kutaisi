@@ -19,11 +19,11 @@
                   </div>
                   <div class="flex flex-col gap-3 whitespace-nowrap">
                     <RouterLink
-                      to="/places-to-visit-kutaisi"
-                      :class="route.path == `/places-to-visit-kutaisi` && 'font-bold text-white'">Places to visit Kutaisi</RouterLink>
+                      to="/places-to-visit-kutaisi/1"
+                      :class="route.path.includes('to-visit') && 'font-bold text-white'">Places to visit Kutaisi</RouterLink>
                     <RouterLink
-                      to="/tours"
-                      :class="route.path == `/tours` && 'font-bold text-white'">Tours</RouterLink>
+                      to="/tours/1"
+                      :class="route.path.includes('tours') && 'font-bold text-white'">Tours</RouterLink>
                     <RouterLink to="/transfers"   :class="route.path == `/transfers` && 'font-bold text-white'">Transfers</RouterLink>
                   </div>
                   <div class="flex flex-col gap-3 mb-10">
