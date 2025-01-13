@@ -5,19 +5,19 @@
             v-for="name in tour.locations" 
             class=" flex justify-center py-2 text-gray-700 sm:hover:cursor-pointer"
             :class="[currentArticle == name ? 'border-l border-t border-r font-bold text-gray-800 border-gray-800' : 'border-b border-gray-800', tour.locations.length === 3 ? 'w-1/3' : 'w-1/2']"
-            @click = "currentArticle = name"
+            @click = "changeLocation(name)"
         >
             <p>{{ name }}</p>
         </div>
 
-    </div> 
-    <Article :location="locations.filter(ob => ob.name == currentArticle)[0]" />
+    </div>
+    <Article :location="filteredLocations" />
         
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed, watch } from 'vue'
 import Article from '../components/Article.vue'
 import { useRoute, useRouter } from 'vue-router'
 import tours from '../tours.json'
@@ -33,6 +33,22 @@ const currentArticle = ref(tour.locations[0])
 
 onMounted(() => {
     window.scrollTo(0, 0)
+    currentArticle.value = route.params.location
+})
+
+watch(
+  () => route.params.location,
+  (newLocation, oldLocation) => {
+    currentArticle.value = newLocation
+  }
+)
+
+const changeLocation = (locationName) => {
+  router.replace({name: 'Tour', params: { location: locationName }})
+}
+
+const filteredLocations = computed(() => {
+  return locations.filter(ob => ob.name == currentArticle.value)[0]
 })
 
 </script>
