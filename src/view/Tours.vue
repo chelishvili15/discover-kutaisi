@@ -24,7 +24,7 @@ const slicedTours = computed(() => {
         <Card 
             v-for="tour in slicedTours" 
             :tour="tour"
-            @click="router.push(`/tours/${tour.id}`)"
+            @click="router.push(`/tours/${tour.id}/${tour.id.split('-')[0]}`)"
         />
 
         <Pagination 
