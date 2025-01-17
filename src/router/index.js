@@ -14,13 +14,61 @@ const routes = [
     name: 'Home', 
     component: HomeView,
   },
-  { path: '/tours/:page(\\d+)', name: 'Tours', component: ToursView, meta: {transition: 'slide-fade-route'} },
-  { path: '/tours/:id/:location', name: 'Tour', component: TourView, meta: {transition: 'slide-fade-route'} },
-  { path: '/transfers', name: 'Transfers', component: TransfersView, meta: {transition: 'slide-fade-route'} },
-  { path: '/about', name:'About', component: AboutView, meta: {transition: 'slide-fade-route'} },
-  { path: '/contact', name:'Contact', component: ContactView, meta: {transition: 'slide-fade-route'} },
-  { path: '/places-to-visit-kutaisi/:page(\\d+)', name:'Places-to-visit-kutaisi', component: LocationsView, meta: {transition: 'slide-fade-route'} },
-  { path: '/places-to-visit-kutaisi/:id', name:'Location', component: LocationView, meta: {transition: 'slide-fade-route'} },
+  { 
+    path: '/tours/:page(\\d+)', 
+    name: 'Tours', 
+    component: ToursView, 
+    meta: {
+      transition: 'slide-fade-route'
+    } 
+  },
+  { 
+    path: '/tours/:id/:location', 
+    name: 'Tour', 
+    component: TourView, 
+    meta: {
+      transition: 'slide-fade-route'} 
+    },
+  { 
+    path: '/transfers', 
+    name: 'Transfers', 
+    component: TransfersView, 
+    meta: {
+      transition: 'slide-fade-route'
+    } 
+  },
+  { 
+    path: '/about', 
+    name:'About', 
+    component: AboutView, 
+    meta: {
+      transition: 'slide-fade-route'
+    } 
+  },
+  { 
+    path: '/contact', 
+    name:'Contact', 
+    component: ContactView, 
+    meta: {
+      transition: 'slide-fade-route'
+    } 
+  },
+  { 
+    path: '/places-to-visit-kutaisi/:page(\\d+)', 
+    name:'Places-to-visit-kutaisi', 
+    component: LocationsView, 
+    meta: {
+      transition: 'slide-fade-route'
+    } 
+  },
+  { 
+    path: '/places-to-visit-kutaisi/:id', 
+    name:'Location', 
+    component: LocationView, 
+    meta: {
+      transition: 'slide-fade-route'
+    } 
+  },
 ]
 
 const router = createRouter({

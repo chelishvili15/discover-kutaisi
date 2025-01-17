@@ -35,12 +35,7 @@ const togSidebar = ref(false)
 
 <style>
 .slide-fade-route-enter-active {
-  transition: all 0.5s ease-out;
-}
-
-.slide-fade-route-leave-active {
-  transition: all 0s ease-in
-  
+  transition: all 0.5s ease;
 }
 
 .slide-fade-route-enter-from,
