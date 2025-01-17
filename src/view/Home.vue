@@ -1,15 +1,27 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import Reviews from '../components/Reviews.vue';
 
 const cls = ref('flex items-center justify-center gap-4 bg-white w-44 h-8 py-1  rounded-full border-green-700 border-[1px] shadow-md shadow-gray-700')
+const showReviews = ref(false)
+
+onMounted(() => {
+  setTimeout(() => {
+    showReviews.value = true
+  }, 1000)
+})
 </script>
 
 <template>
     <div class="w-full h-[calc(100vh-200px)] flex justify-center pt-24">
-        <Reviews  class="opacity-25"/>
+        <Transition name="reviews-fade">
+          <Reviews
+            v-if="showReviews"  
+            class="opacity-45"
+          />
+        </Transition>
 
-        <div class="w-full h-full flex flex-col justify-center gap-5 text-green-700 font-semibold">
+        <div class="w-full flex flex-col justify-center gap-5 text-green-700 font-semibold">
             <a 
                 href="#/places-to-visit-kutaisi/1" 
                 class="pot0"
@@ -54,6 +66,15 @@ const cls = ref('flex items-center justify-center gap-4 bg-white w-44 h-8 py-1  
 </template>
 
 <style>
+.reviews-fade-enter-active {
+  transition: all 0.5s ease;
+}
+
+.reviews-fade-enter-from,
+.reviews-fade-leave-to {
+  opacity: 0;
+}
+
 .pot0 {
   top: 15%;
   left: 50%;
@@ -61,7 +82,7 @@ const cls = ref('flex items-center justify-center gap-4 bg-white w-44 h-8 py-1  
   position: absolute;
   animation: linear;
   animation-name: runTop;
-  animation-duration: 0.8s;
+  animation-duration: 0.5s;
 }
 
 .pot1 {
@@ -71,7 +92,7 @@ const cls = ref('flex items-center justify-center gap-4 bg-white w-44 h-8 py-1  
   position: absolute;
   animation: linear;
   animation-name: runLeft;
-  animation-duration: 0.8s;
+  animation-duration: 0.5s;
 }
 .pot4 {
   top: 75%;
@@ -102,7 +123,7 @@ const cls = ref('flex items-center justify-center gap-4 bg-white w-44 h-8 py-1  
   position: absolute;
   animation: linear;
   animation-name: runRight;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
 }
 .pot3 {
   top: 60%;
@@ -116,10 +137,10 @@ const cls = ref('flex items-center justify-center gap-4 bg-white w-44 h-8 py-1  
 
 @keyframes runRight {
   0% {
-    right: 10%;
+    right: 25%;
   }
   50% { 
-    right: 20%; 
+    right: 40%; 
    }
   100% {
     right: 50%;     
