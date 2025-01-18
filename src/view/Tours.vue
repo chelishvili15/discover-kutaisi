@@ -9,7 +9,7 @@ import H1 from '../components/H1.vue';
 const router = useRouter()
 const route = useRoute()
 
-const itemsPerPage = ref(3)
+const itemsPerPage = ref(4)
 
 const slicedTours = computed(() => {
     const first = (route.params.page - 1) * itemsPerPage.value
