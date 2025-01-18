@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="!transition-none">
     <div class="flex mb-10">
         <div 
             v-for="name in tour.locations" 
@@ -11,7 +11,12 @@
         </div>
 
     </div>
-    <Article :location="filteredLocations" />
+
+    <Transition :name="route.meta.transition">
+      <div v-if="showArticle" class="w-full h-full">
+        <Article :location="filteredLocations" :key="route.fullPath" />
+      </div>
+    </Transition>
         
   </div>
 </template>
@@ -28,10 +33,14 @@ const router = useRouter()
 
 const id = route.params.id
 const [tour] = tours.data.filter(ob => ob.id == id)
+const showArticle = ref(false)
 
 const currentArticle = ref(tour.locations[0])
 
 onMounted(() => {
+    setTimeout(() => {
+      showArticle.value = true
+    }, 0)
     window.scrollTo(0, 0)
     currentArticle.value = route.params.location
 })

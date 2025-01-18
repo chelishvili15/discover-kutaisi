@@ -55,7 +55,7 @@
         </p>
         
         <p 
-            class="text-blue-500 text-right underline" 
+            class="text-blue-500 text-right underline sm:hover:cursor-pointer" 
             @click="readMore = !readMore"
         >
             {{ readMore ? 'Read more' : 'Read less' }}

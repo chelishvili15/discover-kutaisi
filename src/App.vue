@@ -25,7 +25,10 @@ const togSidebar = ref(false)
       >
         <router-view v-slot="{ Component, route }">
           <transition :name="route.meta.transition">
-            <component :is="Component" />
+            <component 
+              :is="Component" 
+              :key="route.fullPath" 
+            />
           </transition>
         </router-view>
       </div>
@@ -40,6 +43,6 @@ const togSidebar = ref(false)
 
 .slide-fade-route-enter-from,
 .slide-fade-route-leave-to {
-  transform: translateY(100%)
+  transform: translateY(50%)
 }
 </style>
