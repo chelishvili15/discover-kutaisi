@@ -1,5 +1,5 @@
 <template>
-    <div class=" fixed bottom-0 left-0 right-0 flex justify-between z-50">
+    <div class=" fixed bottom-0 left-0 right-0 flex justify-between z-30">
         <a
             href="mailto:d.chelishvili91@gmail.com" 
             :class="cls"

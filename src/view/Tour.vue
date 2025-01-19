@@ -17,7 +17,8 @@
         <Article :location="filteredLocations" :key="route.fullPath" />
       </div>
     </Transition>
-        
+
+    <BookingOption />    
   </div>
 </template>
 
@@ -27,6 +28,7 @@ import Article from '../components/Article.vue'
 import { useRoute, useRouter } from 'vue-router'
 import tours from '../tours.json'
 import locations from '../locations.json'
+import BookingOption from '../components/BookingOption.vue'
 
 const route = useRoute()
 const router = useRouter()
