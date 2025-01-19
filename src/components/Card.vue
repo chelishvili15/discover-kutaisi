@@ -6,6 +6,7 @@
         <div class="images flex justify-around mb-3">
             <div 
                 v-for="(name, index) in tour.locations" 
+                :key="name"
                 class="img1 w-24 h-28 rounded overflow-hidden flex flex-col items-center"
                 :class="index == 0 ? '-rotate-12' : index == 1 ? 'rotate-3' : '-rotate-6'"
             >
@@ -25,8 +26,8 @@
                 <p><strong>Start and Finish:</strong> {{ tour.startFinish }}</p>
             </div>
             <div>
-                <p class="text-2xl font-semibold text-gray-200">PRICE: {{ tour.price }}</p>
-                <p class="text-xs font-semibold">Minivan(6+1 person)</p>
+                <p class="text-2xl font-semibold text-gray-200">Price from: {{ tour.price.from }}</p>
+                <p class="text-sm font-semibold">1 person</p>
             </div>
         </div>
 

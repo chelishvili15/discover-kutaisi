@@ -19,7 +19,7 @@
       </div>
     </Transition>
 
-    <BookingOption />    
+    <BookingOption :tour="refTour" />    
   </div>
 </template>
 
@@ -36,6 +36,7 @@ const router = useRouter()
 
 const id = route.params.id
 const [tour] = tours.data.filter(ob => ob.id == id)
+const refTour = ref(tour)
 const showArticle = ref(false)
 
 const currentArticle = ref(tour.locations[0])

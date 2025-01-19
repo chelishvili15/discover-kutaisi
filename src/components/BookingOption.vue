@@ -14,18 +14,29 @@
             :class="toggle ? 'h-1/3':'h-8'"
             @click="toggle = !toggle"  
         >
-            <div class="bg-green-600 px-10 pt-2 rounded -translate-y-1/2 flex justify-center gap-4">
+            <div class="bg-green-600 px-10 pt-2 rounded -translate-y-1/2 flex justify-center gap-4 font-semibold">
                 <div class="whitespace-nowrap text-lg animate-pulse">
                     Booking option
                 </div>
 
                 <ArrowLeft
-                    class="animate-pulse" 
+                    class="animate-pulse transform duration-300 ease-in" 
                     :class="toggle ? '-rotate-90 ':'rotate-90'"
                 />
             </div>
-            <div>
-                
+            <div class="flex flex-col items-center w-full">
+                <p class="text-lg font-semibold">{{ tour.id }}</p>
+                <p>{{ tour.type }}</p>
+                <div class="w-full text-lg pt-7 flex justify-around">
+                    <div
+                        v-for="car in cars"
+                        :key="car" 
+                        class="flex flex-col"
+                    >
+                        <p>{{ car }}: <span class="font-bold text-2xl">{{ tour.price[car] }}</span></p>
+                        <p class="text-sm -translate-y-1/3">{{ car == 'Sedan' ? '(1-4 persons)' : '(5-7 persons)'  }}</p>    
+                    </div>
+                </div>                
             </div>    
         </div>    
     </div>
@@ -35,7 +46,10 @@
 import { ref } from 'vue';
 import ArrowLeft from '../assets/icons/ArrowLeft.vue';
 
+defineProps(["tour"])
+
 const toggle = ref(false)
+const cars = ref(['Sedan', 'Minivan'])
 </script>
 
 <style lang="scss" scoped>
