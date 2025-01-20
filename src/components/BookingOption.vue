@@ -25,7 +25,7 @@
                 />
             </div>
             <div class="flex flex-col items-center w-full">
-                <p class="text-lg font-semibold">{{ tour.id }}</p>
+                <p class="text-2xl font-semibold">{{ tour.id }}</p>
                 <p>{{ tour.type }}</p>
                 <div class="w-full text-lg pt-7 flex justify-around">
                     <div
@@ -38,13 +38,28 @@
                     </div>
                 </div>                
             </div>    
+            <div class="pt-4 w-full">
+                <p class="text-xl font-semibold text-center">Book this tour :</p>
+                <div class="flex justify-around pt-2">
+                    <div class="flex items-end gap-3 underline sm:hover:cursor-pointer">
+                        <Gmail />
+                        <span>With e-mail</span>
+                    </div>
+                    <div class="flex items-end gap-3 underline sm:hover:cursor-pointer">
+                        <Whatsapp />
+                        <span>With Whatsapp</span>
+                    </div>
+                </div>
+            </div>
         </div>    
     </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-import ArrowLeft from '../assets/icons/ArrowLeft.vue';
+import ArrowLeft from '../assets/icons/ArrowLeft.vue'
+import Gmail from '../assets/icons/Gmail.vue'
+import Whatsapp from '../assets/icons/Whatsapp.vue'
 
 defineProps(["tour"])
 
