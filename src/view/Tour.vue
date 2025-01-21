@@ -2,7 +2,8 @@
   <div class="!transition-none">
     <div class="flex mb-10">
         <div 
-            v-for="name in tour.locations" 
+            v-for="name in tour.locations"
+            :key="name" 
             class=" flex justify-center py-2 text-gray-700 sm:hover:cursor-pointer"
             :class="[currentArticle == name ? 'border-l border-t border-r font-bold text-gray-800 border-gray-800' : 'border-b border-gray-800', tour.locations.length === 3 ? 'w-1/3' : 'w-1/2']"
             @click = "changeLocation(name)"
@@ -17,7 +18,8 @@
         <Article :location="filteredLocations" :key="route.fullPath" />
       </div>
     </Transition>
-        
+
+    <BookingOption :tour="refTour" />    
   </div>
 </template>
 
@@ -27,12 +29,14 @@ import Article from '../components/Article.vue'
 import { useRoute, useRouter } from 'vue-router'
 import tours from '../tours.json'
 import locations from '../locations.json'
+import BookingOption from '../components/BookingOption.vue'
 
 const route = useRoute()
 const router = useRouter()
 
 const id = route.params.id
 const [tour] = tours.data.filter(ob => ob.id == id)
+const refTour = ref(tour)
 const showArticle = ref(false)
 
 const currentArticle = ref(tour.locations[0])

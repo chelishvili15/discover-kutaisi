@@ -7,7 +7,11 @@
             "type": "History Tour",
             "duration": "3 Hours",
             "startFinish": "Kutaisi",
-            "price": "100₾"
+            "price": {
+                "from": "18₾",
+                "Sedan": "80₾",
+                "Minivan": "100₾"
+            }
         },
         {
             "id": "Martvili-Prometheus",
@@ -15,7 +19,11 @@
             "type": "Adventure",
             "duration": "5-6 Hours",
             "startFinish": "Kutaisi",
-            "price": "195₾"
+            "price": {
+                "from": "35₾",
+                "Sedan": "160₾",
+                "Minivan": "200₾"
+            }
         },
         {
             "id": "Martvili-Okatse-Prometheus",
@@ -23,7 +31,11 @@
             "type": "Adventure",
             "duration": "9 Hours",
             "startFinish": "Kutaisi",
-            "price": "240₾"
+            "price": {
+                "from": "40₾",
+                "Sedan": "180₾",
+                "Minivan": "240₾"
+            }
         },
         {
             "id": "Tskhrajvari-Shaori-Nikortsminda" ,
@@ -31,7 +43,11 @@
             "type": "History and Hiking",
             "duration": "9 Hours",
             "startFinish": "Kutaisi",
-            "price": "300₾"
+            "price": {
+                "from": "60₾",
+                "Sedan": "250₾",
+                "Minivan": "300₾"
+            }
         },
         {
             "id": "Okatse-Kinchkha",
@@ -39,7 +55,11 @@
             "type": "Adventure",
             "duration": "4-5 Hours",
             "startFinish": "Kutaisi",
-            "price": "180₾"
+            "price": {
+                "from": "30₾",
+                "Sedan": "150₾",
+                "Minivan": "180₾"
+            }
         }
     ]
 }
