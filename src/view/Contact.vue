@@ -2,11 +2,11 @@
     <div class="w-full h-[calc(100vh-200px)] flex justify-center pt-24"> 
         <div class="w-min h-min">
             <a
-                href="mailto:d.chelishvili91@gmail.com" 
+                href="mailto:discoverkutaisi@gmail.com" 
                 class="flex items-center gap-4"
             >
                 <Gmail />  
-                <p class="underline">d.chelishvili91@gmail.com </p>
+                <p class="underline">discoverkutaisi@gmail.com </p>
             </a>
             <a 
                 href="https://api.whatsapp.com/send?phone=+995557669179" 

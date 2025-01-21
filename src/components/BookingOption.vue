@@ -11,7 +11,7 @@
         
         <div
             class="fixed left-0 right-0 bottom-0 sm:right-[calc(50%-384px)] sm:left-[calc(50%-384px)] bg-green-600 text-gray-200 z-50 flex flex-col items-center sm:hover:cursor-pointer rounded-t transform duration-300 ease-in"
-            :class="toggle ? 'h-1/3':'h-8'"
+            :class="toggle ? 'h-96':'h-8'"
             @click="toggle = !toggle"  
         >
             <div class="bg-green-600 px-10 pt-2 rounded -translate-y-1/2 flex justify-center gap-4 font-semibold">
@@ -27,7 +27,8 @@
             <div class="flex flex-col items-center w-full">
                 <p class="text-2xl font-semibold">{{ tour.id }}</p>
                 <p>{{ tour.type }}</p>
-                <div class="w-full text-lg pt-7 flex justify-around">
+                <p class="text-xl font-semibold pt-7 text-center">Price :</p>
+                <div class="w-full text-lg flex justify-around">
                     <div
                         v-for="car in cars"
                         :key="car" 
@@ -41,14 +42,20 @@
             <div class="pt-4 w-full">
                 <p class="text-xl font-semibold text-center">Book this tour :</p>
                 <div class="flex justify-around pt-2">
-                    <div class="flex items-end gap-3 underline sm:hover:cursor-pointer">
+                    <a 
+                        :href="`mailto:discoverkutaisi@gmail.com?subject=${tour.id}`"
+                        class="flex items-end gap-3 underline sm:hover:cursor-pointer"
+                    >
                         <Gmail />
                         <span>With e-mail</span>
-                    </div>
-                    <div class="flex items-end gap-3 underline sm:hover:cursor-pointer">
+                    </a>
+                    <a
+                        :href="`https://api.whatsapp.com/send?phone=+995557669179?text=Is%20'${tour.id}'%20tour%20available?`" 
+                        class="flex items-end gap-3 underline sm:hover:cursor-pointer"
+                    >
                         <Whatsapp />
                         <span>With Whatsapp</span>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>    
