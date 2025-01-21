@@ -19,7 +19,7 @@
                 {{ name }} : {{ price}}
             </div>
         </div>
-        <p class="absolute right-5 bottom-3 text-gray-100 underline" >See More ...</p>
+        <p class="absolute right-5 bottom-3 text-gray-100 underline animate-pulse" >See More ...</p>
     </div>
 
 </template>

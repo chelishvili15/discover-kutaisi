@@ -11,7 +11,7 @@
         
         <div
             class="fixed left-0 right-0 bottom-0 sm:right-[calc(50%-384px)] sm:left-[calc(50%-384px)] bg-green-600 text-gray-200 z-50 flex flex-col items-center sm:hover:cursor-pointer rounded-t transform duration-300 ease-in"
-            :class="toggle ? 'h-96':'h-8'"
+            :class="toggle ? 'h-96': show ? 'h-8' : 'h-0 translate-y-5'"
             @click="toggle = !toggle"  
         >
             <div class="bg-green-600 px-10 pt-2 rounded -translate-y-1/2 flex justify-center gap-4 font-semibold">
@@ -63,7 +63,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import ArrowLeft from '../assets/icons/ArrowLeft.vue'
 import Gmail from '../assets/icons/Gmail.vue'
 import Whatsapp from '../assets/icons/Whatsapp.vue'
@@ -71,6 +71,14 @@ import Whatsapp from '../assets/icons/Whatsapp.vue'
 defineProps(["tour"])
 
 const toggle = ref(false)
+const show = ref(false)
+
+onMounted(() => {
+    setTimeout(() => {
+        show.value = true
+    }, 1000)
+})
+
 const cars = ref(['Sedan', 'Minivan'])
 </script>
 

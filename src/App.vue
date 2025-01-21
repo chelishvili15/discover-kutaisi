@@ -32,7 +32,7 @@ const togSidebar = ref(false)
           </transition>
         </router-view>
       </div>
-      <!-- <Footer class="max-w-[768px] m-auto" />  -->
+      <Footer class="max-w-[768px] m-auto" /> 
     </div>
 </template>
 

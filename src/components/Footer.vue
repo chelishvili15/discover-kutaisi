@@ -1,5 +1,8 @@
 <template>
-    <div class=" fixed bottom-0 left-0 right-0 flex justify-between z-30">
+    <div
+        class=" fixed bottom-0 left-0 right-0 flex justify-between z-30 transform duration-500 ease-in"
+        :class="$route.name == 'Tour' ? 'h-0' : 'h-10'"
+    >
         <a
             href="mailto:d.chelishvili91@gmail.com" 
             :class="cls"
