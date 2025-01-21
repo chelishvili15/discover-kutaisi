@@ -50,7 +50,7 @@
                         <span>With e-mail</span>
                     </a>
                     <a
-                        :href="`https://api.whatsapp.com/send?phone=+995557669179?text=Is%20'${tour.id}'%20tour%20available?`" 
+                        :href="`https://api.whatsapp.com/send?phone=+995557669179&text=Is%20'${tour.id}'%20tour%20available?`" 
                         class="flex items-end gap-3 underline sm:hover:cursor-pointer"
                     >
                         <Whatsapp />
