@@ -1,6 +1,8 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import Reviews from '../components/Reviews.vue';
+import H1 from '../components/H1.vue';
+import H2 from '../components/H2.vue';
 
 const cls = ref('flex items-center justify-center gap-4 bg-white w-44 h-8 py-1  rounded-full border-green-700 border-[1px] shadow-md shadow-gray-700')
 const showReviews = ref(false)
@@ -14,6 +16,11 @@ onMounted(() => {
 
 <template>
     <div class="w-full h-[calc(100vh-200px)] flex justify-center pt-24">
+      <div class="absolute top-0 opacity-0">
+        <H1 title="Discover Kutaisi"></H1>
+        <H2 title="Tours and Transfers from Kutaisi"></H2>
+      </div>
+
         <Transition name="reviews-fade">
           <Reviews
             v-if="showReviews"  
@@ -23,42 +30,46 @@ onMounted(() => {
 
         <div class="w-full flex flex-col justify-center gap-5 text-green-700 font-semibold">
             <a 
-                href="places-to-visit-kutaisi/1" 
+                href="#/places-to-visit-kutaisi/1" 
                 class="pot0"
                 :class="cls"
             >
                 <p class="text-sm">Places to visit Kutaisi</p>
             </a>
             <a 
-                href="tours/1" 
+                href="#/tours/1" 
                 class="pot1"
                 :class="cls"
             >
                 <p class="">Tours</p>
             </a>
             <a 
-                href="transfers" 
+                href="#/transfers" 
                 class="pot2"
                 :class="cls"
             >
                 <p class="">Transfers</p>
             </a>
             <a 
-                href="about" 
+                href="#/about" 
                 class="pot3"
                 :class="cls"
             >
                 <p class="">About</p>
             </a>
             <a 
-                href="contact" 
+                href="#/contact" 
                 class="pot4"
                 :class="cls"
             >
                 <p class="">Contact</p>
             </a>
         </div>
+
+        
     </div>
+
+
 </template>
 
 <style>
