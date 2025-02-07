@@ -22,7 +22,7 @@
             <Youtube /> 
         </a>
         <a 
-            href="https://maps.app.goo.gl/BTfJWPiJzyUDRkyn7"
+            href="https://maps.app.goo.gl/XRrGhEsdh4BahJcE7"
             target="_blank" 
             :class="cls"
         >

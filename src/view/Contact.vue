@@ -23,7 +23,7 @@
                 <p class="underline">@DiscoverKutaisi</p>
             </a>
             <a 
-                href="https://maps.app.goo.gl/BTfJWPiJzyUDRkyn7"
+                href="https://maps.app.goo.gl/XRrGhEsdh4BahJcE7"
                 target="_blank" 
                 class="flex items-center gap-4"
             >

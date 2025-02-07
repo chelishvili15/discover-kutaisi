@@ -23,46 +23,42 @@ onMounted(() => {
 
         <div class="w-full flex flex-col justify-center gap-5 text-green-700 font-semibold">
             <a 
-                href="#/places-to-visit-kutaisi/1" 
+                href="places-to-visit-kutaisi/1" 
                 class="pot0"
                 :class="cls"
             >
                 <p class="text-sm">Places to visit Kutaisi</p>
             </a>
             <a 
-                href="#/tours/1" 
+                href="tours/1" 
                 class="pot1"
                 :class="cls"
             >
                 <p class="">Tours</p>
             </a>
             <a 
-                href="#/transfers" 
+                href="transfers" 
                 class="pot2"
                 :class="cls"
             >
                 <p class="">Transfers</p>
             </a>
             <a 
-                href="#/about" 
+                href="about" 
                 class="pot3"
                 :class="cls"
             >
                 <p class="">About</p>
             </a>
             <a 
-                href="#/contact" 
+                href="contact" 
                 class="pot4"
                 :class="cls"
             >
                 <p class="">Contact</p>
             </a>
         </div>
-
-        
     </div>
-
-
 </template>
 
 <style>
