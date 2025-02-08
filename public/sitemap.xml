@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Static Pages -->
+  <url>
+    <loc>https://discoverkutaisi.com/</loc>
+    <lastmod>2024-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://discoverkutaisi.com/transfers</loc>
+    <lastmod>2024-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://discoverkutaisi.com/about</loc>
+    <lastmod>2024-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://discoverkutaisi.com/contact</loc>
+    <lastmod>2024-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Dynamic Tour Pages (Manually add tour pages) -->
+  <url>
+    <loc>https://discoverkutaisi.com/tours/1</loc>
+    <lastmod>2024-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://discoverkutaisi.com/tours/2</loc>
+    <lastmod>2024-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://discoverkutaisi.com/tours/3</loc>
+    <lastmod>2024-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Dynamic Location Pages -->
+  <url>
+    <loc>https://discoverkutaisi.com/places-to-visit-kutaisi/1</loc>
+    <lastmod>2024-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://discoverkutaisi.com/places-to-visit-kutaisi/2</loc>
+    <lastmod>2024-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
