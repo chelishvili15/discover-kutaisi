@@ -45,13 +45,6 @@
     <priority>0.8</priority>
   </url>
 
-  <url>
-    <loc>https://discoverkutaisi.com/tours/3</loc>
-    <lastmod>2024-02-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- Dynamic Location Pages -->
   <url>
     <loc>https://discoverkutaisi.com/places-to-visit-kutaisi/1</loc>
