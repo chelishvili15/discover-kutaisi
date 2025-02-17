@@ -8,6 +8,7 @@ import TourView from '../view/Tour.vue'
 import TransfersView from '../view/Transfers.vue'
 import LocationsView from '../view/Locations.vue'
 import LocationView from '../view/Location.vue'
+import SiteMap from '../view/SiteMap.vue'
 
 const routes = [
   { 
@@ -223,7 +224,13 @@ const routes = [
         }
       ],
       transition: 'slide-fade-route'
-    } 
+    }, 
+  },
+
+  {
+    path: '/sitemap.xml',
+    name: 'Sitemap',
+    component: SiteMap
   },
 ]
 
