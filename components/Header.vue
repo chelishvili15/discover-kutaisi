@@ -2,9 +2,9 @@
     <div class="sticky top-0 z-50 flex justify-between items-center px-5 bg-green-700 text-gray-200 font-main">
 
         <div class="w-1/2 flex justify-end">
-            <RouterLink to="/">
+            <NuxtLink to="/">
                 <Logo class="translate-x-1/2" @click="$emit('closeSidebar')"/>
-            </RouterLink>
+            </NuxtLink>
         </div>
 
         <div class="w-1/2 flex justify-end">

@@ -10,32 +10,32 @@
             >
                 <div class="h-full flex flex-col justify-around">
                   <div class="flex flex-col ">
-                    <RouterLink 
+                    <NuxtLink 
                       to="/"   
                       :class="route.path == `/` && 'font-bold text-white'"
                     >
                       Home
-                    </RouterLink>
+                    </NuxtLink>
                   </div>
                   <div class="flex flex-col gap-3 whitespace-nowrap">
-                    <RouterLink
+                    <NuxtLink
                       to="/places-to-visit-kutaisi"
-                      :class="route.path.includes('to-visit') && 'font-bold text-white'">Places to visit Kutaisi</RouterLink>
-                    <RouterLink
+                      :class="route.path.includes('to-visit') && 'font-bold text-white'">Places to visit Kutaisi</NuxtLink>
+                    <NuxtLink
                       to="/tours/1"
-                      :class="route.path.includes('tours') && 'font-bold text-white'">Tours</RouterLink>
-                    <RouterLink to="/transfers"   :class="route.path == `/transfers` && 'font-bold text-white'">Transfers</RouterLink>
+                      :class="route.path.includes('tours') && 'font-bold text-white'">Tours</NuxtLink>
+                    <NuxtLink to="/transfers"   :class="route.path == `/transfers` && 'font-bold text-white'">Transfers</NuxtLink>
                   </div>
                   <div class="flex flex-col gap-3 mb-10">
-                    <RouterLink 
+                    <NuxtLink 
                       to="/about"   
                       :class="route.path == `/about` && 'font-bold text-white'"
                     >
                       About
-                    </RouterLink>
-                    <RouterLink
+                    </NuxtLink>
+                    <NuxtLink
                       to="/contact"
-                      :class="route.path == `/contact` && 'font-bold text-white'">Contact</RouterLink>
+                      :class="route.path == `/contact` && 'font-bold text-white'">Contact</NuxtLink>
                   </div>
                 </div>
             </div>
