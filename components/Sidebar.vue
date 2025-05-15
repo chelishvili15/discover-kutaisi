@@ -22,7 +22,7 @@
                       to="/places-to-visit-kutaisi"
                       :class="route.path.includes('to-visit') && 'font-bold text-white'">Places to visit Kutaisi</NuxtLink>
                     <NuxtLink
-                      to="/tours/1"
+                      to="/tours"
                       :class="route.path.includes('tours') && 'font-bold text-white'">Tours</NuxtLink>
                     <NuxtLink to="/transfers"   :class="route.path == `/transfers` && 'font-bold text-white'">Transfers</NuxtLink>
                   </div>

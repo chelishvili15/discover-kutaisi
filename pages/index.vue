@@ -112,12 +112,15 @@ onMounted(() => {
 @keyframes runLeft {
   0% {
     left: 10%;
+    opacity: 0;
   }
   50% { 
-    left: 20%; 
+    left: 20%;
+    opacity: 20%; 
    }
   100% {
-    left: 50%;     
+    left: 50%;
+    opacity: 100%;     
   }
 }
 
@@ -143,24 +146,30 @@ onMounted(() => {
 @keyframes runRight {
   0% {
     right: 25%;
+    opacity: 0;
   }
   50% { 
     right: 40%; 
+    opacity: 60%;
    }
   100% {
     right: 50%;     
+    opacity: 100%;
   }
 }
 
 @keyframes runTop {
   0% {
     top: -10%;
+    opacity: 0;
   }
   50% { 
     top: -0%; 
+    opacity: 10%;
    }
   100% {
     top: 15%;     
+    opacity: 100%;
   }
 }
 </style>

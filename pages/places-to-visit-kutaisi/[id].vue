@@ -5,10 +5,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
-import Article from '../components/Article.vue'
-import locations from '../locations.json'
+import locations from '@/public/locations.json'
 
 const route = useRoute()
 

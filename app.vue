@@ -3,8 +3,9 @@ const togSidebar = ref(false)
 </script>
 
 <template>
-  <!-- <BlackLogo class="opacity-5 w-full fixed -z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />  -->
     <div class="max-w-[768px] m-auto bg-transparent font-main relative">
+      <BlackLogo class="opacity-5 w-full fixed -z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" /> 
+
       <Sidebar :toggleSidebar="togSidebar" @closeSidebar = "togSidebar = false" />
       <Header
         :toggleSidebar="togSidebar"
