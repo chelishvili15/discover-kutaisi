@@ -1,0 +1,232 @@
+[
+    {
+        "id": "Sataplia",
+        "location": "Tskaltubo",
+        "type": ["Managed reserve", "Cave", "Hiking", "Panoramic view"],
+        "name": "Sataplia",
+        "fullName": "Sataplia Strict Nature Reserve",
+        "description": "Sataplia Managed Reserve is located in Imereti, in the territory of Tskaltubo municipality's villages Gumbra, Banoja and khomuli, on the hill of Sataplia 500 meters above the sea level. It was founded in 1935. Reserve itself has a complex structure and contains geologic, paleontological, speleological, zoological and botanical monuments.<br><br>Sataplia Managed Reserve is part of the Imereti Protected Areas and its infrastructure includes Visitor Center, Dinosaur Footprint Conservation Building, Exhibition Hall,Glass Panorama view, Cafes, Souvenir Shops, well-organized Caves and Marked Trails.<br><br>Visitors can visit the dinosaur footprints, Sataplia karst cave with a length of 900 meters, a height of 10 meters, a width of 12 meters, rock trail, Colchic forest, and panoramic views.<br><br>Word Sataplia means 'honey place'. The name originated from the Sataplia Mountain, which derives its name from the bees living in the mountains and the ancient tradition of collecting honey.",
+        "image": 
+        [
+            "https://cdn.georgiantravelguide.com/storage/files/sataflia-satafliis-aghkvetili-sataplia-9.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/sataflia-satafliis-aghkvetili-sataplia-3.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/sataflia-satafliis-aghkvetili-sataplia-1.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/sataflia-satafliis-aghkvetili-sataplia-14.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/sataflia-satafliis-aghkvetili-sataplia-8.jpg"
+        ],
+        "fee": 
+            {
+                "Entry": "20₾",
+                "Glass bridge": "free"
+            }
+
+    },
+    {
+        "id": "Prometheus",
+        "location": "Tskaltubo",
+        "type": ["Cave"],
+        "name": "Prometheus",
+        "fullName": "Prometheus Cave",
+        "description": "Natural monument Prometheus Cave is located in Tskaltubo municipality in Imereti region. Its length is 1,8 km and is formed within the depth of 40 meters.<br><br>The Prometheus Cave is a notable beautiful natural monument of the world. It is about 60-70 million years old. This beautifully shaped karst cave with stunning strips of stalactites and stalagmites once again will convince you of the enormous power of nature and will travel you in the fairy world.<br><br>Prometheus cave is located in the village of Kumistavi in Tskaltubo municipality, in the basin of Kuma River. In the cave are found 22 halls, from which for tourists is opened only 6. In the cave, it is possible to walk through the length of 1420 meters, see the halls and travel by boat on the river flow.<br><br>In the Prometheus Cave, you will meet a lot of real masterpieces of nature - stalactites, and stalagmites, beautiful forms of it leave the impression of the fairy environment. Also, When walking in the cave, there are 'petrification waterfalls', 'hanging stone curtains', 'helictites' and etc.",
+        "image": 
+        [
+            "https://cdn.georgiantravelguide.com/storage/files/prometes-mghvime-prometheus-cave-kumistavi.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/img-6185.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/img-6208.jpg"
+        ],
+        "fee": 
+            {
+                "Entry": "25₾"
+            },
+        "youtube": "W1d6CWjswdM"
+    },
+    {
+        "id": "Martvili",
+        "location": "Martvili",
+        "type": ["Canyon", "Waterfall"],
+        "name": "Martvili",
+        "fullName": "Martvili Canyon",
+        "description": "Martvili Canyon – is the monument of nature. In the village of Gachedili, in the municipality of Martvili, on the side of Samegrelo, 210 meters from sea level, you can see this picturesque place. Martvili Canyon Visitors Center is situated near the entrance of the canyon.<br><br>This monument of nature represents the ravine, created by the river Abasha, cut out through the limestone rock sides. The length of the canyon is 2400 meters, and the depth of carving is 20-30 meters, and as for the width, - 5-10 meters. In the middle reaches of the canyon, there are arising 12-15 meters long waterfalls, with a small falling. One section is highly distinguished, as it is really charming. It is called Ophutskhole, which is also known as the “Dadiani Bathe” as well.<br><br>From the Visitor Center, stars the tournament footway path, which is cobbled with stones and in total, is 700 meters long. It leads you to the Dadiani historical by-path. There are placed two bridges, 3 panorama platforms, and a huge, chalk-stoned, man-made historical, 30 stepped stairway.<br><br>The visitors can also take a walk or row down the river Abasha. This “trip” is about 300 meters long interspace, (one way) and take pleasure in the extremely beautiful and pretty views of the river and canyon. Maritime routes are also available, but you must satisfy one condition- you must be higher, than 1 meter.",
+        "image": 
+        [
+            "https://cdn.georgiantravelguide.com/storage/files/martvilis-kanioni-canyon-visitor-center-6.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/martvilis-kanioni-canyon-visitor-center.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/martvilis-kanioni-canyon-visitor-center-4.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/martvilis-kanioni-canyon-visitor-center-8.jpg"
+        ],
+        "fee": 
+            {
+                "Entry": "20₾",
+                "Zipline": "50₾",
+                "Boat": "20₾"
+            },
+        "youtube": "Vaebg93W2o4"
+
+    },
+    {
+        "id": "Tskhrajvari",
+        "location": "Tkibuli",
+        "type": ["Mountain", "Hiking", "Panoramic view"],
+        "name": "Tskhrajvari",
+        "fullName": "Tskhrajvari shrine",
+        "description": "Tskhrajvari (literally nine crosses), a shrine of St. George, is located in the Imereti region, near the Nakerala Pass, on the top of a mountain near Tkibuli, at 1500 meters above sea level.<br><br>Every year on the last Saturday of May, 'Tskhrajvaroba' is celebrated in Imereti, especially in Tkibuli Municipality and its villages.<br><br>In addition, a unique cave is discovered near the Tskhrajvari temple.<br><br><strong>There is a legend<strong> according to which 9 sons from one family went to war. The boys' father prayed daily that his sons would return home safe. He decided to make an offering and erected crosses on the mountain of Tkibuli. He lifted 9 crosses on his shoulders to the mountain and built a shrine there. After the end of World War II, all the sons returned home unharmed. Since then, the shrine has become popular among tourists.<br><br>According to another legend: long ago in Svaneti, the Sopromian brothers killed the prince, after which they emigrated from Svaneti, settled in a small village in Okriba and changed the surname to Sopromadze. After a while, God's wrath fell on the Sopromadze family. Newborn sons of the Sopromadze family died before reaching the age of majority. And then one day, the horrified people gathered in the open air and prayed to God: raise a son for us, and we will release a pigeon, and where it sits down on, we will build a shrine for the glory of the Lord.<br><br>Indeed, the elders of the Sopromadze family released a pigeon, which, as it turns out, sat down on the top of this mountain. They carried stones to the mountain on their hands, many even died during the construction, but in the end, after long torment and hard work, they erected a small shrine on the mountain. On the last day of the construction of the temple, they made a feast, slaughtered many heifers and birds. In the middle of the feast, after getting drunk they started to fight, using the sharp bones of heifers as a weapon; the sinners severely wounded each other and the blood was shed. After sobering up, they experienced great regret, knelt down and asked the Lord for forgiveness. Since then, the Sopromadze family, annually, on the last Saturday of May, praises the Lord and rejects the meat.",
+        "image": 
+        [
+            "https://cdn.georgiantravelguide.com/storage/files/tskhrajvari-5.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/tskhrajvari-4.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/tskhrajvari.jpg"
+        ],
+        "fee": 
+            {
+                "Entry": "free"
+            },
+        "youtube": "xVuwIiZFZuM"
+    },
+    {
+        "id": "Shaori",
+        "location": "Racha",
+        "type": ["Lake", "Swimming"],
+        "name": "Shaori",
+        "fullName": "Shaori reservoir",
+        "description": "Shaori Reservoir is one of the most attractive places in Racha. Heading to Racha, you cannot overpass the Reservoir which dazzles you with its landscape. Shaori Reservoir is not a very popular tourist destination; however, on the plus side, it makes the place more interesting. People who love to wander frequently search for places which are not overcrowded with visitors and tourists and, at the same time, where they can spend a pleasant weekend in nature.<br><br>Located in Ambrolauri Municipality at the altitude of 1100-1200 meters, Shaori Reservoir is the biggest in Racha-Lechkhumi and Lower Svaneti region. The Reservoir is inside a structural basin formed by the damming of Shaori River and surrounded by mixed deciduous trees. There had been two lakes in this basin – Kharistvali and Dzrikhistvali, which are now covered with the reservoir waters. The length of Shaori Lake is 7.1km, greatest width – 2.7km and maximum depth – 14.5 meters.<br><br>Shaori Reservoir is endowed with rich tourism potential. You can arrange various activities here - nowadays, fishing is the most popular one. The lake is the home to various species of fish and people from all parts of Georgia visit it for this purpose. You can also take a boat trip (if you bring the boat). The Reservoir is surrounded by Nakerala Mountain Range and Mount Satsalike, where you can take hikes. The area around the Reservoir offers an abundance of mushrooms - one of the most delicious and expensive of which is Caesar’s mushroom. Small infrastructure is arranged near the Reservoir. There are swings in the lake, capturing the attention of people who love photoshoots.<br><br>Shaori is beautiful in every season, however, it is the most stunning in autumn and spring, when various colors are reflected in the lake or when the nature is blooming.<br><br>Climate here on Shaori territory holds healing properties. The temperature is relatively low, winters are cold and summers – cool.<br><br>Shaori Reservoir is 275 km away from the capital city and 20km from Ambrolauri. Roads are asphalted and you can travel by any transport.<br><br>And finally, Shaori Reservoir is a must-see place.",
+        "image": 
+        [
+            "https://cdn.georgiantravelguide.com/storage/files/shaoris-tsqalsatsavi-racha-shaori-reservoir-racha-shaori-vodohranilishche-racha-1.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/shaoris-tsqalsatsavi-racha-shaori-reservoir-racha-shaori-vodohranilishche-racha.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/shaoris-tsqalsatsavi-racha-shaori-reservoir-racha-shaori-vodohranilishche-racha-4.jpg"
+        ],
+        "fee": 
+            {
+                "Entry": "free"
+            },
+        "youtube": "LUxt0tM-Muw"
+    },
+    {
+        "id": "Okatse",
+        "location": "Khoni",
+        "type": ["Canyon", "Panoramic view"],
+        "name": "Okatse",
+        "fullName": "Okatse canyon",
+        "description": "Okatse Canyon - is located in the territories of the village of Gordi in Khoni municipality. For those who love extreme tours, there is a hanging trail which takes approximately 2-3 hours of walking.<br><br>Okatse canyon route is very interesting for extreme lovers. It has a pedestrian route which goes through Dadiani historical forest, 780 m length hanging trail and finishes with panoramic view, where visitors can take memorable photos by Smart-Selfie Camera, installed nearby.",
+        "image": 
+        [
+            "https://cdn.georgiantravelguide.com/storage/files/okatses-kanioni-okace-canyon-imereti-1.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/okatses-kanioni-okace-canyon-imereti.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/okatses-kanioni-okace-canyon-imereti-3.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/okatses-kanioni-okace-canyon-imereti-5.jpg"  
+        ],
+        "fee": 
+            {
+                "Entry": "20₾"
+            },
+        "youtube": "HHjoeYaxGMk"
+    },
+    {
+        "id": "Kinchkha",
+        "location": "Khoni",
+        "type": ["Waterfall","Swimming"],
+        "name": "Kinchkha",
+        "fullName": "Kinchkha waterfall",
+        "description": "Kinchkha Waterfall - The natural monument, the three-step waterfall cascade is in the valley of satsiskvilo. The upper two stages are on the right tributary of the Satsiskvilo river, the first waterfall height is about 25 m and the second waterfall rises to 70 m. Streamflow connected to river Satsiskvilo form the third 35 meters high stage. It is located in Khoni municipality, in the village of Kinchka, 843 meters above the sea level.",
+        "image": 
+        [
+            "https://cdn.georgiantravelguide.com/storage/files/okatses-chanchkeri-kinchkha-okatses-kanioni-samegrelo-waterfall-canyon-3.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/okatses-chanchkeri-kinchkha-okatses-kanioni-samegrelo-waterfall-canyon.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/okatses-chanchkeri-kinchkha-okatses-kanioni-samegrelo-waterfall-canyon-1.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/okatses-chanchkeri-kinchkha-okatses-kanioni-samegrelo-waterfall-canyon-2.jpg"
+        ],
+        "fee": 
+            {
+                "Entry": "20₾",
+                "Zipline": "60₾"
+            },
+        "youtube": "b4R_OKAGcOA"
+
+    },
+    {
+        "id": "Gelati",
+        "location": "Gelati",
+        "type": ["Historical", "Monastery"],
+        "name": "Gelati",
+        "fullName": "Gelaty Monastery",
+        "description": "Gelati Monastery is located in the Imereti region, 11 km from the city of Kutaisi. The monastery was founded by David the Builder in 1106. We read in his will: “The monastery remained for my burial and for the crypt of my children forever and I will take eternal pain, so may my son Dimitri complete the construction”. Here the greatest king of Georgia is buried. The ensemble includes the main church of the Assumption of the Virgin, St. George's Church, St. Nicholas Church, bell tower, academy and fence. Gelati Monastery was the largest cultural and educational center, at different period here worked: Arsen Ikaltoeli, Arsen Bulmaisimisdze, Petre Gelateli, Evdemon Chkhetidze, Ekvtime Sakvarelidze, Gedeon Lortkipanidze and others. David could not finish the construction of the monastery and his son Demeter continued the work. In the XII-XV centuries the Gelati Monastery was granted full autonomy, recognized only the supreme right of the king, even the Catholicos-Patriarch of Georgia had no governmental power. After the political collapse of Georgia, Gelati Monastery passed into the hands of the kings of western Georgia. On November 23, 1510, it was burned by the Ottoman army invading Imereti. The kings of Imereti Bagrat III and George II restored the Gelati Monastery and donated new lands. Bagrat III was called the 'second builder' of Gelati. In the second half of the XVI century, the residence of the Catholicos-Patriarch of Western Georgia was moved from Bichvinta to Gelati. From the XVIII century, large-scale restoration works were carried out in Gelati Monastery by George VI, Alexander V, Solomon I, Solomon II and the bishops of Gelati. After the unification of the Kingdom of Imereti with the Russian Empire, the monastery was transformed from a church seminary into a state institution. Gelati Monastery owned a rich collection of manuscripts and engraved works of art that are now preserved in museums. Gelati complex is included in the list of UNESCO World Heritage Sites.<br><br><strong>Architecture</strong><br><br>Gelati Monastery includes several buildings, the dominant one being the main Church of the Assumption. The complex also includes: St. George's Church, St. Nicholas Church, bell tower, academy and fence. The main temple of the Assumption of the Virgin Mary is a central-domed building. The interior of the temple is especially impressive. The wide and high dome erected in the center rests on transitional arches on four arms. The arms of the cross that make up the central space are different. The main, eastern arm consists of a deep beam and a semicircular apse. To the right of the altar is Sadiakvne(room for storing things to the south side of an altar), and to the left is Samkvetlo (place where everything is done for the liturgy). The arms of the cross are covered with slightly arrowed vaults. The sides of the western part of the temple are two-storied, with choirs arranged on the second floor. The altar on the level of the choir also has a second floor where the hiding places were located. The central space of the building is crowned by a wide, high, sixteen-arched dome. The transition from the under dome square to the circle is done by sails. The interior space of the temple is well lit. The building is surrounded on three sides by later additions, which somehow aggravate it. The facades are decorated simply: Only doors and windows are decorated. The outer masses of the temple, within the main building, are orderly and unified. The facades are treated with decorative arcades of complex rhythm. Important samples of Georgian monumental painting and mosaic are preserved in Gelati Cathedral.<br><br>To the east of the main temple stands St. George's church, which was built in the early XIV century. The plan of the temple and the solution of the interior space are in line with the traditions of the era. The church draws attention with beautiful relief ornaments and frescoes.<br><br>To the west of the main temple there are St. Nicholas two-storey church and an academy building. There is an arched exit on the first floor of the church. A small cross-type church is erected on this building. The first floor is connected to the second by a stone staircase. The building of Gelati Academy stands on a steep riverbank. The entrance has a richly decorated four-column gate. We enter the huge hall through the gate. The building is rectangular in shape. There are stone benches along the walls that were provided for the academy listeners.<br><br>The first bell tower is contemporaneous with two monasteries, the third - relatively late, XIV century. Water is drawn on the first floor. Historical sources tell us that water used to enter all the chambers and stalls through pipes.",
+        "image": 
+        [
+            "https://cdn.georgiantravelguide.com/storage/files/gelati-monastery-kutaisi-imereti-2.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/imereti-gelati-monastery-kutaisi.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/gelati-monastery-kutaisi-imereti.jpg"
+        ],
+        "fee": 
+            {
+                "Entry": "free"
+            },
+        "youtube": "nwiGdYsE6Uo"
+
+    },
+    {
+        "id": "Motsameta",
+        "location": "Motsameta",
+        "type": ["Historical", "Monastery"],
+        "name": "Motsameta",
+        "fullName": "Motsameta Monastery",
+        "description": "Another remarkable temple near Kutaisi is Motsameta, which was built in the XI century. The history of its foundation is connected with the names of the princes of Argveti - David and Konstantine Mkheidze, who heroically sacrificed themselves to the expedition of the Arab commander, Marwan the Deaf to Georgia. They were canonized by the Georgian Orthodox Church, and their name was changed to 'Motsameta' (Place of the Martyrs). The temple is located in the Tskaltsitela gorge and from there, there are wonderful views of Imereti.",
+        "image": 
+        [
+            "https://cdn.georgiantravelguide.com/storage/thumbnails/imereti-motsameta-monastery-1.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/imereti-motsameta-monastery.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/motsameta-monastery-kutaisi.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/motsametas-monasteri-tqibuli-im-1.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/motsametas-monasteri-tqibuli-im-3.jpg"
+        ],
+        "fee": 
+            {
+                "Entry": "free"
+            },
+        "youtube": "rQbJTi82cmI"
+
+    },
+    {
+        "id": "Bagrati",
+        "location": "Kutaisi",
+        "type": ["Historical", "Cathedral"],
+        "name": "Bagrati",
+        "fullName": "Bagrati Cathedral",
+        "description": "Bagrati Cathedral is located in Kutaisi, Imereti region, on Ukimerioni hill. It was built in 1003, during the reign of Bagrat III. Bagrati Temple is an important monument of Georgian culture, both in terms of architectural solution and symbolic significance. It is a symbol of the unity and strength of our country. 'Matiane Kartlisai' tells us that Bagrat III gathered representatives of different parts of Georgia and invited guests from abroad for the celebration of the blessing of Bagrat III temple. ' All the rulers, the Catholics, the priests, and the heads of all the monasteries, and all the nobles of the upper and lower kingdom of the land, and all the other nations, were gathered together '. Doing so, he gave Bagrati Cathedral general national significance. It should be noted that the inscription near the north window of the building, which is the oldest example of the use of Arabic numerals in Georgia, gives the exact date of construction of the church: “ The church was built in 223”. If we put this date in the Christian calendar, it turns out to be 1003 years. Until the end of the XVII century, the monument was safely preserved. In 1692, the Ottomans, entered from Akhaltsikhe, captured the Kutaisi fortress and blew up the Bagrati temple during the battle. They also seized the wealth of the church. In 1770, King Solomon I of Imereti recaptured the fortress and liberated the Bagrati Temple from the Ottomans, although the monument was further damaged during the battle. Nowadays, the church is completely restored. The Bagrati Temple has been on the UNESCO World Heritage List since 1994, but was removed from the list after restoration.<br><br><strong>Architecture</strong><br><br>The Bagrati Temple is a triconch-type cross-domed structure with cross-sided arms and four free-standing under the dome piers. The building has a large interior space. The west arm has three naves, the side naves are two-storied, and they have choirs on the second floor. The storerooms next to the eastern altar are also two-storey. The solution of the inner space of the temple is sharply detected in external masses. The south and north arms protrude from the connecting lines of the parts, emphasizing the concept of the cross plan. The architect of the Bagrati temple built the dome on high poles, and used a unified system of fixtures from the flat to the facade, which was a novelty in Georgian architecture. The walls and floors of the building were decorated with mosaics. Richly carved gates were erected on the west and south arms of the church a couple of decades after they were built. In the south gate there are traces of a fresco - the image of the Virgin. The temple was surrounded by a stone wall, inside which were built auxiliary buildings and a stone bell tower. In the north-west corner of the church stands a three-story tower, which was built before the construction of the temple was completed. There is one room on each of the three floors, with fireplaces. This tower was probably inhabited by a bishop.",
+        "image": 
+        [
+            "https://pbs.twimg.com/media/E8qLnQ0XIAESO0N?format=jpg&name=large",
+            "https://cdn.georgiantravelguide.com/storage/files/imereti-kutaisi-kutaisi-kutaisi.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/bagratis-tadzari-kutaisi-imereti.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/bagratis-tadzari-kutaisi-imereti-1.jpg"
+        ],
+        "fee": 
+            {
+                "Entry": "free"
+            },
+        "youtube": "4eMDdWia5V4"
+
+    },
+    {
+        "id": "Nikortsminda",
+        "location": "Racha",
+        "type": ["Historical", "Temple", "Cathedral"],
+        "name": "Nikortsminda",
+        "fullName": "Nikortsminda Temple",
+        "description": "Nikortsminda - domed temple in Racha-Lechkhumi and Kvemo Svaneti region, in the village of the same name Nikortsminda in Ambrolauri municipality.<br><br>After the creation of the Racha Saeristavo at the end of the 10th century, by the order of Bagrat III, the first king of united feudal Georgia, the foundation was laid for the construction of a large temple named after St. Nicholas, which became the cultural center of this Saeristavo.<br><br>Since October 24, 2007, Nikortsminda Monastery has been included in the tentative list of UNESCO World Heritage Sites.<br><br>Rehabilitation work in 2012 uncovered previously unknown 16th-century frescoes in the soot-covered gates: images of temple founders, local feudal lords, and Archangel Michael. One of the fresco inscriptions mentions the painter of the temple, someone Javakhadze. Two surnames, Javakhadzes and Tsulukidzes, are mentioned with the images of the founders.<br><br><strong>History</strong><br><br>Nikortsminda Church is a masterpiece of national architecture. Built at the beginning of the XI century, in the years 1010-1014. This is the period when great attention was paid to the decoration of the facades. In this regard, the decor of Nikortsminda is the achievement of Georgian monumental plastic.<br><br>The monument has not undergone major changes during its existence. This is a rare case. The dome of the temple is preserved in its original form.<br><br>Nikortsminda was rebuilt in the 16th century with the support of the King of Imereti, Bagrat III. This fact is confirmed by the deed signed by the king for the temple in 1534:<br><br>'We, King Bagrat ... have a hand in the construction of the degraded monastery ... and will establish a cathedral for the episcopate.'<br><br>Many historians and travelers have written about Nikortsminda. In the 18th century, Russian ambassadors Tolochanov and Yevlev visited the church: \"We went to King Alexander's Racha ... The church is made of stone, big, amazing, in the name of Nicholas the Wonderworker ... There is a stone fence with two doors near the church. The king's close relatives are buried in the same church ... The tombs are held in the walls of the church.\" <br><br> The records of the ambassadors mention the fence of the church, which is broken today, only its remains are preserved. And as for the tombs of the king's relatives, have been covered during the renovation of the monument.",
+        "image": 
+        [
+            "https://cdn.georgiantravelguide.com/storage/files/nikortsminda-racha-nikortsminda-church-racha-5.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/nikortsminda-racha-nikortsminda-church-racha-3.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/nikortsminda-racha-nikortsminda-church-racha-4.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/nikortsmindis-tadzari.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/nikortsmindis-tadzari-3.jpg",
+            "https://cdn.georgiantravelguide.com/storage/files/nikortsmindis-tadzari-11.jpg"
+        ],
+        "fee": 
+            {
+                "Entry": "free"
+            },
+        "youtube": "xLyPNUtuIT8"
+
+    }
+]

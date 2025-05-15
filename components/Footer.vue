@@ -1,0 +1,46 @@
+<template>
+    <div
+        class=" fixed bottom-0 left-0 right-0 flex justify-between z-30 transform duration-500 ease-in"
+        :class="$route.name == 'Tour' ? 'h-0' : 'h-10'"
+    >
+        <a
+            href="mailto:d.chelishvili91@gmail.com" 
+            :class="cls"
+        >
+            <Gmail />  
+        </a>
+        <a 
+            href="https://api.whatsapp.com/send?phone=+995557669179" 
+            :class="cls"
+        >
+            <Whatsapp /> 
+        </a>
+        <a 
+            href="https://t.me/+995557669179"  
+            :class="cls"
+        >
+            <Telegram /> 
+        </a>
+        <a 
+            href="https://www.youtube.com/@DiscoverKutaisi" 
+            :class="cls"
+        >
+            <Youtube /> 
+        </a>
+        <a 
+            href="https://maps.app.goo.gl/XRrGhEsdh4BahJcE7"
+            target="_blank" 
+            :class="cls"
+        >
+            <Maps /> 
+        </a>
+    </div>
+</template>
+
+<script setup>
+const cls = ref('flex items-center gap-4 w-1/5 flex justify-center bg-green-700 py-2 border-r-[0.5px] border-gray-300 rounded')
+</script>
+
+<style lang="scss" scoped>
+
+</style>
