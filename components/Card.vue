@@ -36,8 +36,7 @@
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router'
-import locations from '../locations.json'
+import locations from '@/public/locations.json'
 
 defineProps(["tour"])
 

@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Kutaisi Airport",
+            "price": "50 ₾",
+            "pick-up": "Kutaisi",
+            "image": ""
+        },
+        {
+            "id": 1,
+            "name": "Tbilisi",
+            "price": "280 ₾",
+            "pick-up": "Kutaisi",
+            "image": ""
+        },
+        {
+            "id": 2,
+            "name": "Batumi",
+            "price": "200 ₾",
+            "pick-up": "Kutaisi",
+            "image": ""
+        },
+        {
+            "id": 3,
+            "name": "Mestia",
+            "price": "400 ₾",
+            "pick-up": "Kutaisi",
+            "image": ""
+        },
+        {
+            "id": 4,
+            "name": "Telavi",
+            "price": "500 ₾",
+            "pick-up": "Kutaisi",
+            "image": ""
+        },
+        {
+            "id": 5,
+            "name": "Borjomi",
+            "price": "170 ₾",
+            "pick-up": "Kutaisi",
+            "image": ""
+        },
+        {
+            "id": 6,
+            "name": "Bakuriani",
+            "price": "200 ₾",
+            "pick-up": "Kutaisi",
+            "image": ""
+        }
+    ]
+}

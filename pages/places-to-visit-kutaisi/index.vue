@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-import locations from '@/locations.json'
+import locations from '@/public/locations.json'
 const itemsPerPage = ref(10)
 
 const route = useRoute()

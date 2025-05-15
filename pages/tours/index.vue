@@ -1,5 +1,5 @@
 <script setup>
-import tours from '@/tours.json'
+import tours from '@/public/tours.json'
 
 const router = useRouter()
 const route = useRoute()

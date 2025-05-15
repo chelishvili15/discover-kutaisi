@@ -24,8 +24,8 @@
 </template>
 
 <script setup>
-import tours from '@/tours.json'
-import locations from '@/locations.json'
+import tours from '@/public/tours.json'
+import locations from '@/public/locations.json'
 const route = useRoute()
 const router = useRouter()
 

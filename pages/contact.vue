@@ -1,6 +1,6 @@
 <template>
     <div class="w-full h-[calc(100vh-200px)] flex justify-center pt-24"> 
-        <div class="w-min h-min">
+        <div class="w-min h-min flex flex-col gap-3 text-green-700 font-semibold">
             <a
                 href="mailto:discoverkutaisi@gmail.com" 
                 class="flex items-center gap-4"
@@ -13,7 +13,13 @@
                 class="flex items-center gap-4"
             >
                 <Whatsapp /> 
-                <p class="underline">+995 557 66 91 79</p>
+                <p class="underline">Whatsapp</p>
+            </a>
+            <a 
+                href="https://t.me/+995557669179"  
+                class="flex items-center gap-4">
+                <Telegram /> 
+                <p class="underline">Telegram</p>
             </a>
             <a 
                 href="https://www.youtube.com/@DiscoverKutaisi" 
