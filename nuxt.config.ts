@@ -57,7 +57,11 @@ export default defineNuxtConfig({
     pageTransition: { name: 'slide-fade-route', mode: 'out-in' }
   },
   compatibilityDate: '2024-11-01',
-  devtools: { enabled: false },
+  devtools: { enabled: true },
+  ssr: true,
+  nitro: {
+    preset: 'node-server'
+  },
   modules: ['@nuxtjs/tailwindcss', 'vue3-carousel-nuxt', '@nuxtjs/sitemap'],
   css: ['~/assets/css/main.css'],
 
