@@ -24,8 +24,10 @@
 </template>
 
 <script setup>
+import { useSeoMeta, useHead } from '#imports'
 import tours from '@/public/tours.json'
 import locations from '@/public/locations.json'
+
 const route = useRoute()
 const router = useRouter()
 
@@ -57,6 +59,43 @@ const changeLocation = (locationName) => {
 
 const filteredLocations = computed(() => {
   return locations.filter(ob => ob.name == currentArticle.value)[0]
+})
+
+// Mocked example tour data (replace with actual data fetching)
+const tourMeta = {
+  title: `${tour.id.split('-')} Tour from Kutaisi`,
+  description: `Join our full-day tour to Prometheus ${tour.id.split('-')} Canyon. Discover Georgia’s stunning nature with professional guides and comfortable transport from Kutaisi.`,
+  image: 'https://discoverkutaisi.com/images/tours/prometheus-martvili.jpg',
+  slug: `${tour.id}`
+}
+
+// SEO Meta Tags for Dynamic Tour Page
+useSeoMeta({
+  title: `${tourMeta.title} | Discover Kutaisi Tours`,
+  description: tourMeta.description,
+
+  ogTitle: `${tourMeta.title} | Discover Kutaisi Tours`,
+  ogDescription: tourMeta.description,
+  ogImage: tourMeta.image,
+  ogUrl: `https://discoverkutaisi.com/${route.path}`,
+  ogType: 'article',
+
+  twitterTitle: `${tourMeta.title} | Discover Kutaisi Tours`,
+  twitterDescription: tourMeta.description,
+  twitterImage: tourMeta.image,
+  twitterCard: 'summary_large_image',
+
+  keywords: 'Kutaisi tour, Prometheus Cave, Martvili Canyon, day trip from Kutaisi, Georgia tours, nature tours, guided tours Kutaisi',
+})
+
+// Canonical tag for dynamic route
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: `https://discoverkutaisi.com/tours/${tourMeta.slug}`,
+    },
+  ],
 })
 
 </script>

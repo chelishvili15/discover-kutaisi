@@ -35,7 +35,7 @@
                         class="flex flex-col"
                     >
                         <p>{{ car }}: <span class="font-bold text-2xl">{{ tour.price[car] }}</span></p>
-                        <p class="text-sm -translate-y-1/3">{{ car == 'Sedan' ? '(1-4 persons)' : '(5-7 persons)'  }}</p>    
+                        <p class="text-sm -translate-y-1/3">{{ car == 'Sedan' ? '(1-3 persons)' : '(4-6 persons)'  }}</p>    
                     </div>
                 </div>                
             </div>    

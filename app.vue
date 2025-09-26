@@ -1,4 +1,6 @@
 <script setup>
+import { routeLocationKey } from 'vue-router';
+
 const togSidebar = ref(false)
 </script>
 
@@ -16,16 +18,10 @@ const togSidebar = ref(false)
         class="bg-gradient-to-br w-full p-2 font-main mb-10"
         @click="togSidebar = false"
       >
-        <nuxt-page v-slot="{ Component, route }">
-          <transition :name="route.meta.transition">
-            <component 
-              :is="Component" 
-              :key="route.fullPath" 
-            />
-          </transition>
-        </nuxt-page>
+        <NuxtPage />
       </div>
-      <Footer class="max-w-[768px] m-auto" /> 
+      <!-- footer should be change in future -->
+      <Footer v-if="$route.fullPath.split('/').length <= 3" class="max-w-[768px] m-auto" />
     </div>
 </template>
 
@@ -39,3 +35,15 @@ const togSidebar = ref(false)
   transform: translateY(50%)
 }
 </style>
+
+<!-- <style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+</style> -->
