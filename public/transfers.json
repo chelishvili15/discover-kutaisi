@@ -10,42 +10,42 @@
         {
             "id": 1,
             "name": "Tbilisi",
-            "price": "280 ₾",
+            "price": "350 ₾",
             "pick-up": "Kutaisi",
             "image": ""
         },
         {
             "id": 2,
             "name": "Batumi",
-            "price": "200 ₾",
+            "price": "250 ₾",
             "pick-up": "Kutaisi",
             "image": ""
         },
         {
             "id": 3,
             "name": "Mestia",
-            "price": "400 ₾",
+            "price": "500 ₾",
             "pick-up": "Kutaisi",
             "image": ""
         },
         {
             "id": 4,
             "name": "Telavi",
-            "price": "500 ₾",
+            "price": "550 ₾",
             "pick-up": "Kutaisi",
             "image": ""
         },
         {
             "id": 5,
             "name": "Borjomi",
-            "price": "170 ₾",
+            "price": "250 ₾",
             "pick-up": "Kutaisi",
             "image": ""
         },
         {
             "id": 6,
             "name": "Bakuriani",
-            "price": "200 ₾",
+            "price": "280 ₾",
             "pick-up": "Kutaisi",
             "image": ""
         }
