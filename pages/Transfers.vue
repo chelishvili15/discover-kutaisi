@@ -50,5 +50,8 @@ useHead({
       href: 'https://discoverkutaisi.com/transfers',
     },
   ],
+  htmlAttrs: {
+    lang: 'en' // Sets language to English
+  }
 })
 </script>

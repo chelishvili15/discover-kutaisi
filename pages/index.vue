@@ -103,6 +103,9 @@ useHead({
       href: 'https://discoverkutaisi.com',
     },
   ],
+  htmlAttrs: {
+    lang: 'en' // Sets language to English
+  }
 })
 </script>
 

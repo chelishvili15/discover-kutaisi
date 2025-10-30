@@ -54,6 +54,9 @@ useHead({
       href: `https://discoverkutaisi.com/places-to-visit-kutaisi/${place.slug}`,
     },
   ],
+  htmlAttrs: {
+    lang: 'en' // Sets language to English
+  }
 })
 
 </script>

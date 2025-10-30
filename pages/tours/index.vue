@@ -58,5 +58,8 @@ useHead({
       href: 'https://discoverkutaisi.com/tours',
     },
   ],
+  htmlAttrs: {
+    lang: 'en' // Sets language to English
+  }
 })
 </script>

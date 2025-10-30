@@ -54,5 +54,8 @@ useHead({
       href: `https://discoverkutaisi.com/about`,
     },
   ],
+  htmlAttrs: {
+    lang: 'en' // Sets language to English
+  }
 })
 </script>
