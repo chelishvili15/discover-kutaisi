@@ -1,0 +1,32 @@
+{
+  "id": "weekend-guide-kutaisi",
+  "slug": "weekend-guide-kutaisi",
+  "title": "How to Spend a Perfect Weekend in Kutaisi",
+  "excerpt": "A practical 2-day Kutaisi itinerary with monasteries, canyons, food stops, and timing tips from local guides.",
+  "author": "Discover Kutaisi Team",
+  "publishedAt": "2026-01-14",
+  "category": "Travel Guide",
+  "tags": ["kutaisi", "itinerary", "weekend", "georgia travel"],
+  "coverImage": "/content/img/places/bagrati-cathedral/bagrati-cathedral-01.jpg",
+  "coverImageAlt": "Bagrati Cathedral in Kutaisi on a clear day",
+  "isPublished": true,
+  "seo": {
+    "title": "Perfect Weekend in Kutaisi: 2-Day Itinerary",
+    "description": "Plan a perfect weekend in Kutaisi with local tips, top places to visit, and practical travel advice.",
+    "canonicalPath": "/blog/weekend-guide-kutaisi",
+    "image": "/content/img/places/bagrati-cathedral/bagrati-cathedral-01.jpg",
+    "ogTitle": "Perfect Weekend in Kutaisi: 2-Day Itinerary",
+    "ogDescription": "Plan a perfect weekend in Kutaisi with local tips, top places to visit, and practical travel advice.",
+    "ogImage": "/content/img/places/bagrati-cathedral/bagrati-cathedral-01.jpg"
+  },
+  "contentBlocks": [
+    { "type": "paragraph", "text": "Kutaisi is one of the easiest cities in Georgia for a short trip. In two days, you can combine historical landmarks, scenic nature, and excellent local food without rushing." },
+    { "type": "heading", "level": 2, "text": "Day 1: Kutaisi Highlights" },
+    { "type": "list", "style": "unordered", "items": ["Start with Bagrati Cathedral for city views.", "Continue to Gelati Monastery in the morning while it is calm.", "Visit Motsameta Monastery before sunset.", "Have dinner in central Kutaisi and try Imeretian khachapuri."] },
+    { "type": "heading", "level": 2, "text": "Day 2: Nature Around Kutaisi" },
+    { "type": "paragraph", "text": "Use the second day for nearby natural attractions. Prometheus Cave, Martvili Canyon, or Okatse Canyon are excellent options depending on your pace and weather." },
+    { "type": "quote", "text": "If you want fewer crowds, start earlier and visit major attractions before noon.", "cite": "Local guide tip" },
+    { "type": "image", "src": "/content/img/places/gelati-monastery/gelati-monastery-02.jpg", "alt": "Gelati Monastery exterior with green hills", "caption": "Gelati Monastery is best visited early in the day." },
+    { "type": "paragraph", "text": "For first-time visitors, private transfers save time and make it easier to combine multiple stops in one day." }
+  ]
+}

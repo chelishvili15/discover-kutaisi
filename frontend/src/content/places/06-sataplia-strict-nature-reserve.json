@@ -1,0 +1,38 @@
+﻿{
+  "id": "sataplia-reserve",
+  "slug": "sataplia-strict-nature-reserve",
+  "name": "Sataplia Strict Nature Reserve",
+  "category": "nature",
+  "location": "Tskaltubo municipality, Imereti",
+  "entryFee": "20 ₾",
+  "summary": "Protected area with dinosaur footprints, cave tours, forest trails, and panoramic glass view.",
+  "description": "Sataplia combines geology, paleontology, cave exploration, and easy nature walks close to Kutaisi.",
+  "activities": [
+    "Entry - 20 ₾",
+    "Glass bridge - free"
+  ],
+  "details": [
+    "Sataplia Managed Reserve is located in Imereti near the villages of Gumbra, Banoja and Khomuli, on Sataplia hill at around 500 meters above sea level.",
+    "Founded in 1935, the reserve includes geological, paleontological, speleological, zoological and botanical monuments.",
+    "Infrastructure includes a visitor center, dinosaur footprint conservation building, exhibition hall, glass panorama view, cafes, souvenir points, organized cave paths and marked trails.",
+    "Visitors can explore dinosaur tracks, a karst cave with approximately 900 meters of tour, rock trails, Colchic forest and panoramic viewpoints.",
+    "The name Sataplia means honey place, linked to mountain bees and local honey-collecting traditions."
+  ],
+  "images": [
+    "/content/img/places/sataplia-strict-nature-reserve/sataplia-strict-nature-reserve-01.jpg",
+    "/content/img/places/sataplia-strict-nature-reserve/sataplia-strict-nature-reserve-02.jpg",
+    "/content/img/places/sataplia-strict-nature-reserve/sataplia-strict-nature-reserve-03.jpg",
+    "/content/img/places/sataplia-strict-nature-reserve/sataplia-strict-nature-reserve-04.jpg"
+  ],
+  "seo": {
+    "title": "Sataplia Strict Nature Reserve",
+    "description": "Protected area with dinosaur footprints, cave tours, forest trails, and panoramic glass view.",
+    "canonicalPath": "/places-to-visit/sataplia-strict-nature-reserve",
+    "image": "/content/img/places/sataplia-strict-nature-reserve/sataplia-strict-nature-reserve-01.jpg",
+    "ogTitle": "Sataplia Strict Nature Reserve",
+    "ogDescription": "Protected area with dinosaur footprints, cave tours, forest trails, and panoramic glass view.",
+    "ogImage": "/content/img/places/sataplia-strict-nature-reserve/sataplia-strict-nature-reserve-01.jpg"
+  }
+}
+
+

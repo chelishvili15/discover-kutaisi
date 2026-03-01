@@ -1,0 +1,33 @@
+﻿{
+  "id": "motsameta-monastery",
+  "slug": "motsameta-monastery",
+  "name": "Motsameta Monastery",
+  "category": "monasteries",
+  "location": "Near Kutaisi, Imereti",
+  "entryFee": "Free",
+  "summary": "A historic monastery near Kutaisi, frequently paired with Gelati and Bagrati tours.",
+  "description": "Motsameta is an important spiritual stop in the Kutaisi area and part of the region's core heritage circuit.",
+  "activities": [
+    "Entry - free"
+  ],
+  "details": [
+    "The source folder includes image assets for Motsameta Monastery, while the info text file is currently empty.",
+    "This destination is included as a mandatory place in the site dataset and appears in list and detail pages."
+  ],
+  "images": [
+    "/content/img/places/motsameta-monastery/motsameta-monastery-01.jpg",
+    "/content/img/places/motsameta-monastery/motsameta-monastery-02.jpg",
+    "/content/img/places/motsameta-monastery/motsameta-monastery-03.jpg",
+    "/content/img/places/motsameta-monastery/motsameta-monastery-04.jpg"
+  ],
+  "seo": {
+    "title": "Motsameta Monastery",
+    "description": "A historic monastery near Kutaisi, frequently paired with Gelati and Bagrati tours.",
+    "canonicalPath": "/places-to-visit/motsameta-monastery",
+    "image": "/content/img/places/motsameta-monastery/motsameta-monastery-01.jpg",
+    "ogTitle": "Motsameta Monastery",
+    "ogDescription": "A historic monastery near Kutaisi, frequently paired with Gelati and Bagrati tours.",
+    "ogImage": "/content/img/places/motsameta-monastery/motsameta-monastery-01.jpg"
+  }
+}
+

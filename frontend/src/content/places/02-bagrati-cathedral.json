@@ -1,0 +1,36 @@
+﻿{
+  "id": "bagrati-cathedral",
+  "slug": "bagrati-cathedral",
+  "name": "Bagrati Cathedral",
+  "category": "monasteries",
+  "location": "Kutaisi, Imereti (Ukimerioni Hill)",
+  "entryFee": "Free",
+  "summary": "Iconic cathedral built in 1003 and a major symbol of Georgian unity and culture.",
+  "description": "Bagrati Cathedral is one of Kutaisi's key landmarks, known for historical importance, symbolic value, and commanding city views.",
+  "activities": [
+    "Entry - free"
+  ],
+  "details": [
+    "Bagrati Cathedral was built in 1003 during the reign of Bagrat III and became a major monument of Georgian culture and state symbolism.",
+    "Historical records describe how representatives from many parts of the country gathered for the cathedral blessing, giving it national significance.",
+    "The cathedral was damaged in the 17th century during Ottoman attacks and later further affected in 1770 fighting, but it has since been restored.",
+    "Architecturally, the temple is a triconch-type cross-domed structure with a large interior, two-storey sections, carved gates, and historically rich details.",
+    "The site entered the UNESCO World Heritage list in 1994 and was later removed after restoration."
+  ],
+  "videoUrl": "https://youtu.be/4eMDdWia5V4?list=TLGGRUEmLirPlVgxODAyMjAyNg",
+  "images": [
+    "/content/img/places/bagrati-cathedral/bagrati-cathedral-01.jpg",
+    "/content/img/places/bagrati-cathedral/bagrati-cathedral-02.jpg",
+    "/content/img/places/bagrati-cathedral/bagrati-cathedral-03.jpg",
+    "/content/img/places/bagrati-cathedral/bagrati-cathedral-04.jpg"
+  ],
+  "seo": {
+    "title": "Bagrati Cathedral",
+    "description": "Iconic cathedral built in 1003 and a major symbol of Georgian unity and culture.",
+    "canonicalPath": "/places-to-visit/bagrati-cathedral",
+    "image": "/content/img/places/bagrati-cathedral/bagrati-cathedral-01.jpg",
+    "ogTitle": "Bagrati Cathedral",
+    "ogDescription": "Iconic cathedral built in 1003 and a major symbol of Georgian unity and culture.",
+    "ogImage": "/content/img/places/bagrati-cathedral/bagrati-cathedral-01.jpg"
+  }
+}

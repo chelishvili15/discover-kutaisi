@@ -1,0 +1,238 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import BookingForms from "@/components/BookingForms.astro";
+import RichDetailsRenderer from "@/components/RichDetailsRenderer.astro";
+import ShareActions from "@/components/ShareActions.astro";
+import StructuredData from "@/components/StructuredData.astro";
+import { icons } from "@/data/icons";
+import { site } from "@/data/site";
+import { tours } from "@/data/tours";
+import { formatUsdGel } from "@/lib/currency";
+import { buildBreadcrumbSchema, buildTouristTripSchema, toAbsoluteUrl } from "@/lib/seo";
+
+export function getStaticPaths() {
+  return tours.map((tour) => ({ params: { slug: tour.slug }, props: { tour } }));
+}
+
+const { tour } = Astro.props;
+const siteUrl = `https://${site.domain}`;
+const canonicalUrl = toAbsoluteUrl(tour.seo.canonicalPath, siteUrl);
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Home", url: siteUrl },
+  { name: "Tours", url: toAbsoluteUrl("/tours", siteUrl) },
+  { name: tour.title, url: canonicalUrl }
+]);
+const touristTripSchema = buildTouristTripSchema(tour, canonicalUrl);
+const heroHeading = tour.title.trim().length < 20 ? `${tour.title} in Georgia` : tour.title;
+const DEFAULT_TOUR_MAP_EMBED =
+  "https://www.google.com/maps/d/u/0/embed?mid=105JDWQtrBaF-2nbA3sCLdq5o8n9TBrM&ehbc=2E312F&noprof=1";
+---
+
+<BaseLayout
+  title={tour.seo.title}
+  description={tour.seo.description}
+  canonicalPath={tour.seo.canonicalPath}
+  image={tour.seo.image}
+  ogTitle={tour.seo.ogTitle}
+  ogDescription={tour.seo.ogDescription}
+  ogImage={tour.seo.ogImage}
+>
+  <StructuredData data={[breadcrumbSchema, touristTripSchema]} />
+  <section
+    class="hero-bg hero-image-default hero-overlay-40 relative h-[380px] overflow-hidden"
+    
+  >
+    <div class="container-shell absolute inset-x-0 bottom-8 text-white">
+      <h1 class="text-4xl font-semibold">{heroHeading}</h1>
+      <p class="mt-2 text-sm">
+        Duration: {tour.durationLabel} &bull; From <span class="font-bold text-brandOrange">{formatUsdGel(tour.priceFromGel)}</span> per person
+      </p>
+    </div>
+  </section>
+  <section class="container-shell py-12">
+    <div class="space-y-8">
+      <article>
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-9 w-9 shrink-0 items-center justify-center">
+            <img src={icons.tourDetail.overview} alt="" class="h-5 w-5 object-contain" loading="lazy" aria-hidden="true" />
+          </span>
+          <h2 class="text-2xl font-semibold text-brandDark">Overview</h2>
+        </div>
+        <p class="mt-3 text-gray-700">{tour.description}</p>
+      </article>
+
+      <article>
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-9 w-9 shrink-0 items-center justify-center">
+            <img src={icons.tourDetail.itinerary} alt="" class="h-5 w-5 object-contain" loading="lazy" aria-hidden="true" />
+          </span>
+          <h2 class="text-2xl font-semibold text-brandDark">Itinerary</h2>
+        </div>
+        <div class="mt-3 grid gap-4 lg:grid-cols-2 lg:items-start">
+          <div>
+            <div class="relative">
+              <div
+                id="itineraryCollapse"
+                data-collapsed-height="360"
+                class="transition-[max-height] duration-300 ease-in-out"
+              >
+                <ul class="space-y-0">
+                  {
+                    tour.itinerary.map((stop, index) => {
+                      const activities = stop.activities ?? [];
+                      return (
+                      <li class="relative pl-10 pb-4">
+                        {index < tour.itinerary.length - 1 && (
+                          <span
+                            class="absolute left-[14px] top-8 h-[calc(100%-0.25rem)] w-0 border-l-4 border-dotted border-black/70"
+                            aria-hidden="true"
+                          ></span>
+                        )}
+                        <span class="absolute left-0 top-3 inline-flex h-7 w-7 items-center justify-center rounded-full bg-white" aria-hidden="true">
+                          <img src={stop.icon} alt="" class="h-6 w-6 object-contain" loading="lazy" />
+                        </span>
+                        <div class="rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-sm space-y-3">
+                          {stop.details.length > 0 && <RichDetailsRenderer blocks={stop.details} />}
+                          {activities.length > 0 && (
+                            <ul class="space-y-2 pl-5">
+                              {activities.map((activity) => {
+                                return (
+                                  <li class="relative pl-8">
+                                    <span class="absolute left-0 top-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-white" aria-hidden="true">
+                                      <img src={activity.icon} alt="" class="h-5 w-5 object-contain" loading="lazy" />
+                                    </span>
+                                    <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
+                                      {activity.details.length > 0 && <RichDetailsRenderer blocks={activity.details} />}
+                                    </div>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          )}
+                        </div>
+                      </li>
+                    );
+                    })
+                  }
+                </ul>
+              </div>
+              <div id="itineraryFade" class="pointer-events-none absolute inset-x-0 bottom-0 hidden h-20 bg-gradient-to-t from-white to-transparent"></div>
+            </div>
+            <button
+              id="itineraryToggle"
+              type="button"
+              class="mt-3 hidden text-sm font-semibold text-brandOrange transition hover:text-brandDark hover:underline"
+              aria-controls="itineraryCollapse"
+              aria-expanded="false"
+            >
+              See more
+            </button>
+          </div>
+          <div class="overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
+            <iframe
+              src={tour.mapEmbedUrl ?? DEFAULT_TOUR_MAP_EMBED}
+              class="h-[360px] w-full"
+              loading="lazy"
+              title="Tour itinerary map"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-9 w-9 shrink-0 items-center justify-center">
+            <img src={icons.tourDetail.included} alt="" class="h-5 w-5 object-contain" loading="lazy" aria-hidden="true" />
+          </span>
+          <h2 class="text-2xl font-semibold text-brandDark">What's Included</h2>
+        </div>
+        <ul class="mt-3 list-disc space-y-1 pl-5">{tour.includes.map((item) => <li>{item}</li>)}</ul>
+      </article>
+
+      <article>
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-9 w-9 shrink-0 items-center justify-center">
+            <img src={icons.tourDetail.excluded} alt="" class="h-5 w-5 object-contain" loading="lazy" aria-hidden="true" />
+          </span>
+          <h2 class="text-2xl font-semibold text-brandDark">What's Not Included</h2>
+        </div>
+        <ul class="mt-3 list-disc space-y-1 pl-5">{tour.excludes.map((item) => <li>{item}</li>)}</ul>
+      </article>
+
+      <article>
+        <div class="flex items-center gap-3">
+          <span class="inline-flex h-9 w-9 shrink-0 items-center justify-center">
+            <img src={icons.tourDetail.important} alt="" class="h-5 w-5 object-contain" loading="lazy" aria-hidden="true" />
+          </span>
+          <h2 class="text-2xl font-semibold text-brandDark">Important Information</h2>
+        </div>
+        <ul class="mt-3 list-disc space-y-1 pl-5">{tour.importantInfo.map((item) => <li>{item}</li>)}</ul>
+      </article>
+    </div>
+    <aside class="mt-10">
+      <BookingForms mode="tour" />
+      <div class="mt-6">
+        <ShareActions url={canonicalUrl} title={tour.title} />
+      </div>
+    </aside>
+  </section>
+
+  <script>
+    const itineraryCollapse = document.getElementById("itineraryCollapse");
+    const itineraryFade = document.getElementById("itineraryFade");
+    const itineraryToggle = document.getElementById("itineraryToggle");
+
+    if (itineraryCollapse && itineraryFade && itineraryToggle) {
+      const collapsedHeight = Number.parseInt(itineraryCollapse.getAttribute("data-collapsed-height") ?? "360", 10);
+      let isExpanded = false;
+
+      const setCollapsedState = () => {
+        itineraryCollapse.style.maxHeight = `${collapsedHeight}px`;
+        itineraryCollapse.classList.add("overflow-hidden");
+        itineraryFade.classList.remove("hidden");
+        itineraryToggle.textContent = "See more";
+        itineraryToggle.setAttribute("aria-expanded", "false");
+      };
+
+      const setExpandedState = () => {
+        itineraryCollapse.style.maxHeight = `${itineraryCollapse.scrollHeight}px`;
+        itineraryCollapse.classList.add("overflow-hidden");
+        itineraryFade.classList.add("hidden");
+        itineraryToggle.textContent = "See less";
+        itineraryToggle.setAttribute("aria-expanded", "true");
+      };
+
+      const refresh = () => {
+        const isCollapsible = itineraryCollapse.scrollHeight > collapsedHeight + 1;
+        if (!isCollapsible) {
+          itineraryCollapse.style.maxHeight = "";
+          itineraryCollapse.classList.remove("overflow-hidden");
+          itineraryFade.classList.add("hidden");
+          itineraryToggle.classList.add("hidden");
+          itineraryToggle.setAttribute("aria-expanded", "false");
+          return;
+        }
+
+        itineraryToggle.classList.remove("hidden");
+        if (isExpanded) {
+          setExpandedState();
+          return;
+        }
+        setCollapsedState();
+      };
+
+      itineraryToggle.addEventListener("click", () => {
+        isExpanded = !isExpanded;
+        if (isExpanded) {
+          setExpandedState();
+          return;
+        }
+        setCollapsedState();
+      });
+
+      window.addEventListener("resize", refresh);
+      refresh();
+    }
+  </script>
+</BaseLayout>

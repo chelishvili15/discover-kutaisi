@@ -1,0 +1,291 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import TourCard from "@/components/TourCard.astro";
+import PlaceCard from "@/components/PlaceCard.astro";
+import TestimonialCard from "@/components/TestimonialCard.astro";
+import BlogCard from "@/components/BlogCard.astro";
+import StructuredData from "@/components/StructuredData.astro";
+import { publishedBlogPosts } from "@/data/blog";
+import { tours } from "@/data/tours";
+import { places } from "@/data/places";
+import { testimonials } from "@/data/testimonials";
+import { homePage } from "@/data/pages";
+import { site } from "@/data/site";
+import { getTransferFromPriceGel, getTransferPricingRow, transferFeatures, transferPricingTable, transferTours } from "@/data/transfers";
+import { icons } from "@/data/icons";
+import { formatUsdGel } from "@/lib/currency";
+import { buildOrganizationSchema } from "@/lib/seo";
+const { seo, content } = homePage;
+const siteUrl = `https://${site.domain}`;
+const organizationSchema = buildOrganizationSchema(site, siteUrl);
+const featuredTestimonialIds = new Set(["t1", "t2", "t6"]);
+const featuredTestimonials = testimonials.filter((item) => featuredTestimonialIds.has(item.id));
+const popularTransferTours = transferTours.slice(0, 5).filter((tour) => tour.to !== "Telavi");
+const popularTransferPricingRows = popularTransferTours
+  .map((tour) => getTransferPricingRow(tour))
+  .filter((row): row is NonNullable<typeof row> => Boolean(row));
+
+const formatGelCell = (value?: string): string => {
+  if (!value?.trim()) {
+    return "-";
+  }
+  if (/^\d+(\.\d+)?$/.test(value.trim())) {
+    return formatUsdGel(Number(value.trim()));
+  }
+  return value;
+};
+---
+
+<BaseLayout
+  title={seo.title}
+  description={seo.description}
+  canonicalPath={seo.canonicalPath}
+  image={seo.image}
+  ogTitle={seo.ogTitle}
+  ogDescription={seo.ogDescription}
+  ogImage={seo.ogImage}
+>
+  <StructuredData data={organizationSchema} />
+  <section
+    class="hero-bg hero-image-default hero-overlay-45 relative min-h-screen overflow-hidden"
+    
+  >
+    <div class="container-shell relative flex min-h-screen items-center justify-center text-center text-white">
+      <div>
+        <span class="inline-flex rounded-full border border-amber-300 bg-amber-200 px-3 py-1 text-xs font-semibold tracking-wide text-amber-900">
+          {content.heroBadge}
+        </span>
+        <h1 class="mx-auto max-w-2xl text-5xl font-bold">{content.heroTitle}</h1>
+        <p class="mx-auto mt-4 max-w-xl text-[1.3rem]">{content.heroSubtitle}</p>
+        <p class="mx-auto mt-4 max-w-xl text-[1rem] text-gray-300">
+          {content.heroDescription}
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+          <a href="/tours" class="rounded-full bg-brandOrange px-6 py-3 font-semibold">{content.exploreToursLabel}</a>
+          <a href="/transfers" class="rounded-full border border-white px-6 py-3 font-semibold">{content.bookTransferLabel}</a>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-14 left-1/2 -translate-x-1/2 text-white">
+      <div class="flex items-center animate-bounce">
+        <svg viewBox="0 0 24 24" class="h-7 w-7 fill-none stroke-current" aria-hidden="true">
+          <path d="M12 4v11" stroke-width="2.2" stroke-linecap="round"></path>
+          <path d="M7 12.5 12 17.5l5-5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-shell py-16">
+    <span class="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold tracking-wide text-amber-800">
+      {content.featuredBadge}
+    </span>
+    <h2 class="section-title">{content.popularToursTitle}</h2>
+    <p class="section-copy !text-gray-500">{content.popularToursSubtitle}</p>
+    <div class="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+      {tours.slice(0, 4).map((tour) => <TourCard tour={tour} />)}
+    </div>
+    <div class="mt-8 text-center">
+      <a href="/tours" class="inline-block rounded-full bg-brandOrange px-6 py-3 text-sm font-semibold text-white transition hover:bg-brandDark">
+        See All Tours
+      </a>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 py-16">
+    <div class="container-shell">
+      <span class="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold tracking-wide text-amber-800">
+        {content.whyBadge}
+      </span>
+      <h2 class="section-title">{content.whyTitle}</h2>
+      <p class="section-copy !text-gray-500">{content.whySubtitle}</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <article class="flex flex-col items-center rounded-xl bg-white p-6 text-center shadow-sm">
+          <img src={icons.home.why.guides} alt={content.whyItems[0]?.title ?? "Guides icon"} class="h-8 w-8 object-contain" loading="lazy" />
+          <p class="mt-3 font-semibold">{content.whyItems[0]?.title}</p>
+          <p class="mt-2 text-sm text-gray-500">{content.whyItems[0]?.description}</p>
+        </article>
+        <article class="flex flex-col items-center rounded-xl bg-white p-6 text-center shadow-sm">
+          <img src={icons.home.why.transport} alt={content.whyItems[1]?.title ?? "Transport icon"} class="h-8 w-8 object-contain" loading="lazy" />
+          <p class="mt-3 font-semibold">{content.whyItems[1]?.title}</p>
+          <p class="mt-2 text-sm text-gray-500">{content.whyItems[1]?.description}</p>
+        </article>
+        <article class="flex flex-col items-center rounded-xl bg-white p-6 text-center shadow-sm">
+          <img src={icons.home.why.flexibility} alt={content.whyItems[2]?.title ?? "Flexibility icon"} class="h-8 w-8 object-contain" loading="lazy" />
+          <p class="mt-3 font-semibold">{content.whyItems[2]?.title}</p>
+          <p class="mt-2 text-sm text-gray-500">{content.whyItems[2]?.description}</p>
+        </article>
+        <article class="flex flex-col items-center rounded-xl bg-white p-6 text-center shadow-sm">
+          <img src={icons.home.why.prices} alt={content.whyItems[3]?.title ?? "Prices icon"} class="h-8 w-8 object-contain" loading="lazy" />
+          <p class="mt-3 font-semibold">{content.whyItems[3]?.title}</p>
+          <p class="mt-2 text-sm text-gray-500">{content.whyItems[3]?.description}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-shell py-16">
+    <span class="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold tracking-wide text-amber-800">
+      {content.highlightsBadge}
+    </span>
+    <h2 class="section-title">{content.placesTitle}</h2>
+    <p class="section-copy !text-gray-500">{content.placesSubtitle}</p>
+    <div class="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {places.slice(0, 6).map((place) => <PlaceCard place={place} />)}
+    </div>
+    <div class="mt-8 text-center">
+      <a
+        href="/places-to-visit"
+        class="inline-block rounded-full bg-brandOrange px-6 py-3 text-sm font-semibold text-white transition hover:bg-brandDark"
+      >
+        {content.viewAllPlacesLabel}
+      </a>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 py-16">
+    <div class="container-shell">
+      <span class="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold tracking-wide text-amber-800">
+        {content.transportBadge}
+      </span>
+      <h2 class="section-title">{content.transfersTitle}</h2>
+      <p class="section-copy !text-gray-500">{content.transfersSubtitle}</p>
+    </div>
+    <div class="container-shell mt-8 grid gap-8 md:grid-cols-2">
+      <article class="rounded-xl border border-gray-200 bg-white p-6">
+        <h2 class="text-2xl font-semibold text-brandDark">{content.popularTransfersTitle}</h2>
+        <ul class="mt-4 space-y-2">
+          {
+            popularTransferTours.map((tour) => (
+              <li class="flex items-center gap-3 rounded-lg border border-gray-200 px-3 py-2">
+                <span class="inline-flex h-9 w-9 shrink-0 items-center justify-center">
+                  <img src={icons.transfers.popularRoutes} alt="Popular route" class="h-6 w-6 object-contain" loading="lazy" />
+                </span>
+                <div class="flex-1 text-sm">
+                  <div class="grid grid-cols-[1fr_auto_1fr] items-center gap-2">
+                    <span class="font-semibold text-gray-900">{tour.from}</span>
+                    <span class="inline-flex justify-self-center" aria-hidden="true">
+                      <img src={icons.transfers.tourDirection} alt="Direction arrow" class="h-4 w-4 object-contain" loading="lazy" />
+                    </span>
+                    <span class="justify-self-end font-semibold text-gray-900">{tour.to}</span>
+                  </div>
+                  <div class="mt-1 flex items-center justify-between text-xs">
+                    <span class="text-gray-600">Duration: <span class="font-medium text-gray-800">{tour.duration}</span></span>
+                    <span class="text-gray-600">From: <span class="font-semibold text-brandOrange">{formatUsdGel(getTransferFromPriceGel(tour))}</span></span>
+                  </div>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </article>
+      <article class="rounded-xl border border-gray-200 bg-white p-6">
+        <h2 class="text-2xl font-semibold text-brandDark">{content.serviceFeaturesTitle}</h2>
+        <ul class="mt-4 space-y-3 text-sm text-gray-700">
+          {
+            transferFeatures.slice(0, 4).map((feature) => (
+              <li class="flex items-center gap-3 rounded-lg border border-gray-100 px-3 py-2">
+                <span class="inline-flex h-9 w-9 shrink-0 items-center justify-center">
+                  <img src={icons.home.serviceFeatures} alt={feature.title} class="h-6 w-6 object-contain" loading="lazy" />
+                </span>
+                <div>
+                  <p class="text-base font-semibold text-gray-900">{feature.title}</p>
+                  <p class="text-xs text-gray-500">{feature.description}</p>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </article>
+    </div>
+    {
+      transferPricingTable && (
+        <div class="container-shell mt-8">
+          <article class="rounded-xl border border-gray-200 bg-white p-6">
+            <h3 class="text-xl font-semibold text-brandDark">{transferPricingTable.title}</h3>
+            <div class="mt-4 overflow-x-auto">
+              <table class="min-w-[680px] w-full border-collapse text-left text-sm">
+                <thead>
+                  <tr class="border-b border-gray-200 bg-gray-50">
+                    <th class="px-4 py-3 font-semibold text-gray-900">{transferPricingTable.columnRoute}</th>
+                    <th class="px-4 py-3 font-semibold text-gray-900">{transferPricingTable.column1To3}</th>
+                    <th class="px-4 py-3 font-semibold text-gray-900">{transferPricingTable.column4To7}</th>
+                    <th class="px-4 py-3 font-semibold text-gray-900">{transferPricingTable.column7Plus}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {popularTransferPricingRows.map((row) => (
+                    <tr class="border-b border-gray-100 last:border-0">
+                      <td class="px-4 py-3 font-medium text-gray-900">{row.route}</td>
+                      <td class="px-4 py-3 text-gray-900">{formatGelCell(row.price1To3)}</td>
+                      <td class="px-4 py-3 text-gray-900">{formatGelCell(row.price4To7)}</td>
+                      <td class="px-4 py-3 text-gray-900">{formatGelCell(row.price7Plus ?? "Price on request")}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            {transferPricingTable.note && <p class="mt-4 text-sm text-gray-600">{transferPricingTable.note}</p>}
+          </article>
+        </div>
+      )
+    }
+    <div class="container-shell mt-8 text-center">
+      <a href="/transfers" class="inline-block rounded-full bg-brandOrange px-6 py-3 text-sm font-semibold text-white transition hover:bg-brandDark">
+        See All Transfers
+      </a>
+    </div>
+  </section>
+
+  <section class="container-shell py-16">
+    <span class="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold tracking-wide text-amber-800">
+      {content.testimonialsBadge}
+    </span>
+    <h2 class="section-title">{content.testimonialsTitle}</h2>
+    <p class="section-copy !text-gray-500">{content.testimonialsSubtitle}</p>
+    <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      {featuredTestimonials.map((item) => <TestimonialCard item={item} />)}
+    </div>
+    <div class="mt-8 text-center">
+      <a
+        href="/reviews"
+        class="inline-block rounded-full bg-brandOrange px-6 py-3 text-sm font-semibold text-white transition hover:bg-brandDark"
+      >
+        See All Reviews
+      </a>
+    </div>
+  </section>
+
+  <section class="container-shell py-16">
+    <span class="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold tracking-wide text-amber-800">
+      {content.blogBadge}
+    </span>
+    <h2 class="section-title">{content.blogTitle}</h2>
+    <p class="section-copy !text-gray-500">{content.blogSubtitle}</p>
+    <div class="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {publishedBlogPosts.slice(0, 3).map((post) => <BlogCard post={post} />)}
+    </div>
+    <div class="mt-8 text-center">
+      <a href="/blog" class="inline-block rounded-full bg-brandOrange px-6 py-3 text-sm font-semibold text-white transition hover:bg-brandDark">
+        {content.blogCtaLabel}
+      </a>
+    </div>
+  </section>
+
+  <section class="relative -mb-16 flex min-h-[110vh] items-center overflow-hidden">
+    <img src="/content/img/cta-bg-kutaisi.jpg" alt="Kutaisi city panorama at sunset" class="absolute inset-0 h-full w-full object-cover" />
+    <div class="absolute inset-0 bg-brandDark/60"></div>
+    <div class="container-shell relative text-center text-white">
+      <span class="inline-flex rounded-full border border-amber-300 bg-amber-200 px-3 py-1 text-xs font-semibold tracking-wide text-amber-900">
+        {content.ctaBadge}
+      </span>
+      <h2 class="text-4xl font-semibold">{content.ctaTitle}</h2>
+      <p class="mt-3">{content.ctaDescription}</p>
+      <a href="/contact" class="mt-6 inline-block rounded-full bg-brandOrange px-6 py-3 font-semibold text-white">
+        {content.ctaButtonLabel}
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+

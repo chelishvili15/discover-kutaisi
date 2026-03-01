@@ -1,0 +1,60 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import PlaceCard from "@/components/PlaceCard.astro";
+import PlaceFilters from "@/components/PlaceFilters.astro";
+import StructuredData from "@/components/StructuredData.astro";
+import { placesIndexPage } from "@/data/pages";
+import { site } from "@/data/site";
+import { places } from "@/data/places";
+import { buildBreadcrumbSchema, toAbsoluteUrl } from "@/lib/seo";
+const { seo, content } = placesIndexPage;
+const siteUrl = `https://${site.domain}`;
+const canonicalUrl = toAbsoluteUrl(seo.canonicalPath, siteUrl);
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Home", url: siteUrl },
+  { name: "Places to Visit", url: canonicalUrl }
+]);
+---
+
+<BaseLayout
+  title={seo.title}
+  description={seo.description}
+  canonicalPath={seo.canonicalPath}
+  image={seo.image}
+  ogTitle={seo.ogTitle}
+  ogDescription={seo.ogDescription}
+  ogImage={seo.ogImage}
+>
+  <StructuredData data={breadcrumbSchema} />
+  <section
+    class="hero-bg hero-image-default hero-overlay-45 relative overflow-hidden py-20"
+    
+  >
+    <div class="container-shell relative text-white">
+      <h1 class="section-title !text-white">{content.heroTitle}</h1>
+      <p class="mt-3 max-w-2xl text-sm text-gray-100">{content.heroSubtitle}</p>
+    </div>
+  </section>
+  <section class="container-shell py-10">
+    <PlaceFilters />
+    <div id="placeGrid" class="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {places.map((place) => <div data-place-category={place.category}><PlaceCard place={place} /></div>)}
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const category = document.getElementById("placeCategory") as HTMLSelectElement | null;
+  const cards = Array.from(document.querySelectorAll<HTMLElement>("[data-place-category]"));
+  const apply = () => {
+    if (!category) return;
+    const value = category.value;
+    cards.forEach((el) => {
+      const placeCategory = el.getAttribute("data-place-category");
+      el.style.display = value === "all" || placeCategory === value ? "" : "none";
+    });
+  };
+  category?.addEventListener("input", apply);
+</script>
+
+

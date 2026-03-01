@@ -1,0 +1,82 @@
+---
+import type { ItineraryDetail, ItinerarySpan } from "@/types/content";
+
+interface Props {
+  blocks: ItineraryDetail[];
+}
+
+const { blocks } = Astro.props;
+
+const escapeHtml = (value: string): string =>
+  value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+
+const toSpanHtml = (span: ItinerarySpan): string => {
+  const sizeClassMap: Record<NonNullable<ItinerarySpan["size"]>, string> = {
+    xs: "text-xs",
+    sm: "text-sm",
+    base: "text-base",
+    lg: "text-lg"
+  };
+  const colorClassMap: Record<NonNullable<ItinerarySpan["color"]>, string> = {
+    default: "text-gray-700",
+    muted: "text-gray-600",
+    dark: "text-brandDark",
+    brand: "text-brandOrange",
+    white: "text-white"
+  };
+
+  const sizeClass = span.size ? sizeClassMap[span.size] : "";
+  const colorClass = span.color ? colorClassMap[span.color] : "";
+  const toneClasses = [sizeClass, colorClass].filter(Boolean).join(" ");
+
+  let content = escapeHtml(span.text);
+  if (span.bold) {
+    content = `<strong>${content}</strong>`;
+  }
+  if (span.italic) {
+    content = `<em>${content}</em>`;
+  }
+  if (span.href) {
+    const linkTone = toneClasses.length > 0 ? toneClasses : "text-brandOrange";
+    return `<a class="font-semibold ${linkTone} transition hover:text-brandDark hover:underline" href="${escapeHtml(span.href)}">${content}</a>`;
+  }
+  if (toneClasses.length > 0) {
+    return `<span class="${toneClasses}">${content}</span>`;
+  }
+  return content;
+};
+
+const toBlockHtml = (block: ItineraryDetail): string => {
+  if (typeof block === "string") {
+    return block;
+  }
+
+  if (block.type === "heading") {
+    const headingTag = block.level === 3 ? "h3" : "h2";
+    return `<${headingTag}>${escapeHtml(block.text)}</${headingTag}>`;
+  }
+
+  if (block.type === "paragraph") {
+    return `<p>${block.spans.map(toSpanHtml).join("")}</p>`;
+  }
+
+  const listTag = block.ordered ? "ol" : "ul";
+  const items = block.items
+    .map((item) => `<li>${item.map(toSpanHtml).join("")}</li>`)
+    .join("");
+  return `<${listTag}>${items}</${listTag}>`;
+};
+---
+
+<div class="space-y-3">
+  {
+    blocks.map((block) => (
+      <div class="prose prose-sm max-w-none prose-headings:text-brandDark prose-p:text-gray-700 prose-li:text-gray-700" set:html={toBlockHtml(block)}></div>
+    ))
+  }
+</div>

@@ -1,0 +1,99 @@
+---
+import { navLinks, site } from "@/data/site";
+
+const currentPath = Astro.url.pathname;
+const primaryLinks = [
+  ...navLinks.filter((item) => item.href !== "/about" && item.href !== "/contact"),
+  { href: "/tours", label: "Tours" },
+  { href: "/transfers", label: "Transfers" },
+  { href: "/places-to-visit", label: "Places" }
+];
+const trailingLinks = navLinks.filter((item) => item.href === "/contact" || item.href === "/about");
+const headerNavLinks = [...primaryLinks, ...trailingLinks];
+
+const isActiveNavLink = (href: string): boolean => {
+  if (href === "/") {
+    return currentPath === "/";
+  }
+
+  return currentPath === href || currentPath.startsWith(`${href}/`);
+};
+
+const activeHeaderLink = headerNavLinks.find((item) => isActiveNavLink(item.href));
+const currentPageLabel = activeHeaderLink?.label ?? "Page";
+---
+
+<input id="mobile-nav-toggle" type="checkbox" class="peer hidden md:hidden" />
+
+<header class="sticky top-0 z-40 border-b border-white/15 bg-[#0f172a]/95 shadow-[0_8px_18px_rgba(17,24,39,0.22)] backdrop-blur peer-checked:[&_.menu-icon-open]:hidden peer-checked:[&_.menu-icon-close]:block">
+  <div class="container-shell flex items-center gap-2 py-2 md:gap-4 md:py-3">
+    <a href="/" class="flex shrink-0 items-center">
+      <img src={site.logoPath} alt={`${site.name} logo`} class="h-8 w-auto md:h-9" />
+    </a>
+    <p class="font-title flex-1 text-center text-sm font-semibold text-white md:hidden">
+      <span class="inline-flex items-center gap-1 rounded-full border border-white/20 bg-white/10 px-3 py-1">
+        <span class="h-1.5 w-1.5 rounded-full bg-brandOrange" aria-hidden="true"></span>
+        <span class="text-white/90">Now Viewing:</span>
+        <span class="text-brandOrange">{currentPageLabel}</span>
+      </span>
+    </p>
+
+    <label
+      for="mobile-nav-toggle"
+      class="ml-auto flex h-10 w-10 cursor-pointer items-center justify-center rounded-md border border-white/20 bg-white/10 text-white transition hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f172a] md:hidden"
+      aria-label="Toggle menu"
+    >
+      <img
+        src="/content/img/icons/three-horizontal-lines-icon.svg"
+        alt="Open menu"
+        class="menu-icon-open h-5 w-5 object-contain"
+        loading="lazy"
+      />
+      <img
+        src="/content/img/icons/close-icon.svg"
+        alt="Close menu"
+        class="menu-icon-close hidden h-5 w-5 object-contain"
+        loading="lazy"
+      />
+    </label>
+
+    <nav class="hidden min-w-0 flex-1 items-center justify-center gap-3 md:flex lg:gap-5">
+      {
+        headerNavLinks.map((item) => (
+          <a
+            href={item.href}
+            class:list={[
+              "font-title relative rounded-full border px-2 py-1 text-center text-xs font-medium transition duration-200 lg:px-3 lg:py-1.5 lg:text-sm",
+              isActiveNavLink(item.href)
+                ? "border-brandOrange/40 bg-brandOrange/20 text-white shadow-[inset_0_-2px_0_0_#e49c24] hover:bg-brandOrange/30"
+                : "border-transparent text-gray-200 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/10 hover:text-white"
+            ]}
+            aria-current={isActiveNavLink(item.href) ? "page" : undefined}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>
+
+<label for="mobile-nav-toggle" class="fixed inset-0 z-40 hidden bg-transparent peer-checked:block md:hidden" aria-hidden="true"></label>
+<nav class="fixed right-4 top-14 z-50 hidden min-w-[13rem] rounded-xl border border-white/20 bg-[#0f172a] p-2 shadow-2xl peer-checked:block md:hidden">
+  {
+    headerNavLinks.map((item) => (
+      <a
+        href={item.href}
+        class:list={[
+          "font-title block rounded-lg px-3 py-2 text-sm transition",
+          isActiveNavLink(item.href)
+            ? "bg-brandOrange/20 text-white"
+            : "text-gray-200 hover:bg-white/10 hover:text-white"
+        ]}
+        aria-current={isActiveNavLink(item.href) ? "page" : undefined}
+      >
+        {item.label}
+      </a>
+    ))
+  }
+</nav>

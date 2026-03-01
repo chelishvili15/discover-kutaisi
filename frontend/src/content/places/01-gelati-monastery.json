@@ -1,0 +1,35 @@
+﻿{
+  "id": "gelati-monastery",
+  "slug": "gelati-monastery",
+  "name": "Gelati Monastery",
+  "category": "monasteries",
+  "location": "Imereti region, 11 km from Kutaisi",
+  "entryFee": "Free",
+  "summary": "UNESCO-listed medieval monastery complex founded in 1106 by David the Builder.",
+  "description": "Gelati Monastery was one of Georgia's most important cultural and educational centers, with a rich architectural and spiritual legacy.",
+  "activities": [
+    "Entry - free"
+  ],
+  "details": [
+    "Gelati Monastery is in Imereti, about 11 km from Kutaisi. It was founded by David the Builder in 1106 and later completed by his son Demeter.",
+    "The ensemble includes the Church of the Assumption, St. George's Church, St. Nicholas Church, bell tower, academy and enclosure wall. Gelati became one of the largest cultural and educational centers in Georgia.",
+    "In the 12th-15th centuries the monastery held strong autonomy. It suffered damage during Ottoman invasions, then was restored by the kings of Imereti, including Bagrat III and George II. Later restoration work continued across multiple periods.",
+    "Gelati preserves important examples of Georgian monumental painting and mosaic. The architectural complex includes domed and two-storey structures, decorative arcades and significant liturgical spaces.",
+    "The complex is included on the UNESCO World Heritage list."
+  ],
+  "videoUrl": "https://youtu.be/nwiGdYsE6Uo?list=TLGGpO6gIJBchFQxODAyMjAyNg",
+  "images": [
+    "/content/img/places/gelati-monastery/gelati-monastery-01.jpg",
+    "/content/img/places/gelati-monastery/gelati-monastery-02.jpg",
+    "/content/img/places/gelati-monastery/gelati-monastery-03.jpg"
+  ],
+  "seo": {
+    "title": "Gelati Monastery",
+    "description": "UNESCO-listed medieval monastery complex founded in 1106 by David the Builder.",
+    "canonicalPath": "/places-to-visit/gelati-monastery",
+    "image": "/content/img/places/gelati-monastery/gelati-monastery-01.jpg",
+    "ogTitle": "Gelati Monastery",
+    "ogDescription": "UNESCO-listed medieval monastery complex founded in 1106 by David the Builder.",
+    "ogImage": "/content/img/places/gelati-monastery/gelati-monastery-01.jpg"
+  }
+}

@@ -1,0 +1,37 @@
+﻿{
+  "id": "prometheus-cave",
+  "slug": "prometheus-cave",
+  "name": "Prometheus Cave",
+  "category": "caves",
+  "location": "Tskaltubo municipality, Imereti",
+  "entryFee": "25 ₾",
+  "summary": "Large karst cave system with illuminated halls, stalactites, and underground tours.",
+  "description": "Prometheus Cave is one of the region's signature natural attractions, combining dramatic geology with accessible visitor paths.",
+  "activities": [
+    "Entry - 25 ₾"
+  ],
+  "details": [
+    "Prometheus Cave is a natural monument in Tskaltubo municipality, with a total length of about 1.8 km and sections formed roughly 40 meters below ground.",
+    "The cave is estimated to be 60-70 million years old and is known for shaped karst formations, stalactites and stalagmites.",
+    "It is located near Kumistavi village in the Kuma River basin. Of the 22 discovered halls, 6 are open to visitors.",
+    "Visitors can walk approximately 1420 meters through selected halls and, in designated sections, enjoy a boat experience.",
+    "Distinct features include petrified waterfalls, hanging stone curtains and helictites."
+  ],
+  "videoUrl": "https://youtu.be/W1d6CWjswdM?list=TLGGVEsyWRYAf7gxODAyMjAyNg",
+  "images": [
+    "/content/img/places/prometheus-cave/prometheus-cave-01.jpg",
+    "/content/img/places/prometheus-cave/prometheus-cave-02.jpg",
+    "/content/img/places/prometheus-cave/prometheus-cave-03.jpg"
+  ],
+  "seo": {
+    "title": "Prometheus Cave",
+    "description": "Large karst cave system with illuminated halls, stalactites, and underground tours.",
+    "canonicalPath": "/places-to-visit/prometheus-cave",
+    "image": "/content/img/places/prometheus-cave/prometheus-cave-01.jpg",
+    "ogTitle": "Prometheus Cave",
+    "ogDescription": "Large karst cave system with illuminated halls, stalactites, and underground tours.",
+    "ogImage": "/content/img/places/prometheus-cave/prometheus-cave-01.jpg"
+  }
+}
+
+

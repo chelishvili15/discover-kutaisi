@@ -1,0 +1,17 @@
+﻿{
+  "id": "kutaisi-to-batumi",
+  "from": "Kutaisi",
+  "to": "Batumi",
+  "duration": "2.5 hrs",
+  "priceGel": 250,
+  "seo": {
+    "title": "Kutaisi to Batumi Transfer",
+    "description": "Private transfer from Kutaisi to Batumi in approximately 2.5 hrs.",
+    "canonicalPath": "/transfers#kutaisi-to-batumi",
+    "image": "/content/img/hero.jpg",
+    "ogTitle": "Kutaisi to Batumi Transfer",
+    "ogDescription": "Private transfer from Kutaisi to Batumi in approximately 2.5 hrs.",
+    "ogImage": "/content/img/hero.jpg"
+  }
+}
+

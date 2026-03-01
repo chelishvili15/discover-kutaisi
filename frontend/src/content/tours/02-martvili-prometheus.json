@@ -1,0 +1,232 @@
+﻿{
+    "id": "martvili-prometheus",
+    "slug": "martvili-prometheus",
+    "title": "Martvili - Prometheus",
+    "durationLabel": "5-6 hours",
+    "durationHours": 6,
+    "category": "adventure",
+    "difficulty": "easy",
+    "summary": "Canyon views and cave chambers in one day.",
+    "description": "A balanced nature itinerary combining Martvili Canyon and Prometheus Cave.",
+    "priceFromGel": 55,
+    "image": "/content/img/places/prometheus-cave/prometheus-cave-01.jpg",
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=16wJpP4viZsjSlp64Eq7IUISnVGOSGfY&ehbc=2E312F",
+    "itinerary": [
+        {
+            "icon": "/content/img/icons/flag-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Pickup location"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Meet agency representative at the designated pickup point in Kutaisi city center.",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 55-65 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/diamond-icon.svg",
+            "placeSlug": "martvili-canyon",
+            "details": [
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Guided visit at "
+                        },
+                        {
+                            "text": "Martvili Canyon",
+                            "href": "/places-to-visit/martvili-canyon"
+                        },
+                        {
+                            "text": ", with scenic walkways, river viewpoints, and optional boat segment when available."
+                        }
+                    ]
+                }
+            ],
+            "activities": [
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Short orientation walk across the main canyon platforms.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Optional boat ride ticketing and timing guidance at the entrance.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 80-90 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/diamond-icon.svg",
+            "placeSlug": "prometheus-cave",
+            "details": [
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Guided route through "
+                        },
+                        {
+                            "text": "Prometheus Cave",
+                            "href": "/places-to-visit/prometheus-cave"
+                        },
+                        {
+                            "text": ", featuring illuminated halls, natural formations, and key geological highlights."
+                        }
+                    ]
+                }
+            ],
+            "activities": [
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Main cave chambers walkthrough with practical pacing notes.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 25-35 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/flag-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Arrive at pickup location"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Tell agency representative how satisfied you were with the tour experience.",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        }
+    ],
+    "includes": [
+        "Transport",
+        "Guide",
+        "Flexible pace"
+    ],
+    "excludes": [
+        "Entry tickets",
+        "Boat ticket",
+        "Lunch"
+    ],
+    "importantInfo": [
+        "Bring a light jacket for cave",
+        "Weather can affect boat rides"
+    ],
+    "seo": {
+        "title": "Martvili - Prometheus",
+        "description": "Canyon views and cave chambers in one day.",
+        "canonicalPath": "/tours/martvili-prometheus",
+        "image": "/content/img/places/prometheus-cave/prometheus-cave-01.jpg",
+        "ogTitle": "Martvili - Prometheus",
+        "ogDescription": "Canyon views and cave chambers in one day.",
+        "ogImage": "/content/img/places/prometheus-cave/prometheus-cave-01.jpg"
+    }
+}

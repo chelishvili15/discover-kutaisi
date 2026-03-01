@@ -1,0 +1,17 @@
+﻿{
+  "id": "tours-index",
+  "seo": {
+    "title": "Tours",
+    "description": "All day trips and excursions from Kutaisi.",
+    "canonicalPath": "/tours",
+    "image": "/content/img/hero.jpg",
+    "ogTitle": "Tours",
+    "ogDescription": "All day trips and excursions from Kutaisi.",
+    "ogImage": "/content/img/hero.jpg"
+  },
+  "content": {
+    "heroTitle": "Tours from Kutaisi",
+    "heroSubtitle": "Filter by category, duration, and price."
+  }
+}
+

@@ -1,0 +1,23 @@
+﻿{
+  "id": "contact",
+  "seo": {
+    "title": "Contact",
+    "description": "Contact Discover Kutaisi for bookings and travel questions.",
+    "canonicalPath": "/contact",
+    "image": "/content/img/hero.jpg",
+    "ogTitle": "Contact",
+    "ogDescription": "Contact Discover Kutaisi for bookings and travel questions.",
+    "ogImage": "/content/img/hero.jpg"
+  },
+  "content": {
+    "heroTitle": "Contact Discover Kutaisi",
+    "heroSubtitle": "Available 24/7 for bookings and support.",
+    "infoTitle": "Contact Information",
+    "whatsappLabel": "Open chat",
+    "youtubeLabel": "Visit channel",
+    "mapsButtonLabel": "Open in Google Maps",
+    "workingHoursLabel": "Working Hours",
+    "workingHoursValue": "24/7 for bookings"
+  }
+}
+

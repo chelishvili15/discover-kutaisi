@@ -1,0 +1,26 @@
+﻿---
+import type { Place } from "@/types/content";
+
+interface Props {
+  place: Place;
+}
+
+const { place } = Astro.props;
+const coverImage = place.images[0] ?? "/content/img/hero.jpg";
+---
+
+<a href={`/places-to-visit/${place.slug}`} class="group relative block overflow-hidden rounded-lg">
+  <div class="relative aspect-[4/3] w-full overflow-hidden">
+    <div
+      class="card-media-bg absolute inset-0 h-full w-full transition group-hover:scale-105"
+      style={`--card-image: url('${coverImage}');`}
+      role="img"
+      aria-label={place.name}
+    ></div>
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+  <div class="absolute bottom-0 p-4">
+    <p class="text-lg font-semibold text-white">{place.name}</p>
+    <p class="text-xs text-gray-100">{place.location}</p>
+  </div>
+</a>

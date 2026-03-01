@@ -1,0 +1,85 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import TourCard from "@/components/TourCard.astro";
+import TourFilters from "@/components/TourFilters.astro";
+import StructuredData from "@/components/StructuredData.astro";
+import { toursIndexPage } from "@/data/pages";
+import { site } from "@/data/site";
+import { tours } from "@/data/tours";
+import { buildBreadcrumbSchema, toAbsoluteUrl } from "@/lib/seo";
+const { seo, content } = toursIndexPage;
+const siteUrl = `https://${site.domain}`;
+const canonicalUrl = toAbsoluteUrl(seo.canonicalPath, siteUrl);
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Home", url: siteUrl },
+  { name: "Tours", url: canonicalUrl }
+]);
+---
+
+<BaseLayout
+  title={seo.title}
+  description={seo.description}
+  canonicalPath={seo.canonicalPath}
+  image={seo.image}
+  ogTitle={seo.ogTitle}
+  ogDescription={seo.ogDescription}
+  ogImage={seo.ogImage}
+>
+  <StructuredData data={breadcrumbSchema} />
+  <section
+    class="hero-bg hero-image-default hero-overlay-45 relative overflow-hidden py-20"
+    
+  >
+    <div class="container-shell relative text-white">
+      <h1 class="section-title !text-white">{content.heroTitle}</h1>
+      <p class="mt-3 max-w-2xl text-sm text-gray-100">{content.heroSubtitle}</p>
+    </div>
+  </section>
+  <section class="container-shell py-10">
+    <TourFilters />
+    <div id="tourGrid" class="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {tours.map((tour) => <div data-tour={JSON.stringify(tour)}><TourCard tour={tour} /></div>)}
+    </div>
+    <div class="mt-10 rounded-xl border border-gray-200 bg-gray-50 p-6 text-center">
+      <p class="text-base text-gray-800">
+        Looking for something a little different? Message us and we will plan a custom tour around your interests.
+      </p>
+      <a
+        href="/contact"
+        class="mt-4 inline-block rounded-full bg-brandOrange px-5 py-2 text-sm font-semibold text-white transition hover:bg-brandDark"
+      >
+        Contact Us
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const GEL_PER_USD = 2.7;
+  const formatUsdGel = (gel: number) => `$${Math.round(gel / GEL_PER_USD)} (${gel} ₾) per person`;
+  const category = document.getElementById("tourCategory") as HTMLSelectElement | null;
+  const duration = document.getElementById("tourDuration") as HTMLSelectElement | null;
+  const price = document.getElementById("tourPrice") as HTMLInputElement | null;
+  const priceLabel = document.getElementById("tourPriceLabel");
+  const cards = Array.from(document.querySelectorAll<HTMLElement>("[data-tour]"));
+  const bucket = (hours: number) => (hours <= 5 ? "half-day" : hours <= 10 ? "full-day" : "multi-day");
+  const apply = () => {
+    if (!category || !duration || !price || !priceLabel) return;
+    const c = category.value;
+    const d = duration.value;
+    const p = Number(price.value);
+    priceLabel.textContent = formatUsdGel(p);
+    cards.forEach((el) => {
+      const raw = el.getAttribute("data-tour");
+      if (!raw) return;
+      const tour = JSON.parse(raw) as { category: string; durationHours: number; priceFromGel: number };
+      const show =
+        (c === "all" || tour.category === c) &&
+        (d === "all" || bucket(tour.durationHours) === d) &&
+        tour.priceFromGel <= p;
+      el.style.display = show ? "" : "none";
+    });
+  };
+  [category, duration, price].forEach((el) => el?.addEventListener("input", apply));
+</script>
+

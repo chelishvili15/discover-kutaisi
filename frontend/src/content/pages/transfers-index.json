@@ -1,0 +1,21 @@
+﻿{
+  "id": "transfers-index",
+  "seo": {
+    "title": "Transfers",
+    "description": "Private transfers from Kutaisi across Georgia.",
+    "canonicalPath": "/transfers",
+    "image": "/content/img/hero.jpg",
+    "ogTitle": "Transfers",
+    "ogDescription": "Private transfers from Kutaisi across Georgia.",
+    "ogImage": "/content/img/hero.jpg"
+  },
+  "content": {
+    "heroTitle": "Private Transfers in Georgia",
+    "heroSubtitle": "Comfortable, reliable transfers with professional drivers.",
+    "popularToursTitle": "Popular Transfers",
+    "serviceFeaturesTitle": "Service Features",
+    "vehicleTypesTitle": "Vehicle Types"
+  }
+}
+
+

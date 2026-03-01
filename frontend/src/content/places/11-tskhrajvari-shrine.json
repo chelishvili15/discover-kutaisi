@@ -1,0 +1,35 @@
+﻿{
+  "id": "tskhrajvari-shrine",
+  "slug": "tskhrajvari-shrine",
+  "name": "Tskhrajvari Shrine",
+  "category": "shrines",
+  "location": "Near Nakerala Pass, close to Tkibuli",
+  "entryFee": "Free",
+  "summary": "Mountain shrine of St. George known as Nine Crosses, with local tradition and legends.",
+  "description": "Tskhrajvari is a high-altitude spiritual and cultural site tied to annual celebrations and regional folklore.",
+  "activities": [
+    "Entry - free"
+  ],
+  "details": [
+    "Tskhrajvari, meaning nine crosses, is a shrine of St. George in Imereti near Nakerala Pass, on a mountain near Tkibuli at around 1500 meters above sea level.",
+    "Each year on the last Saturday of May, Tskhrajvaroba is celebrated in Imereti, especially in Tkibuli municipality and surrounding villages.",
+    "A cave is also reported near the temple area.",
+    "Local legend says a father carried and raised nine crosses on the mountain after praying for his nine sons to return safely from war.",
+    "Another legend links the site to a family vow and a pigeon sign guiding shrine construction, followed by annual religious observance."
+  ],
+  "videoUrl": "https://youtu.be/xVuwIiZFZuM?list=TLGGTa2Y87_UaVgxODAyMjAyNg",
+  "images": [
+    "/content/img/places/tskhrajvari-shrine/tskhrajvari-shrine-01.jpg",
+    "/content/img/places/tskhrajvari-shrine/tskhrajvari-shrine-02.jpg",
+    "/content/img/places/tskhrajvari-shrine/tskhrajvari-shrine-03.jpg"
+  ],
+  "seo": {
+    "title": "Tskhrajvari Shrine",
+    "description": "Mountain shrine of St. George known as Nine Crosses, with local tradition and legends.",
+    "canonicalPath": "/places-to-visit/tskhrajvari-shrine",
+    "image": "/content/img/places/tskhrajvari-shrine/tskhrajvari-shrine-01.jpg",
+    "ogTitle": "Tskhrajvari Shrine",
+    "ogDescription": "Mountain shrine of St. George known as Nine Crosses, with local tradition and legends.",
+    "ogImage": "/content/img/places/tskhrajvari-shrine/tskhrajvari-shrine-01.jpg"
+  }
+}

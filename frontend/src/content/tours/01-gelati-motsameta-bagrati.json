@@ -1,0 +1,310 @@
+﻿{
+    "id": "gelati-motsameta-bagrati",
+    "slug": "gelati-motsameta-bagrati",
+    "title": "Gelati - Motsameta - Bagrati",
+    "durationLabel": "3 hours",
+    "durationHours": 3,
+    "category": "history",
+    "difficulty": "easy",
+    "summary": "Classic Kutaisi spiritual heritage tour.",
+    "description": "Visit three iconic monuments around Kutaisi with a local guide and comfortable transfer.",
+    "priceFromGel": 40,
+    "image": "/content/img/places/gelati-monastery/gelati-monastery-01.jpg",
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1vqM7inf1KoVeaL5Kk_A-rix7o-NYOR0&ehbc=2E312F",
+    "itinerary": [
+        {
+            "icon": "/content/img/icons/flag-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Pickup location"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Meet agency representative at the designated pickup point in Kutaisi city center.",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 10-20 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/diamond-icon.svg",
+            "details": [
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Guided walk at "
+                        },
+                        {
+                            "text": "Gelati Monastery",
+                            "href": "/places-to-visit/gelati-monastery"
+                        },
+                        {
+                            "text": ", including its UNESCO-listed history, medieval academy significance, and key fresco highlights."
+                        }
+                    ]
+                }
+            ],
+            "activities": [
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Monastery courtyard orientation and short history introduction.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Photo stop at exterior viewpoints around the main complex.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 15-25 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/diamond-icon.svg",
+            "details": [
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Scenic stop at "
+                        },
+                        {
+                            "text": "Motsameta Monastery",
+                            "href": "/places-to-visit/motsameta-monastery"
+                        },
+                        {
+                            "text": " above the river gorge with time for viewpoints, photos, and local historical storytelling."
+                        }
+                    ]
+                }
+            ],
+            "activities": [
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Exterior and terrace photo stops with broad views over Kutaisi.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Short historical briefing and practical recommendations for nearby local food spots.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 10-20 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/diamond-icon.svg",
+            "details": [
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Guided visit at "
+                        },
+                        {
+                            "text": "Bagrati Cathedral",
+                            "href": "/places-to-visit/bagrati-cathedral"
+                        },
+                        {
+                            "text": ", covering its architectural legacy, hilltop panoramic viewpoints, and the role of the cathedral in Kutaisi\u0027s cultural identity."
+                        }
+                    ]
+                }
+            ],
+            "activities": [
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Exterior and terrace photo stops with broad views over Kutaisi.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Short historical briefing and practical recommendations for nearby local food spots.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 20-30 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/flag-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Arrive at pickup location"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Tell agency representative how satisfied you were with the tour experience.",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "includes": [
+        "Professional driver-guide",
+        "Private transport",
+        "Hotel pickup"
+    ],
+    "excludes": [
+        "Meals",
+        "Personal expenses",
+        "Tips"
+    ],
+    "importantInfo": [
+        "Modest clothing recommended",
+        "Comfortable walking shoes"
+    ],
+    "seo": {
+        "title": "Gelati - Motsameta - Bagrati",
+        "description": "Classic Kutaisi spiritual heritage tour.",
+        "canonicalPath": "/tours/gelati-motsameta-bagrati",
+        "image": "/content/img/places/gelati-monastery/gelati-monastery-01.jpg",
+        "ogTitle": "Gelati - Motsameta - Bagrati",
+        "ogDescription": "Classic Kutaisi spiritual heritage tour.",
+        "ogImage": "/content/img/places/gelati-monastery/gelati-monastery-01.jpg"
+    }
+}

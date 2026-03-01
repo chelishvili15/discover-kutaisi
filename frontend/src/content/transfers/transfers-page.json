@@ -1,0 +1,104 @@
+﻿{
+  "id": "transfers-page",
+  "seo": {
+    "title": "Transfers",
+    "description": "Private transfers from Kutaisi across Georgia.",
+    "canonicalPath": "/transfers",
+    "image": "/content/img/hero.jpg",
+    "ogTitle": "Transfers",
+    "ogDescription": "Private transfers from Kutaisi across Georgia.",
+    "ogImage": "/content/img/hero.jpg"
+  },
+  "content": {
+    "features": [
+      {
+        "title": "Modern, Air-Conditioned Vehicles",
+        "description": "Clean, comfortable transport for city and long-distance tours."
+      },
+      {
+        "title": "Professional English-Speaking Drivers",
+        "description": "Friendly local drivers with reliable communication and tour support."
+      },
+      {
+        "title": "Flight Tracking for Airport Pickups",
+        "description": "Pickup timing adjusts automatically to your live arrival schedule."
+      },
+      {
+        "title": "24/7 Availability",
+        "description": "Flexible pickup times for airport arrivals and early departures."
+      },
+      {
+        "title": "60 Minutes Free Airport Waiting Time",
+        "description": "Extra buffer included so you can clear arrivals without stress."
+      },
+      {
+        "title": "No Hidden Fees",
+        "description": "Transparent pricing with all core costs confirmed before your ride."
+      }
+    ],
+    "vehicleTypes": [
+      {
+        "title": "Sedan (1-3 Passengers)",
+        "description": "Best for solo travelers, couples, or compact airport transfers."
+      },
+      {
+        "title": "Minivan (4-7 Passengers)",
+        "description": "Ideal for families and small groups with moderate luggage."
+      },
+      {
+        "title": "Minibus (8-15 Passengers)",
+        "description": "Great for larger groups, day trips, and shared travel plans."
+      }
+    ],
+    "tourLabelFrom": "From",
+    "tourLabelDuration": "Duration",
+    "pricingTable": {
+      "title": "Transfer Pricing",
+      "columnRoute": "Route",
+      "column1To3": "1-3 Passengers",
+      "column4To7": "4-7 Passengers",
+      "column7Plus": "7+ Passengers",
+      "rows": [
+        {
+          "route": "Kutaisi - Kutaisi Airport",
+          "price1To3": "30",
+          "price4To7": "50",
+          "price7Plus": "Price on request"
+        },
+        {
+          "route": "Kutaisi - Tbilisi (and vice versa)",
+          "price1To3": "250",
+          "price4To7": "300"
+        },
+        {
+          "route": "Batumi - Tbilisi (and vice versa)",
+          "price1To3": "400",
+          "price4To7": "500"
+        },
+        {
+          "route": "Kutaisi - Batumi",
+          "price1To3": "200",
+          "price4To7": "250"
+        },
+        {
+          "route": "Kutaisi - Mestia",
+          "price1To3": "400",
+          "price4To7": "500"
+        },
+        {
+          "route": "Batumi - Mestia",
+          "price1To3": "500",
+          "price4To7": "600"
+        },
+        {
+          "route": "Tbilisi - Mestia",
+          "price1To3": "600",
+          "price4To7": "700"
+        }
+      ],
+      "note": "For other transfers, feel free to contact us."
+    }
+  }
+}
+
+

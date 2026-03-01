@@ -1,0 +1,17 @@
+﻿{
+  "id": "kutaisi-to-telavi",
+  "from": "Kutaisi",
+  "to": "Telavi",
+  "duration": "5 hrs",
+  "priceGel": 550,
+  "seo": {
+    "title": "Kutaisi to Telavi Transfer",
+    "description": "Private transfer from Kutaisi to Telavi in approximately 5 hrs.",
+    "canonicalPath": "/transfers#kutaisi-to-telavi",
+    "image": "/content/img/hero.jpg",
+    "ogTitle": "Kutaisi to Telavi Transfer",
+    "ogDescription": "Private transfer from Kutaisi to Telavi in approximately 5 hrs.",
+    "ogImage": "/content/img/hero.jpg"
+  }
+}
+

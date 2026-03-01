@@ -1,0 +1,65 @@
+﻿{
+  "id": "home",
+  "seo": {
+    "title": "Discover Kutaisi",
+    "description": "Explore tours, transfers, and must-see places in Kutaisi and Western Georgia.",
+    "canonicalPath": "/",
+    "image": "/content/img/hero.jpg",
+    "ogTitle": "Discover Kutaisi",
+    "ogDescription": "Explore tours, transfers, and must-see places in Kutaisi and Western Georgia.",
+    "ogImage": "/content/img/hero.jpg"
+  },
+  "content": {
+    "heroBadge": "Welcome to Georgia",
+    "heroTitle": "Discover Kutaisi in Georgia",
+    "heroSubtitle": "Tours & Transfers in Georgia's Cultural Capital",
+    "heroDescription": "Experience the magic of ancient monasteries, breathtaking canyons, and hidden caves with our expert local guides. Your unforgettable Georgian adventure starts here.",
+    "exploreToursLabel": "Explore Tours",
+    "bookTransferLabel": "Book Transfer",
+    "featuredBadge": "Featured",
+    "popularToursTitle": "Popular Tours",
+    "popularToursSubtitle": "Explore the natural wonders and cultural treasures of Western Georgia with our expert local guides",
+    "whyBadge": "Why us",
+    "whyTitle": "Why Choose Us",
+    "whySubtitle": "Trusted local expertise, reliable transport, and flexible service designed for your comfort.",
+    "whyItems": [
+      {
+        "title": "Expert Local Guides",
+        "description": "Knowledgeable, English-speaking guides who know every hidden gem and local story."
+      },
+      {
+        "title": "Comfortable Transport",
+        "description": "Modern, air-conditioned vehicles for a comfortable journey through the region."
+      },
+      {
+        "title": "Flexible Itineraries",
+        "description": "Customize your experience - we adapt to your pace and interests."
+      },
+      {
+        "title": "Best Prices",
+        "description": "Competitive rates with no hidden fees - transparent pricing always."
+      }
+    ],
+    "highlightsBadge": "Highlights",
+    "placesTitle": "Must-See Destinations",
+    "placesSubtitle": "Discover the UNESCO World Heritage sites and natural wonders that make Western Georgia unforgettable.",
+    "viewAllPlacesLabel": "View All Places",
+    "transportBadge": "Transport",
+    "transfersTitle": "Private Transfers",
+    "transfersSubtitle": "Reliable airport and inter-city transfers with professional drivers. Travel comfortably between Georgia's major destinations.",
+    "popularTransfersTitle": "Popular Transfers",
+    "serviceFeaturesTitle": "Service Features",
+    "testimonialsBadge": "Testimonials",
+    "testimonialsTitle": "What Travelers Say",
+    "testimonialsSubtitle": "Real experiences from travelers who discovered Kutaisi with us.",
+    "blogBadge": "Blog",
+    "blogTitle": "Latest from Our Blog",
+    "blogSubtitle": "Travel tips, destination guides, and local insights to help you plan your Kutaisi adventure.",
+    "blogCtaLabel": "Read All Articles",
+    "ctaBadge": "Start Today",
+    "ctaTitle": "Ready to Explore Kutaisi?",
+    "ctaDescription": "Book your tour today and create unforgettable memories.",
+    "ctaButtonLabel": "Start Your Adventure"
+  }
+}
+

@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Century751Custom";
+  src: url("/content/fonts/tt1184m.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  /* Single source of truth for site-wide typography. */
+  --font-title: "Century751Custom", "Times New Roman", Times, serif;
+  --font-body: "Times New Roman", Times, serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+}
+
+.container-shell {
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+
+.section-title {
+  @apply text-[2.2rem] font-extrabold leading-tight text-brandDark md:text-[2.65rem];
+}
+
+.section-copy {
+  @apply mt-3 text-[1.17rem] leading-relaxed text-gray-600;
+}
+
+.hero-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), var(--hero-image);
+}
+
+.hero-image-default {
+  --hero-image: url("/content/img/hero.jpg");
+}
+
+.hero-overlay-40 {
+  --hero-overlay: rgba(0, 0, 0, 0.4);
+}
+
+.hero-overlay-45 {
+  --hero-overlay: rgba(0, 0, 0, 0.45);
+}
+
+.hero-overlay-50 {
+  --hero-overlay: rgba(0, 0, 0, 0.5);
+}
+
+.hero-overlay-55 {
+  --hero-overlay: rgba(0, 0, 0, 0.55);
+}
+
+.card-media-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: var(--card-image);
+}
+
+@keyframes whatsapp-heartbeat {
+  0%,
+  36%,
+  100% {
+    transform: scale(1);
+  }
+  12% {
+    transform: scale(1.08);
+  }
+  24% {
+    transform: scale(0.98);
+  }
+}
+
+.whatsapp-fab {
+  animation: whatsapp-heartbeat 2.2s ease-in-out infinite;
+  transform-origin: center;
+  right: 1.25rem;
+  bottom: 1.25rem;
+}
+
+.whatsapp-fab:hover,
+.whatsapp-fab:focus-visible {
+  animation-play-state: paused;
+}
+
+html {
+  scrollbar-color: #e49c24 #f3f4f6;
+  scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: clamp(0.2rem, 0.35vw, 0.35rem);
+  height: clamp(0.2rem, 0.35vw, 0.35rem);
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  background: #e49c24;
+  border-radius: 9999px;
+  border: 2px solid #f3f4f6;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:hover {
+  background: #c88416;
+}

@@ -1,0 +1,85 @@
+﻿---
+import { icons } from "@/data/icons";
+import { navLinks, site } from "@/data/site";
+
+const footerQuickLinks = [
+  ...navLinks.filter((item) => item.href !== "/about" && item.href !== "/contact"),
+  { href: "/tours", label: "Tours" },
+  { href: "/transfers", label: "Transfers" },
+  { href: "/places-to-visit", label: "Places" },
+  ...navLinks.filter((item) => item.href === "/about" || item.href === "/contact")
+];
+---
+
+<footer class="mt-16 bg-gray-900 py-12 text-gray-200">
+  <div class="container-shell grid gap-8 md:grid-cols-3">
+    <section>
+      <a href="/" class="inline-flex items-center">
+        <img src={site.logoPath} alt={`${site.name} logo`} class="h-10 w-auto" />
+      </a>
+      <p class="mt-2 text-sm text-gray-300">{site.address}</p>
+      <p class="text-sm text-gray-300">{site.phone}</p>
+      <a class="text-sm text-brandOrange" href={`mailto:${site.email}`}>{site.email}</a>
+    </section>
+    <section>
+      <h3 class="text-lg font-semibold text-white">Quick Links</h3>
+      <ul class="mt-2 space-y-1 text-sm">
+        {
+          footerQuickLinks.map((item) => (
+            <li>
+              <a href={item.href} class="hover:text-white">
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+    <section>
+      <h3 class="text-lg font-semibold text-white">Social</h3>
+      <ul class="mt-2 space-y-1 text-sm">
+        <li>
+          <a href={site.whatsapp} target="_blank" class="inline-flex items-center gap-2 hover:text-white">
+            <img src={icons.social.whatsapp} alt="WhatsApp" class="h-4 w-4 object-contain" loading="lazy" />
+            WhatsApp
+          </a>
+        </li>
+        <li>
+          <a href={site.youtube} target="_blank" class="inline-flex items-center gap-2 hover:text-white">
+            <img src={icons.social.youtube} alt="YouTube" class="h-4 w-4 object-contain" loading="lazy" />
+            YouTube
+          </a>
+        </li>
+        <li>
+          <a href={site.maps} target="_blank" class="inline-flex items-center gap-2 hover:text-white">
+            <img src={icons.social.maps} alt="Google Maps" class="h-4 w-4 object-contain" loading="lazy" />
+            Google Maps
+          </a>
+        </li>
+        <li>
+          <a href="#" class="inline-flex items-center gap-2 hover:text-white">
+            <img src={icons.social.instagram} alt="Instagram" class="h-4 w-4 object-contain" loading="lazy" />
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="#" class="inline-flex items-center gap-2 hover:text-white">
+            <img src={icons.social.tripadvisor} alt="TripAdvisor" class="h-4 w-4 object-contain" loading="lazy" />
+            TripAdvisor
+          </a>
+        </li>
+        <li>
+          <a href="#" class="inline-flex items-center gap-2 hover:text-white">
+            <img src={icons.social.getYourGuide} alt="GetYourGuide" class="h-4 w-4 object-contain" loading="lazy" />
+            GetYourGuide
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <div class="mt-8 flex justify-center">
+    <img src="/content/img/icons/made-in-georgia-icon.svg" alt="Made in Georgia" class="h-16 w-auto object-contain" loading="lazy" />
+  </div>
+  <p class="mt-3 text-center text-xs text-gray-400">&copy; 2026 Discover Kutaisi. All rights reserved.</p>
+</footer>
+

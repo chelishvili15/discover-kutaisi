@@ -1,0 +1,40 @@
+﻿{
+  "id": "martvili-canyon",
+  "slug": "martvili-canyon",
+  "name": "Martvili Canyon",
+  "category": "canyons",
+  "location": "Gachedili village, Martvili municipality, Samegrelo",
+  "entryFee": "20 ₾",
+  "summary": "Nature monument with emerald waters, waterfalls, panoramic platforms, and boat tours.",
+  "description": "Martvili Canyon is a popular scenic destination featuring limestone canyon walls, walkways, and river experiences.",
+  "activities": [
+    "Entry - 20 ₾",
+    "Zipline - 50 ₾",
+    "Boat - 20 ₾"
+  ],
+  "details": [
+    "Martvili Canyon is a natural monument in the village of Gachedili, around 210 meters above sea level, with a visitor center near the canyon entrance.",
+    "The canyon was formed by the Abasha River cutting through limestone. It extends about 2400 meters, with 20-30 meter carving depth and 5-10 meter width in sections.",
+    "In the middle reaches, visitors can see 12-15 meter waterfalls. A notable section is known as Ophutskhole, also called the Dadiani Bath.",
+    "From the visitor center, a stone-paved path of about 700 meters leads to historical viewpoints with bridges, panoramic platforms, and stair access.",
+    "Boat and river-tour experiences are available in designated sections, with visitor height requirements for safety."
+  ],
+  "videoUrl": "https://youtu.be/Vaebg93W2o4?list=TLGG5qb5m3Doh6YxODAyMjAyNg",
+  "images": [
+    "/content/img/places/martvili-canyon/martvili-canyon-01.jpg",
+    "/content/img/places/martvili-canyon/martvili-canyon-02.jpg",
+    "/content/img/places/martvili-canyon/martvili-canyon-03.jpg",
+    "/content/img/places/martvili-canyon/martvili-canyon-04.jpg"
+  ],
+  "seo": {
+    "title": "Martvili Canyon",
+    "description": "Nature monument with emerald waters, waterfalls, panoramic platforms, and boat tours.",
+    "canonicalPath": "/places-to-visit/martvili-canyon",
+    "image": "/content/img/places/martvili-canyon/martvili-canyon-01.jpg",
+    "ogTitle": "Martvili Canyon",
+    "ogDescription": "Nature monument with emerald waters, waterfalls, panoramic platforms, and boat tours.",
+    "ogImage": "/content/img/places/martvili-canyon/martvili-canyon-01.jpg"
+  }
+}
+
+

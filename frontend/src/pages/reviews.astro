@@ -1,0 +1,61 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import StructuredData from "@/components/StructuredData.astro";
+import TestimonialCard from "@/components/TestimonialCard.astro";
+import { testimonials } from "@/data/testimonials";
+import { site } from "@/data/site";
+import { buildBreadcrumbSchema, toAbsoluteUrl } from "@/lib/seo";
+
+const siteUrl = `https://${site.domain}`;
+const canonicalPath = "/reviews";
+const canonicalUrl = toAbsoluteUrl(canonicalPath, siteUrl);
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Home", url: siteUrl },
+  { name: "Reviews", url: canonicalUrl }
+]);
+
+const reviews = [...testimonials].sort((a, b) => {
+  const aDate = a.reviewDate ? Date.parse(`${a.reviewDate}-01`) : Number.NEGATIVE_INFINITY;
+  const bDate = b.reviewDate ? Date.parse(`${b.reviewDate}-01`) : Number.NEGATIVE_INFINITY;
+  return bDate - aDate;
+});
+---
+
+<BaseLayout
+  title="Reviews | Discover Kutaisi"
+  description="Read traveler reviews about tours and transfers with Discover Kutaisi."
+  canonicalPath={canonicalPath}
+  image="/content/img/hero.jpg"
+  ogTitle="Reviews | Discover Kutaisi"
+  ogDescription="Real traveler feedback from Google reviews for Discover Kutaisi."
+  ogImage="/content/img/hero.jpg"
+>
+  <StructuredData data={breadcrumbSchema} />
+
+  <section
+    class="hero-bg hero-image-default hero-overlay-45 relative overflow-hidden py-20"
+    
+  >
+    <div class="container-shell relative text-white">
+      <h1 class="section-title !text-white">Traveler Reviews in Kutaisi</h1>
+      <p class="mt-3 max-w-2xl text-sm text-gray-100">See what guests say about their tours and transfers in Kutaisi.</p>
+    </div>
+  </section>
+
+  <section class="container-shell py-12">
+    <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      {reviews.map((item) => <TestimonialCard item={item} />)}
+    </div>
+
+    <div class="mt-8 text-center">
+      <a
+        href={site.maps}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block rounded-full bg-brandOrange px-6 py-3 text-sm font-semibold text-white transition hover:bg-brandDark"
+      >
+        See All Google Reviews
+      </a>
+    </div>
+  </section>
+</BaseLayout>

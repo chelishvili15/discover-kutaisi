@@ -1,0 +1,101 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import BookingForms from "@/components/BookingForms.astro";
+import StructuredData from "@/components/StructuredData.astro";
+import { icons } from "@/data/icons";
+import { contactPage } from "@/data/pages";
+import { site } from "@/data/site";
+import { buildBreadcrumbSchema, buildOrganizationSchema, toAbsoluteUrl } from "@/lib/seo";
+const { seo, content } = contactPage;
+const siteUrl = `https://${site.domain}`;
+const canonicalUrl = toAbsoluteUrl(seo.canonicalPath, siteUrl);
+const organizationSchema = buildOrganizationSchema(site, siteUrl);
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Home", url: siteUrl },
+  { name: "Contact", url: canonicalUrl }
+]);
+---
+
+<BaseLayout
+  title={seo.title}
+  description={seo.description}
+  canonicalPath={seo.canonicalPath}
+  image={seo.image}
+  ogTitle={seo.ogTitle}
+  ogDescription={seo.ogDescription}
+  ogImage={seo.ogImage}
+>
+  <StructuredData data={[organizationSchema, breadcrumbSchema]} />
+  <section
+    class="hero-bg hero-image-default hero-overlay-45 relative overflow-hidden py-20"
+    
+  >
+    <div class="container-shell relative text-white">
+      <h1 class="section-title !text-white">{content.heroTitle}</h1>
+      <p class="mt-3 max-w-2xl text-sm text-gray-100">{content.heroSubtitle}</p>
+    </div>
+  </section>
+  <section class="container-shell py-12">
+    <div class="grid gap-8 lg:grid-cols-2">
+      <article class="rounded-xl border border-gray-200 p-6">
+        <h2 class="text-2xl font-semibold">{content.infoTitle}</h2>
+        <ul class="mt-4 space-y-2 text-sm text-gray-700">
+          <li class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-2 whitespace-nowrap">
+              <img src={icons.social.gmail} alt="" class="h-4 w-4 object-contain" loading="lazy" aria-hidden="true" />
+              Email:
+            </span>
+            <a href={`mailto:${site.email}`} class="text-brandOrange">{site.email}</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-2 whitespace-nowrap">
+              <img src={icons.social.whatsapp} alt="" class="h-4 w-4 object-contain" loading="lazy" aria-hidden="true" />
+              WhatsApp:
+            </span>
+            <a href={site.whatsapp} target="_blank" rel="noopener noreferrer" class="text-brandOrange">{content.whatsappLabel}</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-2 whitespace-nowrap">
+              <img src={icons.social.youtube} alt="" class="h-4 w-4 object-contain" loading="lazy" aria-hidden="true" />
+              YouTube:
+            </span>
+            <a href={site.youtube} target="_blank" rel="noopener noreferrer" class="text-brandOrange">{content.youtubeLabel}</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-2 whitespace-nowrap">
+              <img src={icons.social.instagram} alt="" class="h-4 w-4 object-contain" loading="lazy" aria-hidden="true" />
+              Instagram:
+            </span>
+            <a href="#" class="text-brandOrange">DM on Instagram</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-2 whitespace-nowrap">
+              <img src={icons.social.tripadvisor} alt="" class="h-4 w-4 object-contain" loading="lazy" aria-hidden="true" />
+              TripAdvisor:
+            </span>
+            <a href="#" class="text-brandOrange">Visit TripAdvisor</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-2 whitespace-nowrap">
+              <img src={icons.social.getYourGuide} alt="" class="h-4 w-4 object-contain" loading="lazy" aria-hidden="true" />
+              GetYourGuide:
+            </span>
+            <a href="#" class="text-brandOrange">Find us on GetYourGuide</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-2 whitespace-nowrap">
+              <img src={icons.social.maps} alt="" class="h-4 w-4 object-contain" loading="lazy" aria-hidden="true" />
+              Google Maps:
+            </span>
+            <a href={site.maps} target="_blank" rel="noopener noreferrer" class="text-brandOrange">See details on Google Maps</a>
+          </li>
+          <li>Address: {site.address}</li>
+          <li>{content.workingHoursLabel}: {content.workingHoursValue}</li>
+        </ul>
+      </article>
+      <BookingForms mode="tour" />
+    </div>
+  </section>
+</BaseLayout>
+
+

@@ -1,0 +1,34 @@
+﻿{
+  "id": "kutaisi-airport-transfer-tips",
+  "slug": "kutaisi-airport-transfer-tips",
+  "title": "Kutaisi Airport Transfer Tips for First-Time Visitors",
+  "excerpt": "What to know before landing at Kutaisi Airport, including transfer timing, luggage planning, and tour options.",
+  "author": "Discover Kutaisi Team",
+  "publishedAt": "2026-02-09",
+  "updatedAt": "2026-02-12",
+  "category": "Transport",
+  "tags": ["kutaisi airport", "transfer", "travel tips", "georgia"],
+  "coverImage": "/content/img/hero.jpg",
+  "coverImageAlt": "Road transfer scene in Georgia",
+  "isPublished": true,
+  "seo": {
+    "title": "Kutaisi Airport Transfer Tips for First-Time Visitors",
+    "description": "Useful airport transfer tips for arriving in Kutaisi, including timing, luggage, and destination planning.",
+    "canonicalPath": "/blog/kutaisi-airport-transfer-tips",
+    "image": "/content/img/hero.jpg",
+    "ogTitle": "Kutaisi Airport Transfer Tips for First-Time Visitors",
+    "ogDescription": "Useful airport transfer tips for arriving in Kutaisi, including timing, luggage, and destination planning.",
+    "ogImage": "/content/img/hero.jpg"
+  },
+  "contentBlocks": [
+    { "type": "paragraph", "text": "Kutaisi International Airport is a practical entry point for western Georgia. A small amount of planning before arrival can save significant time after landing." },
+    { "type": "heading", "level": 2, "text": "Before You Land" },
+    { "type": "list", "style": "ordered", "items": ["Confirm your destination address in advance.", "Share flight number and arrival time with your driver.", "Consider luggage size when selecting vehicle type.", "Keep a local eSIM or roaming plan ready."] },
+    { "type": "heading", "level": 2, "text": "Common Transfer Tours" },
+    { "type": "paragraph", "text": "From Kutaisi Airport, many travelers continue to Kutaisi city center, Tbilisi, Batumi, or mountain destinations depending on their itinerary." },
+    { "type": "quote", "text": "If your flight is late at night, pre-booking transfer is the most stress-free option.", "cite": "Discover Kutaisi operations team" },
+    { "type": "paragraph", "text": "Always keep a local contact number and your booking confirmation accessible while exiting the terminal." }
+  ]
+}
+
+

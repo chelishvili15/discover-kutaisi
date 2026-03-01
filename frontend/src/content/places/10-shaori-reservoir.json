@@ -1,0 +1,36 @@
+﻿{
+  "id": "shaori-reservoir",
+  "slug": "shaori-reservoir",
+  "name": "Shaori Reservoir",
+  "category": "lakes",
+  "location": "Ambrolauri municipality, Racha",
+  "entryFee": "Free",
+  "summary": "The largest reservoir in Racha-Lechkhumi with scenic views, fishing, and seasonal color.",
+  "description": "Shaori Reservoir is a highland nature destination known for calm landscapes, outdoor recreation, and mountain surroundings.",
+  "activities": [
+    "Entry - free"
+  ],
+  "details": [
+    "Shaori Reservoir is one of Racha's most attractive landscapes and is located at about 1100-1200 meters altitude in Ambrolauri municipality.",
+    "It is the largest reservoir in Racha-Lechkhumi and Lower Svaneti, formed by damming the Shaori River in a structural basin.",
+    "The reservoir covers former basin lakes and reaches about 7.1 km in length, 2.7 km maximum width and around 14.5 meters maximum depth.",
+    "The area supports multiple activities, with fishing being especially popular. Visitors also enjoy photo spots, seasonal scenery and hiking in surrounding mountain ranges.",
+    "Shaori is especially scenic in autumn and spring, with colorful reflections and blooming landscapes.",
+    "Road access is asphalted, and the site is reachable by standard transport."
+  ],
+  "videoUrl": "https://youtu.be/LUxt0tM-Muw?list=TLGGFd3KqFxyyGUxODAyMjAyNg",
+  "images": [
+    "/content/img/places/shaori-reservoir/shaori-reservoir-01.jpg",
+    "/content/img/places/shaori-reservoir/shaori-reservoir-02.jpg",
+    "/content/img/places/shaori-reservoir/shaori-reservoir-03.jpg"
+  ],
+  "seo": {
+    "title": "Shaori Reservoir",
+    "description": "The largest reservoir in Racha-Lechkhumi with scenic views, fishing, and seasonal color.",
+    "canonicalPath": "/places-to-visit/shaori-reservoir",
+    "image": "/content/img/places/shaori-reservoir/shaori-reservoir-01.jpg",
+    "ogTitle": "Shaori Reservoir",
+    "ogDescription": "The largest reservoir in Racha-Lechkhumi with scenic views, fishing, and seasonal color.",
+    "ogImage": "/content/img/places/shaori-reservoir/shaori-reservoir-01.jpg"
+  }
+}

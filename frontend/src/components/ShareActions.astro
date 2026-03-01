@@ -1,0 +1,51 @@
+---
+import { icons } from "@/data/icons";
+
+interface Props {
+  url: string;
+  title: string;
+}
+
+const { url, title } = Astro.props;
+const encodedUrl = encodeURIComponent(url);
+const encodedTitle = encodeURIComponent(title);
+---
+
+<div class="flex flex-wrap items-center justify-end gap-2">
+  <a
+    href={`https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Share on WhatsApp"
+    class="m-0 inline-flex items-center justify-center p-0 text-gray-700 transition hover:text-brandOrange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2"
+  >
+    <img src={icons.share.whatsapp} alt="" aria-hidden="true" class="h-5 w-5 object-contain" loading="lazy" />
+  </a>
+  <a
+    href={`https://x.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Share on X"
+    class="m-0 inline-flex items-center justify-center p-0 text-gray-700 transition hover:text-brandOrange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2"
+  >
+    <img src={icons.share.x} alt="" aria-hidden="true" class="h-5 w-5 object-contain" loading="lazy" />
+  </a>
+  <a
+    href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Share on Facebook"
+    class="m-0 inline-flex items-center justify-center p-0 text-gray-700 transition hover:text-brandOrange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2"
+  >
+    <img src={icons.share.facebook} alt="" aria-hidden="true" class="h-5 w-5 object-contain" loading="lazy" />
+  </a>
+  <a
+    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Share on LinkedIn"
+    class="m-0 inline-flex items-center justify-center p-0 text-gray-700 transition hover:text-brandOrange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2"
+  >
+    <img src={icons.share.linkedin} alt="" aria-hidden="true" class="h-5 w-5 object-contain" loading="lazy" />
+  </a>
+</div>

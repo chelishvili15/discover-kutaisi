@@ -1,0 +1,40 @@
+﻿{
+  "id": "nikortsminda-temple",
+  "slug": "nikortsminda-temple",
+  "name": "Nikortsminda Temple",
+  "category": "monasteries",
+  "location": "Nikortsminda village, Ambrolauri municipality (Racha)",
+  "entryFee": "Free",
+  "summary": "11th-century domed church in Racha, known for architecture, frescoes, and heritage value.",
+  "description": "Nikortsminda is a major medieval temple monument with preserved dome architecture and rich historical records.",
+  "activities": [
+    "Entry - free"
+  ],
+  "details": [
+    "Nikortsminda is a domed temple in the Racha-Lechkhumi and Kvemo Svaneti region, in the village of Nikortsminda.",
+    "Its origins are connected to the period after the creation of the Racha Saeristavo at the end of the 10th century, and the temple became an important cultural center.",
+    "Nikortsminda Monastery has been included in the UNESCO tentative list since October 24, 2007.",
+    "Rehabilitation work in 2012 revealed 16th-century frescoes in soot-covered gates, including founder imagery and inscriptions referencing the painter Javakhadze.",
+    "The church is considered a masterpiece of national architecture from the early 11th century (1010-1014), with notable facade decoration.",
+    "The monument did not undergo major structural changes through most of its history, which is rare; the dome remains preserved in original form.",
+    "Historical records and travel accounts from the 18th century describe its large stone construction, enclosure, and royal burials associated with the site."
+  ],
+  "videoUrl": "https://youtu.be/xLyPNUtuIT8?list=TLGGE3zgFIlgASoxODAyMjAyNg",
+  "images": [
+    "/content/img/places/nikortsminda-temple/nikortsminda-temple-01.jpg",
+    "/content/img/places/nikortsminda-temple/nikortsminda-temple-02.jpg",
+    "/content/img/places/nikortsminda-temple/nikortsminda-temple-03.jpg",
+    "/content/img/places/nikortsminda-temple/nikortsminda-temple-04.jpg",
+    "/content/img/places/nikortsminda-temple/nikortsminda-temple-05.jpg",
+    "/content/img/places/nikortsminda-temple/nikortsminda-temple-06.jpg"
+  ],
+  "seo": {
+    "title": "Nikortsminda Temple",
+    "description": "11th-century domed church in Racha, known for architecture, frescoes, and heritage value.",
+    "canonicalPath": "/places-to-visit/nikortsminda-temple",
+    "image": "/content/img/places/nikortsminda-temple/nikortsminda-temple-01.jpg",
+    "ogTitle": "Nikortsminda Temple",
+    "ogDescription": "11th-century domed church in Racha, known for architecture, frescoes, and heritage value.",
+    "ogImage": "/content/img/places/nikortsminda-temple/nikortsminda-temple-01.jpg"
+  }
+}

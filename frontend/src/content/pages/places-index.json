@@ -1,0 +1,17 @@
+﻿{
+  "id": "places-index",
+  "seo": {
+    "title": "Places to Visit Kutaisi",
+    "description": "Attractions around Kutaisi including caves, canyons, monasteries, and nature reserves.",
+    "canonicalPath": "/places-to-visit",
+    "image": "/content/img/hero.jpg",
+    "ogTitle": "Places to Visit Kutaisi",
+    "ogDescription": "Attractions around Kutaisi including caves, canyons, monasteries, and nature reserves.",
+    "ogImage": "/content/img/hero.jpg"
+  },
+  "content": {
+    "heroTitle": "Places to Visit in Georgia",
+    "heroSubtitle": "Filter destinations by category."
+  }
+}
+

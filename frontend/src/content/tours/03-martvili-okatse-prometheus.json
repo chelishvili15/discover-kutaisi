@@ -1,0 +1,289 @@
+{
+    "id": "martvili-okatse-prometheus",
+    "slug": "martvili-okatse-prometheus",
+    "title": "Martvili - Okatse - Prometheus",
+    "durationLabel": "9 hours",
+    "durationHours": 9,
+    "category": "adventure",
+    "difficulty": "moderate",
+    "summary": "Full-day canyon and cave highlights.",
+    "description": "Explore Western Georgia\u0027s most popular natural destinations in one full day.",
+    "priceFromGel": 70,
+    "image": "/content/img/places/prometheus-cave/prometheus-cave-01.jpg",
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1u32Out5S4WBW8XIb-3djbbJRzvSTEVo&ehbc=2E312F",
+    "itinerary": [
+        {
+            "icon": "/content/img/icons/flag-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Pickup location"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Meet agency representative at the designated pickup point in Kutaisi city center.",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 70-80 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/diamond-icon.svg",
+            "placeSlug": "okatse-canyon",
+            "details": [
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Hiking route at "
+                        },
+                        {
+                            "text": "Okatse Canyon",
+                            "href": "/places-to-visit/okatse-canyon"
+                        },
+                        {
+                            "text": ", including forest approach, suspended walkway views, and major canyon viewpoints."
+                        }
+                    ]
+                }
+            ],
+            "activities": [
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Short trail orientation and safety briefing before the elevated sections.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Photo stops at the suspended walkway and panoramic lookout points.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 35-45 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/diamond-icon.svg",
+            "placeSlug": "martvili-canyon",
+            "details": [
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Scenic stop at "
+                        },
+                        {
+                            "text": "Martvili Canyon",
+                            "href": "/places-to-visit/martvili-canyon"
+                        },
+                        {
+                            "text": ", with riverside paths, viewpoints, and optional boat activity depending on conditions."
+                        }
+                    ]
+                }
+            ],
+            "activities": [
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Guided walk along the main canyon viewpoints and platforms.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 80-90 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/diamond-icon.svg",
+            "placeSlug": "prometheus-cave",
+            "details": [
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Guided cave route at "
+                        },
+                        {
+                            "text": "Prometheus Cave",
+                            "href": "/places-to-visit/prometheus-cave"
+                        },
+                        {
+                            "text": ", featuring illuminated halls, underground formations, and key geological points of interest."
+                        }
+                    ]
+                }
+            ],
+            "activities": [
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Major cave chambers walkthrough with timing aligned to the return schedule.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 25-35 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/flag-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Arrive at pickup location"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Tell agency representative how satisfied you were with the tour experience.",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        }
+    ],
+    "includes": [
+        "Driver-guide",
+        "Private vehicle",
+        "Pickup and drop-off"
+    ],
+    "excludes": [
+        "Entry tickets",
+        "Meals"
+    ],
+    "importantInfo": [
+        "Some stairs/walking sections",
+        "Bring water and sun protection"
+    ],
+    "seo": {
+        "title": "Martvili - Okatse - Prometheus",
+        "description": "Full-day canyon and cave highlights.",
+        "canonicalPath": "/tours/martvili-okatse-prometheus",
+        "image": "/content/img/places/prometheus-cave/prometheus-cave-01.jpg",
+        "ogTitle": "Martvili - Okatse - Prometheus",
+        "ogDescription": "Full-day canyon and cave highlights.",
+        "ogImage": "/content/img/places/prometheus-cave/prometheus-cave-01.jpg"
+    }
+}

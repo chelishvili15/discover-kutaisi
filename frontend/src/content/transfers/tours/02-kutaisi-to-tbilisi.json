@@ -1,0 +1,17 @@
+﻿{
+  "id": "kutaisi-to-tbilisi",
+  "from": "Kutaisi",
+  "to": "Tbilisi",
+  "duration": "3.5 hrs",
+  "priceGel": 350,
+  "seo": {
+    "title": "Kutaisi to Tbilisi Transfer",
+    "description": "Private transfer from Kutaisi to Tbilisi in approximately 3.5 hrs.",
+    "canonicalPath": "/transfers#kutaisi-to-tbilisi",
+    "image": "/content/img/hero.jpg",
+    "ogTitle": "Kutaisi to Tbilisi Transfer",
+    "ogDescription": "Private transfer from Kutaisi to Tbilisi in approximately 3.5 hrs.",
+    "ogImage": "/content/img/hero.jpg"
+  }
+}
+

@@ -1,0 +1,59 @@
+---
+import SpeedInsights from "@vercel/speed-insights/astro";
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
+import SeoHead from "@/components/SeoHead.astro";
+import Analytics from "@vercel/analytics/astro";
+import { site } from "@/data/site";
+import "@/styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalPath?: string;
+  image?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  ogType?: string;
+  twitterCard?: string;
+}
+
+const { title, description, canonicalPath, image, ogTitle, ogDescription, ogImage, ogType, twitterCard } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="/content/fonts/tt1184m.ttf" as="font" type="font/ttf" crossorigin />
+    <SeoHead
+      title={title}
+      description={description}
+      canonicalPath={canonicalPath}
+      image={image}
+      ogTitle={ogTitle}
+      ogDescription={ogDescription}
+      ogImage={ogImage}
+      ogType={ogType}
+      twitterCard={twitterCard}
+    />
+  </head>
+  <body>
+    <Header />
+    <main><slot /></main>
+    <Footer />
+    <a
+      href={site.whatsapp}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+      class="whatsapp-fab fixed z-[60] inline-flex h-11 w-12 items-center justify-center rounded-lg border-2 border-brandOrange bg-white text-gray-900 shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:border-brandOrange hover:bg-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandOrange focus-visible:ring-offset-2"
+    >
+      <img src="/content/img/icons/what1.svg" alt="WhatsApp chat icon" class="h-6 w-6 object-contain" loading="eager" decoding="async" />
+    </a>
+    <SpeedInsights />
+    <Analytics />
+  </body>
+</html>

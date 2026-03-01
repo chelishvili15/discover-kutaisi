@@ -1,0 +1,275 @@
+{
+    "id": "tskhrajvari-shaori-nikortsminda",
+    "slug": "tskhrajvari-shaori-nikortsminda",
+    "title": "Tskhrajvari - Shaori - Nikortsminda",
+    "durationLabel": "9 hours",
+    "durationHours": 9,
+    "category": "history",
+    "difficulty": "moderate",
+    "summary": "Mountain viewpoints with historical churches.",
+    "description": "A highland day trip connecting sacred heritage and alpine scenery.",
+    "priceFromGel": 100,
+    "image": "/content/img/places/nikortsminda-temple/nikortsminda-temple-01.jpg",
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1KaZ28CsjCYb7uwtcNGUYMMzRFT0c3eQ&ehbc=2E312F",
+    "itinerary": [
+        {
+            "icon": "/content/img/icons/flag-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Pickup location"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Meet agency representative at the designated pickup point in Kutaisi city center.",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 75-85 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/diamond-icon.svg",
+            "placeSlug": "tskhrajvari-shrine",
+            "details": [
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Scenic stop at "
+                        },
+                        {
+                            "text": "Tskhrajvari Shrine",
+                            "href": "/places-to-visit/tskhrajvari-shrine"
+                        },
+                        {
+                            "text": ", featuring panoramic mountain views and regional orientation before continuing into Racha."
+                        }
+                    ]
+                }
+            ],
+            "activities": [
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Main viewpoint photo stop and short local-history overview.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 25-35 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/diamond-icon.svg",
+            "placeSlug": "shaori-reservoir",
+            "details": [
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Nature stop at "
+                        },
+                        {
+                            "text": "Shaori Reservoir",
+                            "href": "/places-to-visit/shaori-reservoir"
+                        },
+                        {
+                            "text": ", with shoreline viewpoints, seasonal reflections, and relaxed breaks for photography."
+                        }
+                    ]
+                }
+            ],
+            "activities": [
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Short walking segment near the waterline with flexible stop duration.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 20-30 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/diamond-icon.svg",
+            "placeSlug": "nikortsminda-temple",
+            "details": [
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Guided exploration of "
+                        },
+                        {
+                            "text": "Nikortsminda Temple",
+                            "href": "/places-to-visit/nikortsminda-temple"
+                        },
+                        {
+                            "text": ", focused on architecture, medieval ornamentation, and local religious heritage."
+                        }
+                    ]
+                }
+            ],
+            "activities": [
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Exterior and interior highlights with context on regional church history.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 95-105 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/flag-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Arrive at pickup location"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Tell agency representative how satisfied you were with the tour experience.",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        }
+    ],
+    "includes": [
+        "Transport",
+        "Guide",
+        "Local tips"
+    ],
+    "excludes": [
+        "Meals",
+        "Personal purchases"
+    ],
+    "importantInfo": [
+        "Weather in mountains changes quickly",
+        "Carry warm layer"
+    ],
+    "seo": {
+        "title": "Tskhrajvari - Shaori - Nikortsminda",
+        "description": "Mountain viewpoints with historical churches.",
+        "canonicalPath": "/tours/tskhrajvari-shaori-nikortsminda",
+        "image": "/content/img/places/nikortsminda-temple/nikortsminda-temple-01.jpg",
+        "ogTitle": "Tskhrajvari - Shaori - Nikortsminda",
+        "ogDescription": "Mountain viewpoints with historical churches.",
+        "ogImage": "/content/img/places/nikortsminda-temple/nikortsminda-temple-01.jpg"
+    }
+}

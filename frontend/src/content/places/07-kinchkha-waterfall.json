@@ -1,0 +1,37 @@
+﻿{
+  "id": "kinchkha-waterfall",
+  "slug": "kinchkha-waterfall",
+  "name": "Kinchkha Waterfall",
+  "category": "waterfalls",
+  "location": "Kinchkha village, Khoni municipality",
+  "entryFee": "20 ₾",
+  "summary": "Three-step waterfall cascade in the Satsiskvilo valley with optional zipline activity.",
+  "description": "Kinchkha is one of the region's most striking waterfall sites, with multiple cascade levels and mountain scenery.",
+  "activities": [
+    "Entry - 20 ₾",
+    "Zipline - 60 ₾"
+  ],
+  "details": [
+    "Kinchkha Waterfall is a natural monument in the Satsiskvilo valley.",
+    "The upper two waterfall stages are on the right tributary of the Satsiskvilo River, with approximate heights of 25 meters and 70 meters.",
+    "A connected streamflow forms the third stage, around 35 meters high.",
+    "The site is located in Khoni municipality near Kinchkha village at roughly 843 meters above sea level."
+  ],
+  "videoUrl": "https://youtu.be/b4R_OKAGcOA?list=TLGGzF8YHX9aZdMxODAyMjAyNg",
+  "images": [
+    "/content/img/places/kinchkha-waterfall/kinchkha-waterfall-01.jpg",
+    "/content/img/places/kinchkha-waterfall/kinchkha-waterfall-02.jpg",
+    "/content/img/places/kinchkha-waterfall/kinchkha-waterfall-03.jpg",
+    "/content/img/places/kinchkha-waterfall/kinchkha-waterfall-04.jpg"
+  ],
+  "seo": {
+    "title": "Kinchkha Waterfall",
+    "description": "Three-step waterfall cascade in the Satsiskvilo valley with optional zipline activity.",
+    "canonicalPath": "/places-to-visit/kinchkha-waterfall",
+    "image": "/content/img/places/kinchkha-waterfall/kinchkha-waterfall-01.jpg",
+    "ogTitle": "Kinchkha Waterfall",
+    "ogDescription": "Three-step waterfall cascade in the Satsiskvilo valley with optional zipline activity.",
+    "ogImage": "/content/img/places/kinchkha-waterfall/kinchkha-waterfall-01.jpg"
+  }
+}
+

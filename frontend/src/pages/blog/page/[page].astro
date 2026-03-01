@@ -1,0 +1,73 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import BlogCard from "@/components/BlogCard.astro";
+import StructuredData from "@/components/StructuredData.astro";
+import { BLOG_PAGE_SIZE, publishedBlogPosts } from "@/data/blog";
+import { site } from "@/data/site";
+import { buildBlogItemListSchema, buildBreadcrumbSchema, toAbsoluteUrl } from "@/lib/seo";
+
+export function getStaticPaths() {
+  const totalPages = Math.ceil(publishedBlogPosts.length / BLOG_PAGE_SIZE);
+  const pages = Array.from({ length: Math.max(0, totalPages - 1) }, (_, idx) => idx + 2);
+  return pages.map((page) => ({ params: { page: String(page) } }));
+}
+
+const currentPage = Number.parseInt(Astro.params.page ?? "2", 10);
+const safeCurrentPage = Number.isNaN(currentPage) || currentPage < 2 ? 2 : currentPage;
+const start = (safeCurrentPage - 1) * BLOG_PAGE_SIZE;
+const end = start + BLOG_PAGE_SIZE;
+const posts = publishedBlogPosts.slice(start, end);
+const totalPages = Math.max(1, Math.ceil(publishedBlogPosts.length / BLOG_PAGE_SIZE));
+const previousPageHref = safeCurrentPage === 2 ? "/blog" : `/blog/page/${safeCurrentPage - 1}`;
+const nextPageHref = safeCurrentPage < totalPages ? `/blog/page/${safeCurrentPage + 1}` : null;
+const siteUrl = `https://${site.domain}`;
+const canonicalPath = `/blog/page/${safeCurrentPage}`;
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Home", url: siteUrl },
+  { name: "Blog", url: toAbsoluteUrl("/blog", siteUrl) },
+  { name: `Page ${safeCurrentPage}`, url: toAbsoluteUrl(canonicalPath, siteUrl) }
+]);
+const itemListSchema = buildBlogItemListSchema(posts, siteUrl);
+---
+
+<BaseLayout
+  title={`Discover Kutaisi Blog - Page ${safeCurrentPage}`}
+  description={`Browse travel articles from Discover Kutaisi blog, page ${safeCurrentPage}.`}
+  canonicalPath={canonicalPath}
+  image="/content/img/hero.jpg"
+  ogTitle={`Discover Kutaisi Blog - Page ${safeCurrentPage}`}
+  ogDescription={`Browse travel articles from Discover Kutaisi blog, page ${safeCurrentPage}.`}
+  ogImage="/content/img/hero.jpg"
+>
+  <StructuredData data={[breadcrumbSchema, itemListSchema]} />
+  <section
+    class="hero-bg hero-image-default hero-overlay-45 relative overflow-hidden py-20"
+    
+  >
+    <div class="container-shell relative text-white">
+      <h1 class="section-title !text-white">Discover Kutaisi Blog</h1>
+      <p class="mt-3 max-w-2xl text-sm text-gray-100">Page {safeCurrentPage} of {totalPages}</p>
+    </div>
+  </section>
+
+  <section class="container-shell py-12">
+    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {posts.map((post) => <BlogCard post={post} />)}
+    </div>
+    <div class="mt-10 flex items-center justify-between">
+      <a href={previousPageHref} class="rounded-full border border-gray-300 px-5 py-2 text-sm font-semibold text-gray-700 transition hover:bg-gray-100">
+        &larr; Previous
+      </a>
+      <span class="text-sm text-gray-600">Page {safeCurrentPage} of {totalPages}</span>
+      {
+        nextPageHref ? (
+          <a href={nextPageHref} class="rounded-full bg-brandOrange px-5 py-2 text-sm font-semibold text-white">
+            Next &rarr;
+          </a>
+        ) : (
+          <span class="inline-block w-[94px]"></span>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>

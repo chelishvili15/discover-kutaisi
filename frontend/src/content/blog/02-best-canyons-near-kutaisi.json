@@ -1,0 +1,33 @@
+﻿{
+  "id": "best-canyons-near-kutaisi",
+  "slug": "best-canyons-near-kutaisi",
+  "title": "Best Canyons Near Kutaisi: Which One Should You Choose?",
+  "excerpt": "Compare Martvili and Okatse canyons by scenery, activity level, transfer time, and traveler type.",
+  "author": "Discover Kutaisi Team",
+  "publishedAt": "2026-01-28",
+  "category": "Nature",
+  "tags": ["martvili canyon", "okatse canyon", "day trips", "western georgia"],
+  "coverImage": "/content/img/places/martvili-canyon/martvili-canyon-01.jpg",
+  "coverImageAlt": "Boat ride area in Martvili Canyon",
+  "isPublished": true,
+  "seo": {
+    "title": "Best Canyons Near Kutaisi: Martvili vs Okatse",
+    "description": "Compare Martvili and Okatse canyons to choose the best day trip from Kutaisi.",
+    "canonicalPath": "/blog/best-canyons-near-kutaisi",
+    "image": "/content/img/places/martvili-canyon/martvili-canyon-01.jpg",
+    "ogTitle": "Best Canyons Near Kutaisi: Martvili vs Okatse",
+    "ogDescription": "Compare Martvili and Okatse canyons to choose the best day trip from Kutaisi.",
+    "ogImage": "/content/img/places/martvili-canyon/martvili-canyon-01.jpg"
+  },
+  "contentBlocks": [
+    { "type": "paragraph", "text": "Both Martvili and Okatse canyons are popular day trips from Kutaisi, but they offer different experiences. Choosing the right one depends on your interests and energy level." },
+    { "type": "heading", "level": 2, "text": "Martvili Canyon" },
+    { "type": "list", "style": "unordered", "items": ["More relaxed experience with impressive turquoise water.", "Optional short boat section depending on conditions.", "Great option for families and mixed-age groups."] },
+    { "type": "heading", "level": 2, "text": "Okatse Canyon" },
+    { "type": "list", "style": "unordered", "items": ["More active tour with walking and viewpoints.", "Famous hanging platforms and dramatic canyon views.", "Best for travelers who enjoy light hiking."] },
+    { "type": "image", "src": "/content/img/places/okatse-canyon/okatse-canyon-02.jpg", "alt": "Viewpoint over Okatse Canyon", "caption": "Okatse offers dramatic elevated views." },
+    { "type": "heading", "level": 3, "text": "Can you combine both in one day?" },
+    { "type": "paragraph", "text": "Yes, many travelers combine both with an early start and private transportation. This works best when road and weather conditions are stable." }
+  ]
+}
+

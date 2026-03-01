@@ -1,0 +1,17 @@
+﻿{
+  "id": "kutaisi-to-kutaisi-airport",
+  "from": "Kutaisi",
+  "to": "Kutaisi Airport",
+  "duration": "25 min",
+  "priceGel": 50,
+  "seo": {
+    "title": "Kutaisi to Kutaisi Airport Transfer",
+    "description": "Private transfer from Kutaisi to Kutaisi Airport in approximately 25 min.",
+    "canonicalPath": "/transfers#kutaisi-to-kutaisi-airport",
+    "image": "/content/img/hero.jpg",
+    "ogTitle": "Kutaisi to Kutaisi Airport Transfer",
+    "ogDescription": "Private transfer from Kutaisi to Kutaisi Airport in approximately 25 min.",
+    "ogImage": "/content/img/hero.jpg"
+  }
+}
+

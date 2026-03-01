@@ -1,0 +1,230 @@
+{
+    "id": "okatse-kinchkha",
+    "slug": "okatse-kinchkha",
+    "title": "Okatse - Kinchkha",
+    "durationLabel": "4-5 hours",
+    "durationHours": 5,
+    "category": "nature",
+    "difficulty": "moderate",
+    "summary": "Suspension walkway plus scenic waterfall.",
+    "description": "A compact half-day escape to Okatse Canyon and Kinchkha Waterfall.",
+    "priceFromGel": 50,
+    "image": "/content/img/places/okatse-canyon/okatse-canyon-01.jpg",
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1zRr6oSXpf8SAJ-asr_d5fgjar-VVaFw&ehbc=2E312F",
+    "itinerary": [
+        {
+            "icon": "/content/img/icons/flag-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Pickup location"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Meet agency representative at the designated pickup point in Kutaisi city center.",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 70-80 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/diamond-icon.svg",
+            "placeSlug": "okatse-canyon",
+            "details": [
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Hiking segment at "
+                        },
+                        {
+                            "text": "Okatse Canyon",
+                            "href": "/places-to-visit/okatse-canyon"
+                        },
+                        {
+                            "text": ", including forest trail approach, suspended walkway crossings, and panoramic viewpoints."
+                        }
+                    ]
+                }
+            ],
+            "activities": [
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Safety and pacing briefing before the walkway section.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Photo stops at key canyon observation platforms.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 20-30 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/diamond-icon.svg",
+            "placeSlug": "kinchkha-waterfall",
+            "details": [
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Scenic nature stop at "
+                        },
+                        {
+                            "text": "Kinchkha Waterfall",
+                            "href": "/places-to-visit/kinchkha-waterfall"
+                        },
+                        {
+                            "text": ", with layered cascade views, short walking options, and flexible photo time."
+                        }
+                    ]
+                }
+            ],
+            "activities": [
+                {
+                    "icon": "/content/img/icons/pushpin-icon.svg",
+                    "details": [
+                        {
+                            "type": "paragraph",
+                            "spans": [
+                                {
+                                    "text": "Short walking segment near the main waterfall viewing points.",
+                                    "size": "sm"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon": "/content/img/icons/car-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Drive by car"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Duration: 80-90 min",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        },
+        {
+            "icon": "/content/img/icons/flag-icon.svg",
+            "details": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "Arrive at pickup location"
+                },
+                {
+                    "type": "paragraph",
+                    "spans": [
+                        {
+                            "text": "Tell agency representative how satisfied you were with the tour experience.",
+                            "size": "sm",
+                            "color": "muted"
+                        }
+                    ]
+                }
+            ],
+            "activities": null
+        }
+    ],
+    "includes": [
+        "Transport",
+        "Guide"
+    ],
+    "excludes": [
+        "Entry tickets",
+        "Lunch"
+    ],
+    "importantInfo": [
+        "Athletic shoes recommended",
+        "Not ideal during heavy rain"
+    ],
+    "seo": {
+        "title": "Okatse - Kinchkha",
+        "description": "Suspension walkway plus scenic waterfall.",
+        "canonicalPath": "/tours/okatse-kinchkha",
+        "image": "/content/img/places/okatse-canyon/okatse-canyon-01.jpg",
+        "ogTitle": "Okatse - Kinchkha",
+        "ogDescription": "Suspension walkway plus scenic waterfall.",
+        "ogImage": "/content/img/places/okatse-canyon/okatse-canyon-01.jpg"
+    }
+}

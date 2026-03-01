@@ -1,0 +1,37 @@
+﻿{
+  "id": "okatse-canyon",
+  "slug": "okatse-canyon",
+  "name": "Okatse Canyon",
+  "category": "canyons",
+  "location": "Gordi village, Khoni municipality",
+  "entryFee": "20 ₾",
+  "summary": "A canyon tour with a long hanging trail and panoramic viewpoints for adventure seekers.",
+  "description": "Okatse Canyon is known for elevated walkways, forest approach tours, and dramatic views over deep terrain.",
+  "activities": [
+    "Entry - 20 ₾"
+  ],
+  "details": [
+    "Okatse Canyon is located in the territory of Gordi village in Khoni municipality.",
+    "It is especially attractive for visitors who enjoy active and extreme-style walking tours, often taking 2-3 hours.",
+    "The visitor tour passes through Dadiani historic forest, includes a hanging trail section of about 780 meters, and ends at a panoramic viewpoint.",
+    "A smart selfie camera point is installed near the panoramic area for visitor photos."
+  ],
+  "videoUrl": "https://youtu.be/HHjoeYaxGMk?list=TLGG_KK4nyyu0ygxODAyMjAyNg",
+  "images": [
+    "/content/img/places/okatse-canyon/okatse-canyon-01.jpg",
+    "/content/img/places/okatse-canyon/okatse-canyon-02.jpg",
+    "/content/img/places/okatse-canyon/okatse-canyon-03.jpg",
+    "/content/img/places/okatse-canyon/okatse-canyon-04.jpg"
+  ],
+  "seo": {
+    "title": "Okatse Canyon",
+    "description": "A canyon tour with a long hanging trail and panoramic viewpoints for adventure seekers.",
+    "canonicalPath": "/places-to-visit/okatse-canyon",
+    "image": "/content/img/places/okatse-canyon/okatse-canyon-01.jpg",
+    "ogTitle": "Okatse Canyon",
+    "ogDescription": "A canyon tour with a long hanging trail and panoramic viewpoints for adventure seekers.",
+    "ogImage": "/content/img/places/okatse-canyon/okatse-canyon-01.jpg"
+  }
+}
+
+
