@@ -36,6 +36,7 @@
 | Places to Visit | `/places-to-visit` | Attractions guide with info cards |
 | Place Detail | `/places-to-visit/[slug]` | Detailed attraction information |
 | Transfers | `/transfers` | Transfer services and booking |
+| Reviews | `/reviews` | Full traveler reviews listing with Google Maps CTA |
 | About | `/about` | Company story, team, values |
 | Contact | `/contact` | Contact form, map, contact info |
 
@@ -50,6 +51,7 @@ Header (Sticky)
     +-- Tours
     +-- Transfers
     +-- Places
+    +-- Reviews
     +-- Contact
     +-- Blog
 
@@ -60,7 +62,8 @@ Footer
 ```
 
 **Navigation Note:**
-- Header navigation starts with links from `frontend/src/data/site.ts` (Home, About, Contact, Blog) and extends in header with: Tours, Transfers, Places.
+- Header navigation starts with links from `frontend/src/data/site.ts` (Home, About, Contact, Reviews, Blog) and extends in header with: Tours, Transfers, Places.
+- Current desktop/mobile header order is: Home, Reviews, Blog, Tours, Transfers, Places, Contact, About.
 - Active page link gets a highlighted visual state (`aria-current="page"` + orange-tinted active styling).
 - On mobile, navigation uses a CSS-only dropdown menu triggered by `three-horizontal-lines-icon.svg`.
 - Mobile header shows a "Now Viewing: {Current Page}" indicator to clarify current location.
@@ -223,6 +226,7 @@ Each card includes:
   - Row 2: duration + price (`$USD (N &#x20BE;)`)
   - Home page shows top tours preview; Kutaisi -> Telavi is excluded from home preview but remains on `/transfers`
 - Service Features are rendered as icon list items with primary + secondary text
+- If transfer pricing table data is available, a compact pricing table preview is rendered under the two-column block
 - Section CTA below tour/feature columns: "See All Transfers" (links to `/transfers`)
 
 ### Section 6: Testimonials
@@ -232,12 +236,12 @@ Each card includes:
 - Quote cards with generated initials avatars
 
 **Content:**
-- Home page displays 3 featured Google reviews (selected IDs: `t2`, `t4`, `t16`)
+- Home page displays 3 featured Google reviews (selected IDs: `t1`, `t2`, `t6`)
 - Cards show reviewer name, quote text, and star rating
 - Review dates are stored in data but intentionally not shown on cards
 - Avatar backgrounds use Google-like color palette variants with reviewer initials
 - Star ratings
-- "See All Reviews" CTA links to Google Maps profile
+- "See All Reviews" CTA links to `/reviews` (full reviews page)
 
 ### Section 7: Latest from Blog
 
@@ -267,7 +271,7 @@ Each card includes:
 
 **Content:**
 - Logo
-- Quick Links (Home, About, Contact, Blog, Tours, Places, Transfers)
+- Quick Links (Home, About, Contact, Reviews, Blog, Tours, Places, Transfers)
 - Contact Information:
   - Email
   - Phone/WhatsApp
@@ -366,6 +370,10 @@ See "content" directory for details
    - Timeline of the day
    - Stop-by-stop breakdown
    - Time spent at each location
+   - Supports structured detail blocks (`heading`, `paragraph` with styled spans/links, `list`)
+   - Includes optional nested activity items per stop
+   - Collapsible timeline UI ("See more / See less")
+   - Map embed panel is shown next to itinerary (uses tour-specific map URL or default fallback)
 
 4. **What's Included**
    - Professional guide
@@ -385,14 +393,15 @@ See "content" directory for details
    - Physical requirements
    - Weather considerations
 
-7. **Gallery**
-   - Photo gallery of the tour/destinations
+7. **Booking Request**
+   - Shared booking form component in tour mode
+   - Submission options: Email (`mailto`) and WhatsApp pre-filled message
 
-8. **Reviews**
-   - Customer testimonials specific to this tour
+8. **Share Actions**
+   - Share links for current tour URL (social/share intent)
 
-9. **Similar Tours**
-   - Related tour recommendations
+9. **Future Enhancements**
+   - Gallery, tour-specific reviews, and related tours can be added later without changing the current schema model
 
 ---
 
@@ -458,6 +467,11 @@ See "content" directory for details
   - Minivan -> `suv-car-icon.svg`
   - Minibus -> `passanger-van-icon.svg`
 
+**Pricing Table:**
+- Rendered when `transfers-page.json` includes `pricingTable`
+- Columns: Route, 1-3 passengers, 4-7 passengers, 7+ passengers
+- Home page renders a pricing table preview for popular transfer rows
+
 ---
 
 ## Booking System
@@ -465,37 +479,25 @@ See "content" directory for details
 ### Booking Form Fields
 
 **Tour Booking:**
-- Select Tour (dropdown)
-- Date (date picker)
-- Number of Adults
-- Number of Children (with ages)
 - Full Name
 - Email
 - Phone/WhatsApp
-- Pickup Location
-- Special Requests (textarea)
+- Date
+- Details (textarea)
 
 **Transfer Booking:**
-- Transfer Type (Airport/City-to-City)
-- From Location
-- To Location
-- Date
-- Time
-- Flight Number (if airport pickup)
-- Number of Passengers
-- Luggage Count
 - Full Name
 - Email
-- Phone
-- Special Requests
+- Phone/WhatsApp
+- Date
+- Details (textarea)
 
 ### Booking Flow
-1. Select service/date
-2. Enter details
-3. Review booking
-4. Submit request
-5. Confirmation email sent
-6. Follow-up with payment link or details
+1. Open booking form on Contact / Tour Detail / Transfers page
+2. Enter required fields (name, email, phone, date, details)
+3. Choose channel: "Send by Email" or "Send by WhatsApp"
+4. Browser opens pre-filled `mailto:` or WhatsApp message draft
+5. User sends request manually in their chosen channel
 
 ---
 
@@ -704,6 +706,7 @@ See "content" directory for details
 ### Required Pages
 - **Terms of Service** - `/terms`
 - **Privacy Policy** - `/privacy`
+- **Current status:** These routes are listed as required but are not yet implemented in `frontend/src/pages/`.
 
 ---
 

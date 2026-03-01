@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 This repo is an Astro site with all app and content assets under `frontend/`:
-- `frontend/src/pages`: route files (`/`, `/about`, `/contact`, `/reviews`, `/tours`, `/transfers`, `/places-to-visit`, `/blog`).
+- `frontend/src/pages`: route files and route directories (`/`, `/about`, `/contact`, `/reviews`, `/transfers`, `/404`, `/tours`, `/tours/[slug]`, `/places-to-visit`, `/places-to-visit/[slug]`, `/blog`, `/blog/[slug]`, `/blog/page/[page]`).
 - `frontend/src/components`: reusable UI blocks (cards, filters, header/footer, booking forms, SEO helpers).
 - `frontend/src/data`: data loaders/aggregators for site content.
 - `frontend/src/content`: source JSON and media content (`blog`, `pages`, `places`, `tours`, `transfers`, `img`, `fonts`).
