@@ -1,0 +1,54 @@
+# Discover Kutaisi
+
+Local travel site for Kutaisi and Western Georgia covering private tours, transfers, places to visit, travel planning, and local tips.
+
+Base URL: https://discoverkutaisi.com
+
+## Core Pages
+- Home: https://discoverkutaisi.com/
+- Tours: https://discoverkutaisi.com/tours
+- Transfers: https://discoverkutaisi.com/transfers
+- Places to Visit: https://discoverkutaisi.com/places-to-visit
+- Blog: https://discoverkutaisi.com/blog
+- Reviews: https://discoverkutaisi.com/reviews
+- About: https://discoverkutaisi.com/about
+- Contact: https://discoverkutaisi.com/contact
+
+## Featured Tours
+- Gelati - Motsameta - Bagrati: https://discoverkutaisi.com/tours/gelati-motsameta-bagrati
+- Martvili - Prometheus: https://discoverkutaisi.com/tours/martvili-prometheus
+- Martvili - Okatse - Prometheus: https://discoverkutaisi.com/tours/martvili-okatse-prometheus
+- Tskhrajvari - Shaori - Nikortsminda: https://discoverkutaisi.com/tours/tskhrajvari-shaori-nikortsminda
+- Okatse - Kinchkha: https://discoverkutaisi.com/tours/okatse-kinchkha
+
+## Places
+- Gelati Monastery: https://discoverkutaisi.com/places-to-visit/gelati-monastery
+- Bagrati Cathedral: https://discoverkutaisi.com/places-to-visit/bagrati-cathedral
+- Prometheus Cave: https://discoverkutaisi.com/places-to-visit/prometheus-cave
+- Martvili Canyon: https://discoverkutaisi.com/places-to-visit/martvili-canyon
+- Okatse Canyon: https://discoverkutaisi.com/places-to-visit/okatse-canyon
+- Sataplia Strict Nature Reserve: https://discoverkutaisi.com/places-to-visit/sataplia-strict-nature-reserve
+- Kinchkha Waterfall: https://discoverkutaisi.com/places-to-visit/kinchkha-waterfall
+- Motsameta Monastery: https://discoverkutaisi.com/places-to-visit/motsameta-monastery
+- Nikortsminda Temple: https://discoverkutaisi.com/places-to-visit/nikortsminda-temple
+- Shaori Reservoir: https://discoverkutaisi.com/places-to-visit/shaori-reservoir
+- Tskhrajvari Shrine: https://discoverkutaisi.com/places-to-visit/tskhrajvari-shrine
+
+## Blog
+- Perfect Weekend in Kutaisi: https://discoverkutaisi.com/blog/weekend-guide-kutaisi
+- Best Canyons Near Kutaisi: https://discoverkutaisi.com/blog/best-canyons-near-kutaisi
+- Kutaisi Airport Transfer Tips: https://discoverkutaisi.com/blog/kutaisi-airport-transfer-tips
+
+## Transfer Routes
+- Kutaisi to Kutaisi Airport: https://discoverkutaisi.com/transfers#kutaisi-to-kutaisi-airport
+- Kutaisi to Tbilisi: https://discoverkutaisi.com/transfers#kutaisi-to-tbilisi
+- Kutaisi to Batumi: https://discoverkutaisi.com/transfers#kutaisi-to-batumi
+- Kutaisi to Mestia: https://discoverkutaisi.com/transfers#kutaisi-to-mestia
+- Kutaisi to Telavi: https://discoverkutaisi.com/transfers#kutaisi-to-telavi
+- Kutaisi to Borjomi: https://discoverkutaisi.com/transfers#kutaisi-to-borjomi
+- Kutaisi to Bakuriani: https://discoverkutaisi.com/transfers#kutaisi-to-bakuriani
+
+## Contact
+- Contact page: https://discoverkutaisi.com/contact
+- WhatsApp: https://api.whatsapp.com/send?phone=+995557669179
+- YouTube: https://www.youtube.com/@DiscoverKutaisi

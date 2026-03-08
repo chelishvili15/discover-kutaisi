@@ -14,7 +14,7 @@ import {
 } from "@/data/transfers";
 import { icons } from "@/data/icons";
 import { formatUsdGel } from "@/lib/currency";
-import { buildBreadcrumbSchema, toAbsoluteUrl } from "@/lib/seo";
+import { buildBreadcrumbSchema, buildTransferItemListSchema, toAbsoluteUrl } from "@/lib/seo";
 const { seo, content } = transfersIndexPage;
 const siteUrl = `https://${site.domain}`;
 const canonicalUrl = toAbsoluteUrl(seo.canonicalPath, siteUrl);
@@ -23,6 +23,10 @@ const breadcrumbSchema = buildBreadcrumbSchema([
   { name: "Transfers", url: canonicalUrl }
 ]);
 const popularTransferTours = transferTours.filter((tour) => hasTransferPricingRow(tour));
+const hiddenAnchorTransfers = transferTours.filter(
+  (tour) => !popularTransferTours.some((popularTour) => popularTour.id === tour.id)
+);
+const transferItemListSchema = buildTransferItemListSchema(transferTours, siteUrl);
 
 const formatGelCell = (value?: string): string => {
   if (!value?.trim()) {
@@ -45,6 +49,12 @@ const formatGelCell = (value?: string): string => {
   ogImage={seo.ogImage}
 >
   <StructuredData data={breadcrumbSchema} />
+  <StructuredData data={transferItemListSchema} />
+  {
+    hiddenAnchorTransfers.map((tour) => (
+      <div id={tour.id} class="sr-only" aria-hidden="true"></div>
+    ))
+  }
   <section
     class="hero-bg hero-image-default hero-overlay-45 relative overflow-hidden py-20"
     
@@ -62,17 +72,17 @@ const formatGelCell = (value?: string): string => {
         <ul class="mt-4 space-y-2">
           {
             popularTransferTours.map((tour) => (
-              <li class="flex items-center gap-3 rounded-lg border border-gray-200 px-3 py-2">
+              <li id={tour.id} class="scroll-mt-24 flex items-center gap-3 rounded-lg border border-gray-200 px-3 py-2">
                 <span class="inline-flex h-9 w-9 shrink-0 items-center justify-center">
                   <img src={icons.transfers.popularRoutes} alt="Popular route" class="h-6 w-6 object-contain" loading="lazy" />
                 </span>
                 <div class="flex-1 text-sm">
                   <div class="grid grid-cols-[1fr_auto_1fr] items-center gap-2">
-                    <span class="font-semibold text-gray-900">{tour.from}</span>
+                    <a href={`#${tour.id}`} class="font-semibold text-gray-900 transition hover:text-brandOrange">{tour.from}</a>
                     <span class="inline-flex justify-self-center" aria-hidden="true">
                       <img src={icons.transfers.tourDirection} alt="Direction arrow" class="h-4 w-4 object-contain" loading="lazy" />
                     </span>
-                    <span class="justify-self-end font-semibold text-gray-900">{tour.to}</span>
+                    <a href={`#${tour.id}`} class="justify-self-end font-semibold text-gray-900 transition hover:text-brandOrange">{tour.to}</a>
                   </div>
                   <div class="mt-1 flex items-center justify-between text-xs">
                     <span class="text-gray-600">Duration: <span class="font-medium text-gray-800">{tour.duration}</span></span>

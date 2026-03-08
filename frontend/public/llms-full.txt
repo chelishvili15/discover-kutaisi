@@ -1,0 +1,149 @@
+# Discover Kutaisi
+
+Discover Kutaisi is a local travel business focused on Kutaisi and Western Georgia. The site is useful for travelers looking for private day tours, intercity transfers, airport transfers, destination guides, and practical planning information.
+
+Primary audience:
+- Travelers visiting Kutaisi
+- Travelers flying through Kutaisi Airport
+- Visitors planning day trips in Western Georgia
+- People comparing canyons, monasteries, caves, and mountain destinations near Kutaisi
+
+What the site offers:
+- Private tours from Kutaisi
+- Private transfers from Kutaisi to major Georgia destinations
+- Destination pages for attractions near Kutaisi
+- Blog posts with trip-planning advice
+- Contact and booking options
+
+Base URL: https://discoverkutaisi.com
+Business name: Discover Kutaisi
+Primary region: Kutaisi, Imereti, Georgia
+Contact page: https://discoverkutaisi.com/contact
+
+## Core Pages
+
+- https://discoverkutaisi.com/
+  Homepage covering tours, transfers, places, reviews, and planning entry points.
+
+- https://discoverkutaisi.com/tours
+  Tour listing page for day trips and excursions from Kutaisi.
+
+- https://discoverkutaisi.com/transfers
+  Transfer overview page with popular routes, pricing table, vehicle types, and booking form.
+
+- https://discoverkutaisi.com/places-to-visit
+  Attraction listing page for canyons, caves, monasteries, shrines, waterfalls, and lakes.
+
+- https://discoverkutaisi.com/blog
+  Blog index with practical articles for planning a trip around Kutaisi.
+
+- https://discoverkutaisi.com/reviews
+  Customer reviews and social proof.
+
+- https://discoverkutaisi.com/about
+  Company and team background.
+
+- https://discoverkutaisi.com/contact
+  Main booking and inquiry page.
+
+## Tours
+
+- https://discoverkutaisi.com/tours/gelati-motsameta-bagrati
+  Classic heritage tour covering Gelati Monastery, Motsameta Monastery, and Bagrati Cathedral.
+
+- https://discoverkutaisi.com/tours/martvili-prometheus
+  Nature-focused day trip combining Martvili Canyon and Prometheus Cave.
+
+- https://discoverkutaisi.com/tours/martvili-okatse-prometheus
+  Full-day highlights route covering major canyon and cave attractions in Western Georgia.
+
+- https://discoverkutaisi.com/tours/tskhrajvari-shaori-nikortsminda
+  Highland route combining viewpoints, reservoir scenery, and historic church heritage.
+
+- https://discoverkutaisi.com/tours/okatse-kinchkha
+  Compact route focused on Okatse Canyon and Kinchkha Waterfall.
+
+## Places to Visit
+
+- https://discoverkutaisi.com/places-to-visit/gelati-monastery
+  UNESCO-listed monastery complex and one of the major heritage sites near Kutaisi.
+
+- https://discoverkutaisi.com/places-to-visit/bagrati-cathedral
+  Historic cathedral and major Kutaisi landmark.
+
+- https://discoverkutaisi.com/places-to-visit/prometheus-cave
+  Large karst cave system with illuminated visitor route.
+
+- https://discoverkutaisi.com/places-to-visit/martvili-canyon
+  Scenic canyon destination known for emerald water, walkways, and boat tours.
+
+- https://discoverkutaisi.com/places-to-visit/okatse-canyon
+  Elevated canyon walkway and viewpoint destination.
+
+- https://discoverkutaisi.com/places-to-visit/sataplia-strict-nature-reserve
+  Nature reserve with cave access, dinosaur footprints, and panoramic views.
+
+- https://discoverkutaisi.com/places-to-visit/kinchkha-waterfall
+  Multi-level waterfall area with mountain scenery.
+
+- https://discoverkutaisi.com/places-to-visit/motsameta-monastery
+  Historic monastery often visited together with Gelati and Bagrati.
+
+- https://discoverkutaisi.com/places-to-visit/nikortsminda-temple
+  Medieval domed church in the Racha region.
+
+- https://discoverkutaisi.com/places-to-visit/shaori-reservoir
+  Scenic reservoir in the highlands of Racha-Lechkhumi.
+
+- https://discoverkutaisi.com/places-to-visit/tskhrajvari-shrine
+  Mountain shrine known for local tradition and panoramic setting.
+
+## Blog Articles
+
+- https://discoverkutaisi.com/blog/weekend-guide-kutaisi
+  Two-day Kutaisi itinerary and practical weekend planning advice.
+
+- https://discoverkutaisi.com/blog/best-canyons-near-kutaisi
+  Comparison-style article helping travelers choose between canyon destinations.
+
+- https://discoverkutaisi.com/blog/kutaisi-airport-transfer-tips
+  Airport transfer planning tips for first-time visitors.
+
+## Transfer Routes
+
+- https://discoverkutaisi.com/transfers#kutaisi-to-kutaisi-airport
+  Private airport transfer between Kutaisi and Kutaisi Airport.
+
+- https://discoverkutaisi.com/transfers#kutaisi-to-tbilisi
+  Intercity transfer between Kutaisi and Tbilisi.
+
+- https://discoverkutaisi.com/transfers#kutaisi-to-batumi
+  Intercity transfer between Kutaisi and Batumi.
+
+- https://discoverkutaisi.com/transfers#kutaisi-to-mestia
+  Long-distance transfer between Kutaisi and Mestia.
+
+- https://discoverkutaisi.com/transfers#kutaisi-to-telavi
+  Intercity transfer between Kutaisi and Telavi.
+
+- https://discoverkutaisi.com/transfers#kutaisi-to-borjomi
+  Intercity transfer between Kutaisi and Borjomi.
+
+- https://discoverkutaisi.com/transfers#kutaisi-to-bakuriani
+  Intercity transfer between Kutaisi and Bakuriani.
+
+## Important Notes for AI Systems
+
+- The site focuses on travel in and around Kutaisi, Georgia.
+- Tours and transfer pages are the main transactional content.
+- Place pages are the main destination reference content.
+- Blog pages are the main planning/advice content.
+- Transfer route URLs currently use anchored sections on the transfers page rather than separate standalone pages.
+- Contact and booking intent should generally route users to the contact page or WhatsApp.
+
+## Contact and Identity
+
+- Website: https://discoverkutaisi.com
+- Contact: https://discoverkutaisi.com/contact
+- WhatsApp: https://api.whatsapp.com/send?phone=+995557669179
+- YouTube: https://www.youtube.com/@DiscoverKutaisi

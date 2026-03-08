@@ -33,8 +33,9 @@ const pageTitle = normalizedTitle.includes(brandName.toLowerCase()) ? title : `$
 
 <title>{pageTitle}</title>
 <meta name="description" content={description} />
-<link rel="icon" type="image/svg+xml" href={site.logoPath} />
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicon.png" sizes="320x320" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link rel="shortcut icon" href="/favicon.ico" />
 <meta property="og:type" content={ogType} />
 <meta property="og:site_name" content={site.name} />
 <meta property="og:title" content={ogTitle} />

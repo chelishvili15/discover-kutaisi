@@ -1,4 +1,4 @@
-import type { BlogPost, Place, Tour } from "@/types/content";
+import type { BlogPost, Place, Tour, TransferTour } from "@/types/content";
 
 export interface BreadcrumbItem {
   name: string;
@@ -12,8 +12,10 @@ interface SiteSchemaInput {
   email: string;
   phone: string;
   address: string;
+  logoPath: string;
   whatsapp: string;
   youtube: string;
+  maps: string;
 }
 
 export const toAbsoluteUrl = (path: string, baseUrl: string): string => new URL(path, baseUrl).toString();
@@ -23,9 +25,19 @@ export const buildOrganizationSchema = (site: SiteSchemaInput, baseUrl: string):
   "@type": "TravelAgency",
   name: site.name,
   url: baseUrl,
+  logo: toAbsoluteUrl(site.logoPath, baseUrl),
   description: site.description,
   email: site.email,
   telephone: site.phone,
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      contactType: "customer support",
+      telephone: site.phone,
+      email: site.email,
+      availableLanguage: ["en"]
+    }
+  ],
   address: {
     "@type": "PostalAddress",
     streetAddress: site.address,
@@ -33,7 +45,7 @@ export const buildOrganizationSchema = (site: SiteSchemaInput, baseUrl: string):
     addressRegion: "Imereti",
     addressCountry: "GE"
   },
-  sameAs: [site.whatsapp, site.youtube]
+  sameAs: [site.whatsapp, site.youtube, site.maps]
 });
 
 export const buildBreadcrumbSchema = (items: BreadcrumbItem[]): Record<string, unknown> => ({
@@ -135,5 +147,19 @@ export const buildBlogItemListSchema = (
     position: idx + 1,
     url: toAbsoluteUrl(`/blog/${post.slug}`, baseUrl),
     name: post.title
+  }))
+});
+
+export const buildTransferItemListSchema = (
+  transfers: TransferTour[],
+  baseUrl: string
+): Record<string, unknown> => ({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: transfers.map((transfer, idx) => ({
+    "@type": "ListItem",
+    position: idx + 1,
+    url: toAbsoluteUrl(transfer.seo.canonicalPath, baseUrl),
+    name: `${transfer.from} to ${transfer.to} transfer`
   }))
 });
