@@ -227,16 +227,6 @@ const baseTestimonials: Testimonial[] = [
     isVerified: true
   },
   {
-    id: "t20",
-    name: "დიმა გოცირიძე",
-    country: "",
-    reviewDate: "2026-02",
-    rating: 5,
-    quote: "Thank you for the best transfer, Kutaisi - Bakuriani, affordable price, excellent service.",
-    sourceType: "google",
-    isVerified: true
-  },
-  {
     id: "t21",
     name: "Krystian Dworczak",
     country: "",
