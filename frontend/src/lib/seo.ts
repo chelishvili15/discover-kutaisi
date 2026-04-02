@@ -18,6 +18,13 @@ interface SiteSchemaInput {
   maps: string;
 }
 
+export const ensureTrailingSlash = (path: string): string => {
+  if (!path || path === "/") return "/";
+  // Don't add trailing slash to hash links (e.g., #anchor)
+  if (path.includes("#")) return path;
+  return path.endsWith("/") ? path : `${path}/`;
+};
+
 export const toAbsoluteUrl = (path: string, baseUrl: string): string => new URL(path, baseUrl).toString();
 
 export const buildOrganizationSchema = (site: SiteSchemaInput, baseUrl: string): Record<string, unknown> => ({
