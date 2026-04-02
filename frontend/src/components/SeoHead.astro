@@ -24,7 +24,7 @@ const {
   ogType = "website",
   twitterCard = "summary_large_image"
 } = Astro.props;
-const canonicalUrl = new URL(canonicalPath, Astro.site).toString();
+const canonicalUrl = (new URL(canonicalPath, Astro.site).toString()).endsWith("/") ? new URL(canonicalPath, Astro.site).toString() : `${new URL(canonicalPath, Astro.site).toString()}/`;
 const ogImageUrl = new URL(ogImage, Astro.site).toString();
 const normalizedTitle = title.trim().toLowerCase();
 const brandName = "Discover Kutaisi";
