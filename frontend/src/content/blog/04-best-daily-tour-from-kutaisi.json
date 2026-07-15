@@ -1,0 +1,62 @@
+{
+  "id": "best-daily-tour-from-kutaisi",
+  "slug": "best-daily-tour-from-kutaisi",
+  "title": "Best daily tour from Kutaisi 15.07.2026",
+  "excerpt": "Explore three of Georgia's most iconic wonders in one day. From the dramatic cliffs of Vardzia to the historic walls of Rabati Castle and the serene Green Monastery, this is the perfect day tour from Kutaisi",
+  "author": "Discover Kutaisi Team",
+  "publishedAt": "2026-07-16",
+  "updatedAt": "2026-07-16",
+  "category": "Transport",
+  "tags": ["One day tour", "Tour", "Itinerary", "Vardzia", "Rabati", "Green Monastery"],
+  "coverImage": "/content/img/vardzia-rabati.jpg",
+  "coverImageAlt": "vardzia-rabati",
+  "isPublished": true,
+    "seo": {
+        "title": "Best Vardzia, Rabati & Green Monastery Tour from Kutaisi",
+        "description": "Book the ultimate day tour from Kutaisi to Vardzia cave city, Rabati Castle, and the peaceful Green Monastery. Explore Georgia's top historic wonders in one day!",
+        "canonicalPath": "/best-daily-tour-from-kutaisi",
+        "image": "/content/img/vardzia-rabati.jpg",
+        "ogTitle": "Vardzia, Rabati & Green Monastery Day Tour from Kutaisi",
+        "ogDescription": "Discover the ancient cave city of Vardzia, the majestic Rabati Castle, and the tranquil Green Monastery on a perfect one-day trip from Kutaisi.",
+        "ogImage": "/content/img/vardzia-rabati.jpg"
+    },
+    "contentBlocks": [
+    { 
+        "type": "paragraph", 
+        "text": "Embarking on a day tour from Kutaisi to Vardzia, Rabati, and the Green Monastery is one of the best ways to experience the incredible diversity of Georgia's history, architecture, and nature in a single journey." 
+    },
+    { 
+        "type": "heading", 
+        "level": 2, 
+        "text": "What You Will Experience" 
+    },
+    { 
+        "type": "list", 
+        "style": "ordered", 
+        "items": [
+        "Vardzia: A magnificent 12th-century cave monastery carved entirely into the side of the Erusheti Mountain.",
+        "Rabati Castle: A stunningly restored medieval fortress in Akhaltsikhe representing a unique blend of Christian and Islamic architecture.",
+        "The Green Monastery: A peaceful, ancient stone sanctuary tucked away deep inside a lush green pine forest near Borjomi.",
+        "Scenic Drive: A comfortable journey through the changing landscapes of Georgia's beautiful Samtskhe-Javakheti region."
+        ] 
+    },
+    { 
+        "type": "heading", 
+        "level": 2, 
+        "text": "A Journey Through Time" 
+    },
+    { 
+        "type": "paragraph", 
+        "text": "Departing from Kutaisi, this comprehensive full-day itinerary transitions seamlessly from the lush forests of Borjomi to the semi-arid, dramatic cliffside landscapes of Vardzia. It is highly recommended for travelers who want to maximize their time in western and southern Georgia without having to arrange complex multiple-leg transfers." 
+    },
+    { 
+        "type": "quote", 
+        "text": "Standing in the heart of Vardzia's rock-cut rooms and looking over the Mtkvari River valley makes you feel like an explorer stepping back into the golden age of Queen Tamar.", 
+        "cite": "Discover Kutaisi Guiding Team" 
+    },
+    { 
+        "type": "paragraph", 
+        "text": "To make the most of this adventure, remember to wear sturdy walking shoes for navigating the uneven stone steps at Vardzia, and keep a modest change of clothes or scarf handy for entering active church premises at the Green Monastery." 
+    }
+    ]
+}
